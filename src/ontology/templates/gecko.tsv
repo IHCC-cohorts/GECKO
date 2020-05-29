@@ -1,0 +1,100 @@
+Short ID	Label	Definition	Parent	Synonym	Comment	Question Description	Expected Answer Type	See Also ID	Known Number of Cohorts	Use Cases Requirements
+ID	LABEL	A definition	SC %	A alternative term	A comment	A question description	A answer type	A see also SPLIT=/	A number of cohorts	A use cases requirements
+										
+GECKO:0000001	basic cohort attributes									
+GECKO:0000002	aims and objectives	The reason for performing a study in terms of the scientific questions to be answered by the analysis of data collected during the study.	basic cohort attributes	Study Objective		What are the aims and objectives of your cohort?	Alphanumeric	NCIT:C93415	9	
+GECKO:0000003	timeline	A chronological schedule of when activities or events occurred or will occur.	basic cohort attributes	Timeline		What is the timeline for your cohort study?	Alphanumeric	NCIT:C54576	9	
+GECKO:0000004	study design	A plan detailing how a study will be performed in order to represent the phenomenon under examination, to answer the research questions that have been asked, and defining the methods of data analysis. Study design is driven by research hypothesis being posed, study subject/population/sample available, logistics/resources: technology, support, networking, collaborative support, etc.‚Ä¶	basic cohort attributes	Study Design	eg. longitudinal	What is the study design for your cohort study?	MIABIS codes (Categorical)	NCIT:C15320	9	
+GECKO:0000005	population data		basic cohort attributes		Population Group? NCIT:C17005					
+GECKO:0000006	location	A position, site, or point in space where something can be found.	population data	Location		What location is your cohort's population based in?	Alphanumeric	NCIT:C25341	9	4.1
+GECKO:0000007	criteria for enrollment and recruitment procedures	Medical and/or social characteristics which are necessary for a subject to be allowed to participate in a clinical study, as outlined in the study protocol. Meeting inclusion criteria is not a sufficient condition for entry or recruitment of a subject into the study. Characteristics limiting the eligibility of a subject for the clinical study must be considered	population data	Inclusion Criteria		What is your cohort's criteria of enrollment or recruitment procedures?	Alphanumeric	NCIT:C25532	6	4.1
+GECKO:0000008	num. participants	The number of subjects entered in a clinical trial.	population data	Planned Subject Number		What are the number of participants in your cohort?	Numeric	NCIT:C49692	9	4.1
+GECKO:0000009	demographic data		basic cohort attributes		NCIT:C142508					
+GECKO:0000010	sex(es) studied in cohort		demographic data							
+GECKO:0000011	gender(s) studied in cohort	The assemblage of properties that distinguish people on the basis of the societal roles expected for the two sexes.	demographic data	Gender		How many of each gender are studied in your cohort?	Numeric	NCIT:C17357		
+GECKO:0000012	age range		demographic data			What is the age range of your cohort's participants?	Alphanumeric		6	
+GECKO:0000013	data collection events		basic cohort attributes			If data was collected over several events or time points, what are the events or time points?	Alphanumeric			
+GECKO:0000014	biosample				NCIT:C43412					
+GECKO:0000015	sample type		biosample		Body fluid or substance NCIT:C13236					
+GECKO:0000016	urine	The fluid that is excreted by the kidneys. It is stored in the bladder and discharged through the urethra.	sample type	Urine		Have you collected this type of biosample?	Yes/No (Binary)	NCIT:C13283	4	5.1
+GECKO:0000017	blood		sample type							
+GECKO:0000018	venous or arterial	A liquid tissue; its major function is to transport oxygen throughout the body. It also supplies the tissues with nutrients, removes waste products, and contains various components of the immune system defending the body against infection. Several hormones also travel in the blood.	blood	Blood				NCIT:C12434	5	
+GECKO:0000019	fasting or non-fasting		blood							
+GECKO:0000020	stool	The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria.	sample type	Feces				NCIT:C13234	2	
+GECKO:0000021	saliva	The watery fluid in the mouth made by the salivary glands. Saliva moistens food to help digestion and it helps protect the mouth against infections.	sample type	Saliva				NCIT:C13275	2	
+GECKO:0000043	other		data type							
+GECKO:0000046	availability	The quality of being obtainable or accessible and ready for use or service.	genomics	Availability		For each data type present, is it available/accessible for research?	DUO code(s)	NCIT:C25429	TBD	all?
+GECKO:0000044	sample size	A subset of a larger population, selected for investigation to draw conclusions or make estimates about the larger population.	genomics	Sample Size		For each data type present, what is the sample size?	Numeric	NCIT:C53190	TBD	all?
+GECKO:0000047	processing method	The system of methods followed in a particular discipline.	genomics	Methodology		For each data type present, what was the processing method used (eg. sequencer/software)?	Alphanumeric	NCIT:C86572	TBD	
+GECKO:0000026	storage method	An administrative activity defined at a global library level that is an action of storing samples.	biosample	Defined Specimen Storage		For each biosample present, what is the storage method?	MIABIS codes (Categorical)	NCIT:C93374	TBD	5.1
+GECKO:0000027	laboratory measures				Laboratory Procedure NCIT:C25294					
+GECKO:0000028	microbiology		laboratory measures		Microbiology Test NCIT:C49188					
+GECKO:0000029	microbial data		microbiology			Have you collected microbial data?	Yes/No (Binary)		TBD	
+GECKO:0000030	biosample source/anatomical location	A request to identify the specimen source site.	microbiology	Specimen Source Site		From where (specimen source site) have you collected microbial data?	Alphanumeric (or Categorical?)	NCIT:C159256		
+GECKO:0000045	available data format(s)	The organization of information according to preset specifications.	genomics	Format		For each data type present, what are the available data formats?	Alphanumeric (or Categorical?)	NCIT:C42761	TBD	4.1
+GECKO:0000032	genomics		laboratory measures		Molecular Analysis? NCIT:C19770					
+GECKO:0000033	data type		genomics							
+GECKO:0000034	DNA/Genotyping		data type	DNA Sequencing/Nucleic Acid Sequencing		Have you collected this type of data?	Yes/No (Binary)	NCIT:C153598/NCIT:C18881	9	4.1,4.2,5.2,5.3
+GECKO:0000035	WGS		data type	Whole Genome Sequencing				NCIT:C101294	7	5.2,5.4
+GECKO:0000036	WES		data type	Whole Exome Sequencing				NCIT:C101295	4	5.2,5.4
+GECKO:0000037	Sequence variants	The analysis of all of the single nucleotide polymorphisms in the genome of a biological sample.	data type	Single Nucleotide Polymorphism Profile	CNV, SNP arrays			NCIT:C129888	TBD	5.2,5.3,5.4
+GECKO:0000038	Epigenetics	The analysis of all of the epigenetic DNA modifications in the genome a biological sample.	data type	Epigenetic Profile				NCIT:C129887	4	5.2
+GECKO:0000039	Metagenomics	A molecular assay that is used to analyze metagenomic data; genetic material recovered directly from environmental samples for genomic research.	data type	Metagenomics analysis				ERO:0000657 (***ERO is obsolete)	TBD	5.2
+GECKO:0000040	Microbiome markers		data type		rRNA, etc					
+GECKO:0000041	RNAseq/gene expression	A procedure that can determine the RNA sequences for all or part of the poly-A tail-containing messenger RNA transcripts in an individual.	data type	mRNA sequencing				NCIT:C129432	6	4.1,5.3
+GECKO:0000042	eQTL	A stretch of DNA at a particular chromosomal location that is able to regulate the expression of a specific mRNA or protein.	data type	Expression Quantitative Trait Locus	Cis eQTLs and/or Trans eQTLs			NCIT:C113415	TBD	4.1
+GECKO:0000048	associated cell type/tissue type/biosample	A request to identify the specimen source site.	genomics	Specimen Source Site		For each data type present, what are the associated cell/tissue/biosample types?	Alphanumeric (or Categorical?)	NCIT:C159256	TBD	
+GECKO:0000049	associated phenotype	Any genetically determined characteristic/The assemblage of traits or outward appearance of an individual. It is the product of interactions between genes and between genes and the environment.	genomics	Trait/Phenotype		For each data type present, what are the associated phenotype(s)?	Alphanumeric	NCIT:C985496/NCIT:C16977
+GECKO:0000050	associated disease	The investigation, analysis and recognition of the presence and nature of disease, condition, or injury from expressed signs and symptoms; also, the scientific determination of any kind; the concise results of such an investigation.	genomics	Diagnosis		For each data type present, what are the associated diseases?	Alphanumeric	NCIT:C15220		
+GECKO:0000051	associated medication		genomics	Medication		For each data type present, what are the associated medications?	Alphanumeric	NCIT:C459	TBD	4.1,4.2,5.1,5.2,5.3
+GECKO:0000052	survey administration				NCIT:C64252					
+GECKO:0000053	date and time-related information	The date (and time) on which an assessment is completed.	survey administration	Assessment Date		Have you collected the date/time of survey assessments?	Yes/No (Binary)	NCIT:C93511	4	
+GECKO:0000054	consent/accessibility	Consent by a patient to a surgical or medical procedure or participation in a clinical study after achieving an understanding of the relevant medical facts and the risks involved.	survey administration	Informed consent		Is there consent for your survey data to be accessible for research?	DUO code(s)	NCIT:C16735	TBD	
+GECKO:0000055	unique identifiers	One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.	survey administration	Identifier		Are there unique identifiers for subjects/participants?	Yes/No (Binary)	NCIT:C25364	6	all?
+GECKO:0000056	questionnaire/survey data				NCIT:C17176					
+GECKO:0000057	socio-demographic and economic characteristics		questionnaire/survey data							
+GECKO:0000058	age/birthdate		socio-demographic and economic characteristics	Age /Birth Date		If this data type is present, what are the associated variables from your cohort's survey/questionnaire? For each associated variable, what is the data type (eg. categorical/binary/numeric/alphanumeric/datetime), the data collection event or time point (if applicable), the population type (if there are different participants sharing one identifier; eg. child, mother, father)?	.csv format	NCIT:C25150/NCIT:C68615	5	4.1
+GECKO:0000059	biological sex	The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female.	socio-demographic and economic characteristics	Sex				NCIT:C28421	8	4.1
+GECKO:0000060	gender	The assemblage of properties that distinguish people on the basis of the societal roles expected for the two sexes.	socio-demographic and economic characteristics	Gender				NCIT:C17357	8	
+GECKO:0000061	ethnicity/race	A social group characterized by a distinctive social and cultural tradition that is maintained from generation to generation. Members share a common history and origin and a sense of identification with the group. They have similar and distinctive features in their lifestyle habits and shared experiences. They often have a common genetic heritage which may be reflected in their experience of health and disease...	socio-demographic and economic characteristics	Ethnicity/Race				NCIT:C16564/NCIT:C17049	6	4.1
+GECKO:0000062	genealogy		socio-demographic and economic characteristics						TBD	4.1
+GECKO:0000063	birthplace		socio-demographic and economic characteristics						6	4.1?
+GECKO:0000064	residence	Any address at which a person dwells more than temporarily.	socio-demographic and economic characteristics	Residence				NCIT:C25273	6	4.1
+GECKO:0000065	education	The activities of educating or instructing or teaching; activities that impart knowledge or skill.	socio-demographic and economic characteristics	Education				NCIT:C16529	6	
+GECKO:0000066	family and household structure		socio-demographic and economic characteristics						6	
+GECKO:0000067	lifestyle and behaviours		questionnaire/survey data		lifestyle NCIT:C16795					
+GECKO:0000068	tobacco	A record of an individual's background in regard to smoking tobacco. This would include such factors as start date, end date (if applicable), number of cigarette smoked, attempts to quit, and others.	lifestyle and behaviours	Tobacco Smoking History				NCIT:C29719	6	
+GECKO:0000069	alcohol	A description of an individual's current and past experience with alcoholic beverage consumption.	lifestyle and behaviours	Alcohol Use History				NCIT:C81229	5	
+GECKO:0000070	physical activity	A measurement of a subject's physical activity or movement.	lifestyle and behaviours	Physical Activity Measurement				NCIT:C120914	6	
+GECKO:0000071	sleep	A natural and periodic state of rest during which consciousness of the world is suspended.	lifestyle and behaviours	Sleep				NCIT:C73425	6	
+GECKO:0000072	nutrition	That which is consumed to fuel necessary life processes of an organism.	lifestyle and behaviours	Nutrition				NCIT:C28294	6	
+GECKO:0000073	physician/practitioner info	The physician responsible for the admission of a patient to a hospital or other inpatient health institution. The admitting physician evaluates patients, makes admitting decisions and assesses diagnostic and treatment plans	questionnaire/survey data	Admitting Physician				NCIT:C51798	TBD	
+GECKO:0000074	diseases		questionnaire/survey data		Disease or Disorder NCIT:C2991					
+GECKO:0000075	blood-related disorders	Any deviation from the normal structure or function of the blood or lymphatic system that is manifested by a characteristic set of symptoms and signs.	diseases	Hematopoietic and Lymphoid System Disorder				NCIT:C35814	5	4.1,4.2,5.1,5.2,5.3,5.4
+GECKO:0000076	endocrine/nutritional/metabolic disorders	A non-neoplastic or neoplastic disorder that affects the endocrine system. Representative examples of non-neoplastic disorders include diabetes mellitus, hyperthyroidism, and adrenal gland insufficiency. Representative examples of neoplastic disorders include carcinoid tumor, neuroendocrine carcinoma, and pheochromocytoma.‚Ä¶	diseases	Endocrine System Disorder				NCIT_C3009	6	
+GECKO:0000077	mental and behaviour disorders	A disorder characterized by behavioral and/or psychological abnormalities, often accompanied by physical symptoms. The symptoms may cause clinically significant distress or impairment in social and occupational areas of functioning. Representative examples include anxiety disorders, cognitive disorders, mood disorders and schizophrenia.‚Ä¶/A specific behavioral problem that occurs in persistent patterns and characteristic clusters and that causes clinically significant impairment.	diseases	Psychiatric Disorder/Behavioural Disorder				NCIT:C2893/NCIT:C35470	5	
+GECKO:0000078	nervous system	A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves.	diseases	Nervous System Disorder				NCIT:C26835	5	
+GECKO:0000079	digestive system	A non-neoplastic or neoplastic disorder that affects the gastrointestinal tract, anus, liver, biliary system, and pancreas.	diseases	Digestive System Disorder				NCIT:C2990	5	
+GECKO:0000080	respiratory system	A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma.	diseases	Respiratory System Disorder				NCIT:C26871	5	
+GECKO:0000081	circulatory system		diseases	Cardiovascular Disorder				NCIT:C2931	5	
+GECKO:0000082	oncological		diseases	Cancer-Related Condition				NCIT:C8278	TBD	
+GECKO:0000083	signs and symptoms		questionnaire/survey data		Sign or Symptom NCIT:C100104				5	
+GECKO:0000084	physiological measurements		questionnaire/survey data							
+GECKO:0000085	anthropometry		physiological measurements							
+GECKO:0000086	weight	The vertical force exerted by a mass as a result of gravity.	anthropometry	Weight				NCIT:C25208	6	
+GECKO:0000087	height	The vertical measurement or distance from the base to the top of an object; the vertical dimension of extension.	anthropometry	Height				NCIT:C25347		
+GECKO:0000088	circulation and respiration		physiological measurements							
+GECKO:0000089	blood pressure	The pressure of the circulating blood against the walls of the blood vessels.	circulation and respiration	Blood Pressure				NCIT:C54706	6	
+GECKO:0000090	heart rate	The number of heartbeats per unit of time, usually expressed as beats per minute.	circulation and respiration	Heart Rate	HR			NCIT:C49677		
+GECKO:0000091	non-pharmacological interventions		questionnaire/survey data							
+GECKO:0000092	surgical interventions		non-pharmacological interventions	Vasculature Mechanical or Surgical Intervention				NCIT_C119212	6	
+GECKO:0000093	medication		questionnaire/survey data		Medication NCIT:C459					
+GECKO:0000094	associated disease(s)		medication						6	4.1,4.2,5.1,5.2,5.3,5.4
+GECKO:0000095	prescription	A verbal or written order given by an authorized person instructing a patient to obtain and use a medical device, prescription or undergo a procedure.	medication	Prescription				NCIT:C28180		
+GECKO:0000096	drug response(s)		medication							
+GECKO:0000097	posology	The specific way a therapeutic drug is to be taken, including formulation, route of administration, dose, dosing interval, and treatment duration.	medication	Dosage Regimen				NCIT:C142516		
+GECKO:0000098	administration method		medication							
+GECKO:0000099	life stage/time point	A designation assigned to a particular period during a life cycle, generally defined by chronological parameters.	questionnaire/survey data	Life Stage				NCIT:C89335	TBD	
+GECKO:0000100	general research data documents	Any item with which a scientist works.		Research Material	pdf, ppt, images etc			NCIT:C84338	TBD	5.3
+GECKO:0000101	statistics									
+GECKO:0000102	summary statistics for additional data from federated sources	Records pertaining to the statistical analyses and reports of a clinical trial.	statistics	Statistical Analysis Documentation		*** need to confirm: these are existing statistical analyses that can complement Use Case 5.2's analyses?		NCIT:C115732	TBD	4.1,4.2

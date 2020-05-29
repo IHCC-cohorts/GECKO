@@ -1,0 +1,9 @@
+ID	Label	Type
+ID	LABEL	TYPE
+IAO:0000115	definition	annotation property
+IAO:0000118	alternative term	annotation property
+IAO:0000136	is about	object property
+rdfs:comment	comment	annotation property
+IHCC:has_target	has target	object property
+IHCC:output_of	output of	object property
+IHCC:measurement_of	measurement of	object property
