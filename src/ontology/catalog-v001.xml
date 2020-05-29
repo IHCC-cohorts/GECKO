@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://purl.obolibrary.org/obo/gecko/gecko-edit.owl" uri="gecko-edit.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/bfo.owl" uri="imports/bfo.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/chebi.owl" uri="imports/chebi.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/cl.owl" uri="imports/cl.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/cmo.owl" uri="imports/cmo.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/doid.owl" uri="imports/doid.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/efo.owl" uri="imports/efo.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/go.owl" uri="imports/go.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/hp.owl" uri="imports/hp.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/ncit.owl" uri="imports/ncit.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/ncbitaxon.owl" uri="imports/ncbitaxon.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/mmo.owl" uri="imports/mmo.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/obi.owl" uri="imports/obi.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/ogms.owl" uri="imports/ogms.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/pr.owl" uri="imports/pr.owl"/>
+<uri name="http://purl.obolibrary.org/obo/gecko/imports/uberon.owl" uri="imports/uberon.owl"/>
+</catalog>

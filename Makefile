@@ -8,7 +8,9 @@
 #
 # 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
 # 2. [Update files](update)
-# 3. [View results](build/gecko-tree.html)
+# 3. View results:
+#     - [Core Tree](build/gecko.html) ([gecko.owl](build/gecko.owl))
+#     - [Full Tree](build/gecko-full.html) ([gecko.owl](build/gecko-full.owl))
 
 ### Configuration
 #
@@ -23,18 +25,24 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
+ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
+IMPORT_IDS := BFO CHEBI CL CMO DOID EFO GO HP NCIT NCBITaxon MMO OBI OGMS PR UBERON
+IMPORT_IDS_LOWER := $(foreach o, $(IMPORT_IDS), $(shell echo $(o) | tr '[:upper:]' '[:lower:]'))
+IMPORT_OWLS := $(foreach o, $(IMPORT_IDS_LOWER), src/ontology/imports/$(o).owl)
+
 .PHONY: all
-all: build/gecko-tree.html
+all: build/gecko.html build/gecko-full.html
 
 .PHONY: update
 update:
-	rm -rf build/templates.xslx build/gecko-mapping.xlsx build/intermediate
+	rm -rf build/templates.xslx build/gecko-mapping.xlsx build/intermediate build/*.owl build/*.html
 	rm -rf src/ontology/templates/*
+	rm -rf src/ontology/modules/*
 	make all
 
-ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 
-build build/intermediate:
+
+build build/imports build/intermediate:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -42,6 +50,12 @@ build/robot.jar: | build
 
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
+
+
+### Tables
+#
+# Many of our terms are specified in two Google Sheets.
+# We use ROBOT to turn them into OWL.
 
 build/templates.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A/export?format=xlsx"
@@ -62,17 +76,59 @@ build/intermediate/properties.owl: src/ontology/templates/properties.tsv | build
 	$(ROBOT) template --template $< --output $@
 
 
+### Imports
+#
+# We look for external terms in src/ontology/templates/index.tsv,
+# download their OWL files,
+# use ROBOT to filter for just the terms we need,
+# then save the results to src/ontology/imports/.
+#
+# WARN: Unforunately some of the source ontologies are large.
+# Extracting a few terms from them still requires loading the full ontology,
+# which requires a lot of memory.
+#
+# TODO: It would be better to use dated versions of these imports.
+
+build/imports/efo.owl.gz: | build/imports
+	curl -L https://www.ebi.ac.uk/ols/ontologies/efo/download | gzip > $@
+
+build/imports/%.owl.gz: | build/imports
+	curl -L http://purl.obolibrary.org/obo/$*.owl | gzip > $@
+
+build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
+	cut -f1 $< \
+	| sed /^$*:/!d \
+	> $@
+
+src/ontology/imports/%.owl: build/imports/%.owl.gz build/imports/%.txt | build/robot.jar
+	java -Xmx16g -jar build/robot.jar --prefixes src/prefixes.json filter \
+	--input $< \
+	--term-file $(word 2,$^) \
+	--select annotations \
+	--output $@
+
+# We automatically build a catalog file from the imports
+src/ontology/catalog-v001.xml: src/ontology/gecko-edit.ttl
+	echo '<?xml version="1.0" encoding="UTF-8" standalone="no"?>' > $@
+	echo '<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">' >> $@
+	echo '  <uri name="http://purl.obolibrary.org/obo/gecko/gecko-edit.owl" uri="gecko-edit.owl"/>' >> $@
+	$(foreach o, $(IMPORT_IDS_LOWER), echo '<uri name="http://purl.obolibrary.org/obo/gecko/imports/$(o).owl" uri="imports/$(o).owl"/>' >> $@;)
+	echo '</catalog>' >> $@
+
+
 ### GECKO Tasks - to be moved into separate repo
 
 # GECKO does not have an xref template
-build/gecko.owl: build/intermediate/properties.owl src/ontology/templates/gecko.tsv src/ontology/metadata.ttl | build/robot.jar
+build/gecko.owl: build/intermediate/properties.owl src/ontology/templates/gecko.tsv src/ontology/gecko-edit.ttl src/ontology/catalog-v001.xml $(IMPORT_OWLS) | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
 	merge \
 	--input $(word 3,$^) \
 	--include-annotations true \
-	annotate --ontology-iri "http://example.com/$(notdir $@)" \
+	annotate \
+	--ontology-iri "http://purl.obolibrary.org/obo/gecko.owl" \
+	--version-iri "http://purl.obolibrary.org/obo/gecko/$(shell date +'%Y-%m-%d').owl" \
 	--output $@
 
 # GECKO plus OBO terms
@@ -82,18 +138,18 @@ build/intermediate/index.owl: src/ontology/templates/properties.tsv src/ontology
 	--template $(word 2,$^) \
 	--output $@
 
-# TODO - move GECKO to its own repo
-build/intermediate/gecko-full.owl: build/gecko.owl build/intermediate/index.owl | build/robot.jar
+build/gecko-full.owl: build/gecko.owl build/intermediate/index.owl | build/robot.jar
 	$(ROBOT) merge --input $< \
 	--input $(word 2,$^) \
 	reason reduce \
 	--output $@
 
 
-# Trees
+### Trees
+#
+# We use ROBOT's experimental tree branch to generate HTML tree views.
 
-#build/gecko-tree.html: build/gecko.owl | build/robot-tree.jar
-build/gecko-tree.html: build/intermediate/gecko-full.owl | build/robot-tree.jar
+build/%.html: build/%.owl | build/robot-tree.jar
 	java -jar build/robot-tree.jar tree \
 	--input $< \
 	--tree $@

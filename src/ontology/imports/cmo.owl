@@ -1,0 +1,1381 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cmo.obo#"
+     xml:base="http://purl.obolibrary.org/obo/cmo.obo"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOWL="http://www.geneontology.org/formats/oboInOWL#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cmo.obo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/created_by"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/creation_date"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/def -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/def"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOWL#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOWL#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOWL#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOWL#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOWL#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOWL#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOWL#xref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOWL#xref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000003">
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the pressure, or force per area, exerted by circulating blood against the walls of the blood vessels. The pressure is dependent on the energy of the heart action, elasticity of the vessel walls and volume and viscosity of the blood.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not4Curation</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood pressure measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the pressure, or force per area, exerted by circulating blood against the walls of the blood vessels. The pressure is dependent on the energy of the heart action, elasticity of the vessel walls and volume and viscosity of the blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Berne_and_Levy#_Berne_and_Levy_Physiology--6th_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323073622"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000003"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The maximum arterial pressure within the cardiac cycle, i.e. at the point at which the heart is in its maximal state of contraction. This is the time when the blood is forced from the ventricles of the heart into the pulmonary artery and the aorta.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systolic blood pressure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The maximum arterial pressure within the cardiac cycle, i.e. at the point at which the heart is in its maximal state of contraction. This is the time when the blood is forced from the ventricles of the heart into the pulmonary artery and the aorta.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Berne_and_Levy#_Berne_and_Levy_Physiology--6th_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323073622"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Dental_Dictionary--2nd_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000003"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimum arterial pressure within the cardiac cycle, usually at the point at which the heart is in a state of relaxation and expansion. This is the time when the ventricles fill with blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diastolic blood pressure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimum arterial pressure within the cardiac cycle, usually at the point at which the heart is in a state of relaxation and expansion. This is the time when the ventricles fill with blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Berne_and_Levy#_Berne_and_Levy_Physiology--6th_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323073622"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000003"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood pressure measurement which has been normalized or adjusted by a mathematical process or computation. Blood pressure is the pressure, or force per area, exerted by circulating blood against the walls of the blood vessels. The pressure is dependent on the energy of the heart action, elasticity of the vessel walls and volume and viscosity of the blood.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not4Curation</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calculated blood pressure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood pressure measurement which has been normalized or adjusted by a mathematical process or computation. Blood pressure is the pressure, or force per area, exerted by circulating blood against the walls of the blood vessels. The pressure is dependent on the energy of the heart action, elasticity of the vessel walls and volume and viscosity of the blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Berne_and_Levy#_Berne_and_Levy_Physiology--6th_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323073622"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Merriam-Webster#_Merriam-Websters_Online_Dictionary--11th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000014">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-17T04:12:19Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total distance around the body at the region of the body lateral to and including the hip joint or coxa.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip girth</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip circumference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000014"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total distance around the body at the region of the body lateral to and including the hip joint or coxa.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurement involving the amount, composition or type of protein, the complex organic compounds containing carbon, hydrogen, oxygen, nitrogen, and sulfur consisting of alpha-amino acids joined by peptide linkages, in blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood protein measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurement involving the amount, composition or type of protein, the complex organic compounds containing carbon, hydrogen, oxygen, nitrogen, and sulfur consisting of alpha-amino acids joined by peptide linkages, in blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of granulocytes categorized as neutrophils in a specified volume of blood. A neutrophil is, or is in the process of becoming, a granular leucocyte having a nucleus with three to five lobes connected by threads of chromatin, cytoplasm containing very fine granules, and which is readily stainable with neutral dyes.</obo:def>
+        <oboInOWL:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polymorphonuclear cell count</oboInOWL:hasBroadSynonym>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil granulocyte count</oboInOWL:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood neutrophil count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of granulocytes categorized as neutrophils in a specified volume of blood. A neutrophil is, or is in the process of becoming, a granular leucocyte having a nucleus with three to five lobes connected by threads of chromatin, cytoplasm containing very fine granules, and which is readily stainable with neutral dyes.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of lymphocytes in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood lymphocyte count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of lymphocytes in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of monocytes in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood monocyte count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of monocytes in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of granulocytes categorized as eosinophils in a specified sample of blood. An eosinophil is a granular leukocyte having a nucleus with two lobes connected by a thread of chromatin, and cytoplasm containing coarse, round granules of uniform size that stain readily with eosin and other acid dyes.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eosinophil granulocyte count</oboInOWL:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood eosinophil count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of granulocytes categorized as eosinophils in a specified sample of blood. An eosinophil is a granular leukocyte having a nucleus with two lobes connected by a thread of chromatin, and cytoplasm containing coarse, round granules of uniform size that stain readily with eosin and other acid dyes.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of granulocytes categorized as basophils in a specified sample of blood. A basophil is a granular leukocyte with an irregularly shaped, relatively pale-staining nucleus that is partially constricted into two lobes, and with cytoplasm containing coarse granules of variable size that stain bluish-black when exposed to basic dyes.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basophil granulocyte count</oboInOWL:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood basophil count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of granulocytes categorized as basophils in a specified sample of blood. A basophil is a granular leukocyte with an irregularly shaped, relatively pale-staining nucleus that is partially constricted into two lobes, and with cytoplasm containing coarse granules of variable size that stain bluish-black when exposed to basic dyes.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000035">
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement of the blood, it&apos;s contents, cells or other factors contained within the blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement of the blood, it&apos;s contents, cells or other factors contained within the blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/RGD#_MS"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the variation in red blood cell size. It is calculated by dividing the standard deviation of mean corpuscular volume by the mean corpuscular volume and multiplying by 100.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDW</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red blood cell distribution width</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the variation in red blood cell size. It is calculated by dividing the standard deviation of mean corpuscular volume by the mean corpuscular volume and multiplying by 100.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-12-17T10:41:54Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of glucose, the monosaccharide sugar, C6H12O6, occurring widely in plant and animal tissues which is one of the three dietary monosaccharides that are absorbed directly into the bloodstream during digestion, is the end product of carbohydrate metabolism, and is the chief source of energy for living organisms, in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glucose level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of glucose, the monosaccharide sugar, C6H12O6, occurring widely in plant and animal tissues which is one of the three dietary monosaccharides that are absorbed directly into the bloodstream during digestion, is the end product of carbohydrate metabolism, and is the chief source of energy for living organisms, in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Multiple_Dictionaries#_http\://www.thefreedictionary.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The level of urea in the blood in terms of nitrogen content; converted to urea concentration by multiplying by 60/28 or 2.14. Urea is the chief nitrogenous end product of protein metabolism in whole blood. Urea is formed in the liver from amino acids and from ammonia compounds and can be found in urine, blood, and lymph.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BUN level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood urea nitrogen level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000049"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The level of urea in the blood in terms of nitrogen content; converted to urea concentration by multiplying by 60/28 or 2.14. Urea is the chief nitrogenous end product of protein metabolism in whole blood. Urea is formed in the liver from amino acids and from ammonia compounds and can be found in urine, blood, and lymph.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the entire amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, without taking into account any association with other molecules such as lipoproteins, in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood TC level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood total cholesterol level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000051"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the entire amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, without taking into account any association with other molecules such as lipoproteins, in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Saunders#_Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in high-density lipoprotein (HDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. HDL is the smallest of the major lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The HDL class of lipoproteins, specifically the subtypes of HDL2 and HDL3, have densities between 1.063 and 1.210 g/ml.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL-C</oboInOWL:hasRelatedSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Values for density ranges of the lipoprotein classes are approximate.  The classes may be defined differently by different researchers, in part because class definitions depend on the number of subclasses into which the lipoprotein fractions are divided.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood high density lipoprotein cholesterol level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000052"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in high-density lipoprotein (HDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. HDL is the smallest of the major lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The HDL class of lipoproteins, specifically the subtypes of HDL2 and HDL3, have densities between 1.063 and 1.210 g/ml.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Multiple_Dictionaries#_http\://www.thefreedictionary.com/"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Website#_http\://themedicalbiochemistrypage.org/lipoproteins.php"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in low-density lipoprotein (LDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. LDL constitute a class of relatively large, heterogeneous lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The LDL class of lipoproteins has a density between 1.019 and 1.063 g/ml. In some animal species, such as canine and rodents, this may overlap with the HDL1 class and be designated LDL/HDL1.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL-C level</oboInOWL:hasRelatedSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Values for density ranges of the lipoprotein classes are approximate.  The classes may be defined differently by different researchers, in part because class definitions depend on the number of subclasses into which the lipoprotein fractions are divided.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood low density lipoprotein cholesterol level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000053"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in low-density lipoprotein (LDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. LDL constitute a class of relatively large, heterogeneous lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The LDL class of lipoproteins has a density between 1.019 and 1.063 g/ml. In some animal species, such as canine and rodents, this may overlap with the HDL1 class and be designated LDL/HDL1.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/BioMedCentral#_http\://www.biomedcentral.com/1746-6148/9/47"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Multiple_Dictionaries#_http\://www.thefreedictionary.com/"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Website#_http\://themedicalbiochemistrypage.org/lipoproteins.php"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000105">
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement relating body weight to height in an organism; typically calculated as the weight of an individual divided by the height of that individual squared. For quadrupeds, the square of body height is often replaced by the square of body length.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMI</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body mass index (BMI)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement relating body weight to height in an organism; typically calculated as the weight of an individual divided by the height of that individual squared. For quadrupeds, the square of body height is often replaced by the square of body length.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/MedicineNet#_http\://www.medicinenet.com"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-12-17T09:37:06Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of ezymatic activity of renin, an enzyme which catalyzes cleavage of the leucine-leucine bond in angiotensinogen to generate angiotensin I, in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood renin activity level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of ezymatic activity of renin, an enzyme which catalyzes cleavage of the leucine-leucine bond in angiotensinogen to generate angiotensin I, in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-12-17T10:35:20Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of bilirubin found in a specific volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood bilirubin level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000123"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of bilirubin found in a specific volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-12-17T11:00:47Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of creatinine in a specified sample of urine, the fluid waste product excreted by the kidneys. Creatinine is a nitrogenous compound formed in muscle as the end product of creatine metabolism. Blood and urine tests for creatinine are used as diagnostic indicators of kidney function and muscle mass.</obo:def>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16737"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine creatinine level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000125"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of creatinine in a specified sample of urine, the fluid waste product excreted by the kidneys. Creatinine is a nitrogenous compound formed in muscle as the end product of creatine metabolism. Blood and urine tests for creatinine are used as diagnostic indicators of kidney function and muscle mass.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Miller-Keane#_Miller-Keane_Encyclopedia_and_Dictionary_of_Medicine_Nursing_and_Allied_Health--7th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-12-17T11:01:31Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of sodium ions in a specified volume of urine.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine sodium level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000129"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of sodium ions in a specified volume of urine.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000187">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-12-17T01:18:12Z</obo:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distal forelimb circumference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-10T11:07:51Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of fibrinogen in blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. Fibrinogen is a glycoprotein comprised of three pairs of nonidentical polypeptide chains; cleavage products of fibrinogen have a major role in blood clotting as well as roles in cell adhesion and spreading, display vasoconstrictor activity, and can function as chemotactic and mitogenic agents for several cell types.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Factor I level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood fibrinogen level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000209"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of fibrinogen in blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. Fibrinogen is a glycoprotein comprised of three pairs of nonidentical polypeptide chains; cleavage products of fibrinogen have a major role in blood clotting as well as roles in cell adhesion and spreading, display vasoconstrictor activity, and can function as chemotactic and mitogenic agents for several cell types.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/RGD_737209"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Saunders#_Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org/wiki/Fibrinogen"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000242">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-17T11:28:45Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distance completely around the body in the area between the thorax and hips. In humans, this is commonly at the umbilicus.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist girth</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist circumference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000242"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distance completely around the body in the area between the thorax and hips. In humans, this is commonly at the umbilicus.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/RGD#_MS"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000256">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-17T12:26:05Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurement of urine, the fluid waste product excreted by the kidneys, or its components.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurement of urine, the fluid waste product excreted by the kidneys, or its components.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Saunders#_Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-17T12:27:01Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure of the concentration of particles in the urine.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine density</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine specific gravity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000257"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure of the concentration of particles in the urine.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-17T12:30:48Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urine pH is a measure of its acidity and is determined by the negative logarithm of the hydrogen ion concentration in a specified sample of urine.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine pH</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000258"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urine pH is a measure of its acidity and is determined by the negative logarithm of the hydrogen ion concentration in a specified sample of urine.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-17T03:36:46Z</obo:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine bilirubin level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-17T03:42:07Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of calcium in a specified volume of urine. Usually determined from a 24 hour volume of urine, expressed in mg of urine per kg of calcium per day or mg per 24 hours.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine calcium level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of calcium in a specified volume of urine. Usually determined from a 24 hour volume of urine, expressed in mg of urine per kg of calcium per day or mg per 24 hours.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Medline_Plus#_http\://www.nlm.nih.gov/medlineplus/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000294">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-08-04T10:37:40Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The count of the rhythmic contractions and expansions of an artery due to the surge of blood from the beat of the heart.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulse</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000294"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The count of the rhythmic contractions and expansions of an artery due to the surge of blood from the beat of the heart.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/MedicineNet#_http\://www.medicinenet.com"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-11-08T01:45:04Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of insulin, the fuel-regulating peptide hormone which is formed from proinsulin in the beta cells of the pancreatic islets and which promotes the storage of glucose and the uptake of amino acids, increases protein and lipid synthesis, and inhibits lipolysis and gluconeogenesis, in a specified sample of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood insulin level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000349"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of insulin, the fuel-regulating peptide hormone which is formed from proinsulin in the beta cells of the pancreatic islets and which promotes the storage of glucose and the uptake of amino acids, increases protein and lipid synthesis, and inhibits lipolysis and gluconeogenesis, in a specified sample of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Saunders#_Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-12-13T09:32:14Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The calculation of the cellular elements of the blood, usually including cell counts for white and red blood cells and platelets.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CBC</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complete blood cell count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000364"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The calculation of the cellular elements of the blood, usually including cell counts for white and red blood cells and platelets.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-12-17T10:31:33Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of glucose in a specified volume of urine.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine glucose level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000383"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of glucose in a specified volume of urine.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-12-17T11:03:16Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The color of urine voided from the body.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine color</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000386"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The color of urine voided from the body.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000485">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-04T11:21:32Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount of adiponectin, a hormone that modulates glucose regulation and fatty acid catabolism, in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood adiponectin level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000485"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount of adiponectin, a hormone that modulates glucose regulation and fatty acid catabolism, in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-04T02:53:16Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of potassium ions in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood potassium level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000496"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of potassium ions in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-04T02:54:11Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of chloride ions in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood chloride level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000497"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of chloride ions in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000499">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-04T02:55:51Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of sodium ions in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood sodium level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000499"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of sodium ions in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-04T03:05:36Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of uric acid, a heterocyclic compound of carbon, nitrogen, oxygen, and hydrogen,the end product of purine catabolism, in a specified sample of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood uric acid level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000501"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of uric acid, a heterocyclic compound of carbon, nitrogen, oxygen, and hydrogen,the end product of purine catabolism, in a specified sample of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Saunders#_Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-04T03:13:20Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of calcium ions in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood calcium level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000502"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of calcium ions in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-04T03:28:18Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of phosphorus, measured as inorganic phosphate, in a specified sample of blood.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood inorganic phosphate level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood inorganic phosphorus level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood phosphate level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000504"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of phosphorus, measured as inorganic phosphate, in a specified sample of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-05T09:43:10Z</obo:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood testosterone level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-05T09:43:25Z</obo:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood estradiol level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-05T10:20:46Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of apolipoprotein A, a class of apolipoproteins that occur primarily in high density lipoproteins, in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood apolipoprotein A level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000519"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of apolipoprotein A, a class of apolipoproteins that occur primarily in high density lipoproteins, in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-01-05T10:23:51Z</obo:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood apoliprotein B level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-10-28T04:31:55Z</obo:creation_date>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16737"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood creatinine level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-11-02T04:09:38Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of enzymatic activity of glutamic-pyruvate transaminase enzyme, commonly known as alanine transaminase or alanine aminotransferase (ALT), enzyme in a specified sample of blood. ALT catalyzes the reversible transamination between alanine and 2-oxoglutarate to generate pyruvate and glutamate. Blood ALT level is used as an enzymatic marker for  liver disease or damage.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood alanine transaminase activity level</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glutamic-pyruvate transaminase activity level</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood ALT activity level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood GPT activity level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood alanine aminotransferase activity level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000574"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of enzymatic activity of glutamic-pyruvate transaminase enzyme, commonly known as alanine transaminase or alanine aminotransferase (ALT), enzyme in a specified sample of blood. ALT catalyzes the reversible transamination between alanine and 2-oxoglutarate to generate pyruvate and glutamate. Blood ALT level is used as an enzymatic marker for  liver disease or damage.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/RGD_737472"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org/wiki/Creatine_kinase"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000576">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-11-02T04:10:38Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantitation of the catalytic effect exerted by alkaline phosphatase (AP) in a specified sample of blood. AP is an enzyme that catalyzes the cleavage of orthophosphate from orthophosphoric monoesters under alkaline conditions.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood alkaline phosphatase activity level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantitation of the catalytic effect exerted by alkaline phosphatase (AP) in a specified sample of blood. AP is an enzyme that catalyzes the cleavage of orthophosphate from orthophosphoric monoesters under alkaline conditions.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000580 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000580">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-11-02T04:17:35Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of enzymatic activity of glutamic-oxaloacetic transaminase enzyme, commonly known as aspartate transaminase or aspartate aminotransferase (AST), in a specified sample of blood. AST catalyzes the reversible transfer of an amine group from l-glutamic acid to oxaloacetic acid, forming alpha-ketoglutaric acid and l-aspartic acid. Blood AST level is used as an enzymatic marker for liver disease or damage.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood aspartate transaminase activity level</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glutamic-oxaloacetic transaminase activity level</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood AST activity level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood GOT activity level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood aspartate aminotransferase activity level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000580"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of enzymatic activity of glutamic-oxaloacetic transaminase enzyme, commonly known as aspartate transaminase or aspartate aminotransferase (AST), in a specified sample of blood. AST catalyzes the reversible transfer of an amine group from l-glutamic acid to oxaloacetic acid, forming alpha-ketoglutaric acid and l-aspartic acid. Blood AST level is used as an enzymatic marker for liver disease or damage.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/VT_0000203"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org/wiki/Aspartate_transaminase"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000625 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mshimoyama</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-11-03T02:56:20Z</obo:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine total protein level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000757 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000757">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-03-28T09:39:31Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of albumin excreted into the urine within a specified period of time.  If the level of albumin in the urine is above normal but not high enough to be detectable with routine protein testing it is referred to as &apos;microalbumin&apos;.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine microalbumin excretion rate</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine albumin excretion rate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000757"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of albumin excreted into the urine within a specified period of time.  If the level of albumin in the urine is above normal but not high enough to be detectable with routine protein testing it is referred to as &apos;microalbumin&apos;.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-0323057479"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Mosby#_Mosbys_Manual_of_Diagnostic_and_Laboratory_Tests--4th_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000761 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000761">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-03-28T09:44:01Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of potassium, the chemical element with atomic number 19, that have lost one electron forming a cation with a charge of +1, discharged in the urine per unit time.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine potassium excretion rate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0000761"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of potassium, the chemical element with atomic number 19, that have lost one electron forming a cation with a charge of +1, discharged in the urine per unit time.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/American_Heritage#_The_American_Heritage_Medical_Dictionary_2007"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001226">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-12-18T17:04:40Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the mineral mass per unit area of bone, the hard, rigid form of connective tissue constituting most of the skeleton of vertebrates and composed chiefly of calcium salts.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">areal bone mineral density</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMD</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">areal BMD</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone density</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone mineral density</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001226"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the mineral mass per unit area of bone, the hard, rigid form of connective tissue constituting most of the skeleton of vertebrates and composed chiefly of calcium salts.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Dorland#_Dorlands_Illustrated_Medical_Dictionary--31st_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/ISBN#_978-1416049982"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/McGraw-Hill#_McGraw-Hill_Concise_Dictionary_of_Modern_Medicine"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-08T13:36:43Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of thyroid-stimulating hormone, a glycoprotein hormone secreted by the anterior lobe of the pituitary gland that stimulates and regulates activity of the thyroid gland, in a specified volume of whole blood.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood TSH level</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood thyrotropin level</oboInOWL:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood thyroid stimulating hormone level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001247"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of thyroid-stimulating hormone, a glycoprotein hormone secreted by the anterior lobe of the pituitary gland that stimulates and regulates activity of the thyroid gland, in a specified volume of whole blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/American_Heritage#_The_American_Heritage_Medical_Dictionary_2007"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-09T11:33:20Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount in a specified volume of whole blood of troponin T, one subunit of a complex of three regulatory proteins required for skeletal and cardiac muscle contraction; used as an indicator for myocardial damage.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood troponin T level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001284"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount in a specified volume of whole blood of troponin T, one subunit of a complex of three regulatory proteins required for skeletal and cardiac muscle contraction; used as an indicator for myocardial damage.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org/wiki/Troponin_T"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-09T11:48:05Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of thyroxine, the major hormone derived from the thyroid gland which regulates cellular metabolism, in a specified volume of blood.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood T4 level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood thyroxine level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001288"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of thyroxine, the major hormone derived from the thyroid gland which regulates cellular metabolism, in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org/wiki/Thyroxine"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-09T11:54:14Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of triiodothyronine, a hormone synthesized and secreted by the thyroid which constitutes the main thyroid hormone used by the tissues, in a specified volume of blood.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood T3 level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood triiodothyronine level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001291"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of triiodothyronine, a hormone synthesized and secreted by the thyroid which constitutes the main thyroid hormone used by the tissues, in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org/wiki/Triiodothyronine"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-09T12:01:37Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of glucagon, a peptide secreted by pancreatic alpha cells which plays an important role in regulation of blood glucose concentration, ketone metabolism, and other biochemical and physiological processes, in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glucagon level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001294"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of glucagon, a peptide secreted by pancreatic alpha cells which plays an important role in regulation of blood glucose concentration, ketone metabolism, and other biochemical and physiological processes, in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/MeSH#_D005934"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001348">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-10T16:09:55Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the average size of the three dimensional space occupied by a blood platelet, a minute, irregularly shaped, disklike, non-nucleated cytoplasmic body found in blood that functions to promote blood clotting.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mean platelet volume</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001348"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the average size of the three dimensional space occupied by a blood platelet, a minute, irregularly shaped, disklike, non-nucleated cytoplasmic body found in blood that functions to promote blood clotting.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/American_Heritage#_The_American_Heritage_Medical_Dictionary_2007"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-10T16:24:24Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion of blood volume that is occupied by platelets, expressed as a percentage.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plateletcrit</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001349"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proportion of blood volume that is occupied by platelets, expressed as a percentage.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/QTLdb#_CAP"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001561">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-05-07T18:45:42Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A calculated measurement of the force necessary to fracture a bone under specified conditions and thus a measure of the biomechanical strength of that bone. Bone is the hard, rigid form of connective tissue constituting most of the skeleton of vertebrates and composed chiefly of calcium salts.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">force at failure</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone ultimate force</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0001561"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A calculated measurement of the force necessary to fracture a bone under specified conditions and thus a measure of the biomechanical strength of that bone. Bone is the hard, rigid form of connective tissue constituting most of the skeleton of vertebrates and composed chiefly of calcium salts.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/PMID_11905527"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-11T14:08:40Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of enzymatic activity of gamma-glutamyltransferase (GGT) in a specified sample of blood. GGT catalyzes the transfer of the gamma-glutamyl moiety of glutathione to an acceptor such as amino acid, a peptide or water. Blood GGT level is used as an enzymatic marker for liver disease or damage.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood gamma-glutamyl transpeptidase activity level</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood GGT activity level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood GGTP activity level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood gamma-glutamyltransferase activity level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0002239"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of enzymatic activity of gamma-glutamyltransferase (GGT) in a specified sample of blood. GGT catalyzes the transfer of the gamma-glutamyl moiety of glutathione to an acceptor such as amino acid, a peptide or water. Blood GGT level is used as an enzymatic marker for liver disease or damage.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_http\://en.wikipedia.org/wiki/Gamma-glutamyl_transpeptidase"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002502">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-01T11:15:11Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurement of the movement of blood into, through or out of the heart.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart blood flow measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0002502"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any measurement of the movement of blood into, through or out of the heart.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Saunders#_Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002656">
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-04-29T08:39:34Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The enumeration, i.e. measurement of the total number, of bacteria in a specified sample of an infected tissue or bodily fluid, or in the entire body of the host.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bacterial count</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bacteria count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0002656"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The enumeration, i.e. measurement of the total number, of bacteria in a specified sample of an infected tissue or bodily fluid, or in the entire body of the host.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/American_Heritage#_The_American_Heritage_Medical_Dictionary_2007"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Webster#_Random_House_Kernerman_Websters_College_Dictionary_2010"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002685">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jesmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-12-03T14:55:55Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of triglyceride (any of a group of lipids that are esters formed from one molecule of glycerol and three molecules of one or more fatty acids, are widespread in adipose tissue, and commonly circulate in the blood in the form of lipoproteins) carried in lipoprotein particles (complex molecules that consist of a protein membrane surrounding a core of lipids) in a specified volume of blood.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood lipoprotein triglyceride level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0002685"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of triglyceride (any of a group of lipids that are esters formed from one molecule of glycerol and three molecules of one or more fatty acids, are widespread in adipose tissue, and commonly circulate in the blood in the form of lipoproteins) carried in lipoprotein particles (complex molecules that consist of a protein membrane surrounding a core of lipids) in a specified volume of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Merriam-Webster#_Merriam-Websters_Online_Dictionary--11th_Ed\"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Website#_http\://themedicalbiochemistrypage.org/lipoproteins.php"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002698 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002698">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000256"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jesmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-04-07T16:57:52Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of ketone bodies, that is, acetoacetate, 3-hydroxybutyrate and/or acetone, in a specified sample of urine. Ketone bodies are produced by fatty acid and carbohydrate metabolism and seen in conditions such as fasting, starvation and diabetes mellitus.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine ketone body level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0002698"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of ketone bodies, that is, acetoacetate, 3-hydroxybutyrate and/or acetone, in a specified sample of urine. Ketone bodies are produced by fatty acid and carbohydrate metabolism and seen in conditions such as fasting, starvation and diabetes mellitus.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_https\://en.wikipedia.org/wiki/Ketone_bodies"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002786 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002786">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jrsmith</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-05-15T16:47:18Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relative concentration of hemoglobin that has been glycosylated as a result of the nonenzymatic attachment of a glucose/hexose moiety to the amino terminal valine of the beta chain of the hemoglobin molecule, in a specified sample of blood.</obo:def>
+        <oboInOWL:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HbA1c level</oboInOWL:hasExactSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glycated hemoglobin level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glycohemoglobin level</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glycosylated hemoglobin level</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood hemoglobin A1c level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0002786"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relative concentration of hemoglobin that has been glycosylated as a result of the nonenzymatic attachment of a glucose/hexose moiety to the amino terminal valine of the beta chain of the hemoglobin molecule, in a specified sample of blood.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Saunders#_Saunders_Comprehensive_Veterinary_Dictionary--3rd_Ed"/>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Website#_https\://www.mayomedicallaboratories.com/test-catalog/Clinical+and+Interpretive/82080"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002818 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002818">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sjwang</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-14T16:11:51Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of type I collagen C-terminal telopeptide in a specified volume of blood. The C-terminal telopeptide can be used as a biomarker in the serum to measure the rate of bone turnover.</obo:def>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood CTX</oboInOWL:hasRelatedSynonym>
+        <oboInOWL:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood carboxy-terminal collagen crosslinks</oboInOWL:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood type I collagen C-terminal telopeptide level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CMO_0002818"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/def"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of type I collagen C-terminal telopeptide in a specified volume of blood. The C-terminal telopeptide can be used as a biomarker in the serum to measure the rate of bone turnover.</owl:annotatedTarget>
+        <oboInOWL:xref rdf:resource="http://purl.obolibrary.org/obo/Wikipedia#_(https\://en.wikipedia.org/wiki/C-terminal_telopeptide"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0002821 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0002821">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000035"/>
+        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sjwang</obo:created_by>
+        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-16T10:39:25Z</obo:creation_date>
+        <obo:def rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of osteocalcin in a specified volume of blood. Osteocalcin is the most abundant noncollagenous protein in bone, and its concentration in serum is closely linked to bone metabolism and serves as a biological marker for the clinical assessment of bone disease.</obo:def>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood osteocalcin level</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
