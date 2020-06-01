@@ -164,7 +164,6 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term was obsoleted because it does not correspond to a physiological reaction.
 Usage comment: The gene family commonly referred to as gamma-glutamyl transferases (GGT) catalyze hydrolysis of gamma-glutamyl bonds in gamma-glutamyl compounds such as glutathione. In a test tube one can set up conditions in which the enzyme will transfer the gamma-glutamyl portion of the substrate to an acceptor molecule, but this requires non-physiologic conditions, including millmolar concentrations of an acceptor such as glygly. This reaction is used in assays to detect the presence of the enzyme, but is not a physiological function of members of the GGT family (PMC4388159), which should be annotated to a suitable hydrolysis term instead (e.g. glutathione hydrolase activity).</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete gamma-glutamyltransferase activity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003840"/>
