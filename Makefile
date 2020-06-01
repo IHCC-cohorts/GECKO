@@ -7,10 +7,11 @@
 ### Workflow
 #
 # 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
-# 2. [Update files](update)
-# 3. View results:
-#     - [Core Tree](build/gecko.html) ([gecko.owl](build/gecko.owl))
-#     - [Full Tree](build/gecko-full.html) ([gecko.owl](build/gecko-full.owl))
+# 2. [Update files](all)
+# 2. View files:
+#     - [ROBOT report](build/report.html)
+#     - [Core tree](build/gecko.html) ([gecko.owl](build/gecko.owl))
+#     - [Full tree](build/gecko-full.html) ([gecko.owl](build/gecko-full.owl))
 
 ### Configuration
 #
@@ -31,13 +32,13 @@ IMPORT_IDS_LOWER := $(foreach o, $(IMPORT_IDS), $(shell echo $(o) | tr '[:upper:
 IMPORT_OWLS := $(foreach o, $(IMPORT_IDS_LOWER), src/ontology/imports/$(o).owl)
 
 .PHONY: all
-all: build/gecko.html build/gecko-full.html
+all: build/gecko.html build/gecko-full.html build/report.html
 
 .PHONY: update
 update:
-	rm -rf build/templates.xslx build/gecko-mapping.xlsx build/intermediate build/*.owl build/*.html
-	rm -rf src/ontology/templates/*
-	rm -rf src/ontology/modules/*
+	#rm -rf build/intermediate build/*.owl build/*.html
+	#rm -rf build/templates.xslx src/ontology/templates/* src/ontology/modules/*
+	#rm -rf build/gecko-mapping.xlsx
 	make all
 
 
@@ -46,7 +47,8 @@ build build/imports build/intermediate:
 	mkdir -p $@
 
 build/robot.jar: | build
-	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.6.0/robot.jar
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/html-report/lastSuccessfulBuild/artifact/bin/robot.jar
+#curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.6.0/robot.jar
 
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
@@ -153,6 +155,22 @@ build/%.html: build/%.owl | build/robot-tree.jar
 	java -jar build/robot-tree.jar tree \
 	--input $< \
 	--tree $@
+
+
+### Report
+#
+# We run ROBOT report to check for common mistakes.
+
+.PRECIOUS: build/report.html
+build/report.html: build/gecko-full.owl | build/robot.jar
+	$(ROBOT) report \
+	--input $< \
+	--labels true \
+	--print 20 \
+	--format HTML \
+	--standalone true \
+	--fail-on none \
+	--output $@
 
 
 # NCIT Module - NCIT terms that have been mapped to GECKO terms
