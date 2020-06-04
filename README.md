@@ -7,4 +7,4 @@ An ontology to represent genomics cohort attributes. The GECKO is maintained by 
 
 ## &copy; 2020 EMBL-EBI
 
-Distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](LICENCE).
+Distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/).
