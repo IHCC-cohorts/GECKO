@@ -16,7 +16,7 @@ IHCC:use-cases-requirements	use cases requirements	annotation property
 IHCC:value	value	annotation property																							
 rdfs:seeAlso	see also	annotation property																							
 oboInOwl:hasDbXref	database_cross_reference	annotation property																							
-																									
+dc:source	source	annotation property																							
 																									
 																									
 																									
