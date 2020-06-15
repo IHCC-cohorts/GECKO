@@ -4,6 +4,7 @@
 		"CHEBI": "http://purl.obolibrary.org/obo/CHEBI_",
 		"CL": "http://purl.obolibrary.org/obo/CL_",
 		"CMO": "http://purl.obolibrary.org/obo/CMO_",
+		"dc": "http://purl.org/dc/elements/1.1/",
 		"DOID": "http://purl.obolibrary.org/obo/DOID_",
 		"EFO": "http://purl.obolibrary.org/obo/EFO_",
 		"GCS": "http://example.com/GCS_",
