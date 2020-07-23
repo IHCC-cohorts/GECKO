@@ -1,10 +1,12 @@
 {
 	"@context": {
 		"BFO": "http://purl.obolibrary.org/obo/BFO_",
+		"COB": "http://purl.obolibrary.org/obo/COB_",
 		"CHEBI": "http://purl.obolibrary.org/obo/CHEBI_",
 		"CL": "http://purl.obolibrary.org/obo/CL_",
 		"CMO": "http://purl.obolibrary.org/obo/CMO_",
-		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"dc11": "http://purl.org/dc/elements/1.1/",
 		"DOID": "http://purl.obolibrary.org/obo/DOID_",
 		"EFO": "http://purl.obolibrary.org/obo/EFO_",
 		"GCS": "http://example.com/GCS_",
@@ -16,6 +18,7 @@
 		"IHCC": "http://example.com/",
 		"KoGES": "http://example.com/KoGES_",
 		"OGMS": "http://purl.obolibrary.org/obo/OGMS_",
+		"PDRO": "http://purl.obolibrary.org/obo/PDRO_",
 		"MAELSTROM": "http://example.com/MAELSTROM_",
 		"MMO": "http://purl.obolibrary.org/obo/MMO_",
 		"NCBITaxon": "http://purl.obolibrary.org/obo/NCBITaxon_",
@@ -27,6 +30,8 @@
 		"PR": "http://purl.obolibrary.org/obo/PR_",
 		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 		"SAPRIN": "http://example.com/SAPRIN_",
+		"STATO": "http://purl.obolibrary.org/obo/STATO_",
+		"SYMP": "http://purl.obolibrary.org/obo/SYMP_",
 		"UBERON": "http://purl.obolibrary.org/obo/UBERON_",
 		"VZ": "http://example.com/VZ_"
 	}

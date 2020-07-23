@@ -6,12 +6,12 @@
 
 ### Workflow
 #
-# 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
-# 2. [Update files](all)
+# 1. Edit the [GECKO template](https://docs.google.com/spreadsheets/d/1bYnbxvPPFO7D7zg9Tr2e32jb8l13kMZ81vP_iaSZCXg/edit#gid=0)
+# 2. [Update files](update)
 # 2. View files:
 #     - [ROBOT report](build/report.html)
-#     - [Core tree](build/gecko.html) ([gecko.owl](build/gecko.owl))
-#     - [Full tree](build/gecko-full.html) ([gecko.owl](build/gecko-full.owl))
+#     - [GECKO tree](build/gecko.html) ([gecko.owl](src/ontology/gecko.owl))
+#     - [IHCC view tree](build/ihcc-gecko.html) ([ihcc-gecko.owl](src/ontology/ihcc-gecko.owl))
 
 ### Configuration
 #
@@ -27,23 +27,23 @@ SHELL := bash
 .SECONDARY:
 
 ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
-IMPORT_IDS := BFO CHEBI CL CMO DOID EFO GO HP NCIT NCBITaxon MMO OBI OGMS PR UBERON
-IMPORT_IDS_LOWER := $(foreach o, $(IMPORT_IDS), $(shell echo $(o) | tr '[:upper:]' '[:lower:]'))
-IMPORT_OWLS := $(foreach o, $(IMPORT_IDS_LOWER), src/ontology/imports/$(o).owl)
+DATE = $(shell date +'%Y-%m-%d')
+OBO = http://purl.obolibrary.org/obo
+
+LICENSE = https://creativecommons.org/licenses/by/4.0/
+DESCRIPTION = An ontology to represent genomics cohort attributes.
+COMMENT = The GECKO is maintained by the CINECA project, https://www.cineca-project.eu, and standardises attributes commonly used for genomics cohort description as well as individual-level data items. A series of tools is being developed to enable automated generation of harmonised data files based on a JSON schema mapping file. For more information please contact info@cineca-project.eu
+TITLE = Genomics Cohorts Knowledge Ontology
 
 .PHONY: all
-all: build/gecko.html build/gecko-full.html build/report.html
+all: src/ontology/gecko.owl src/ontology/ihcc-gecko.owl build/gecko.html build/ihcc-gecko.html build/report.html
 
 .PHONY: update
 update:
-	#rm -rf build/intermediate build/*.owl build/*.html
-	#rm -rf build/templates.xslx src/ontology/templates/* src/ontology/modules/*
-	#rm -rf build/gecko-mapping.xlsx
+	rm -rf build/templates.xlsx
 	make all
 
-
-
-build build/imports build/intermediate:
+build:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -53,97 +53,57 @@ build/robot.jar: | build
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
 
+### GECKO
 
-### Tables
-#
-# Many of our terms are specified in two Google Sheets.
-# We use ROBOT to turn them into OWL.
-
+.PHONY: build/templates.xlsx
 build/templates.xlsx: | build
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A/export?format=xlsx"
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1bYnbxvPPFO7D7zg9Tr2e32jb8l13kMZ81vP_iaSZCXg/export?format=xlsx"
 
-build/gecko-mapping.xlsx: | build
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
-
-src/ontology/templates/gecko.tsv: build/templates.xlsx
+src/ontology/templates/gecko.tsv src/ontology/templates/properties.tsv src/ontology/templates/external.tsv: build/templates.xlsx | build/robot.jar
 	xlsx2csv -d tab -n $(basename $(notdir $@)) $< $@
 
-src/ontology/templates/index.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n index $< $@
+build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
+	$(ROBOT) template \
+	--template $< \
+	--output $@
 
-src/ontology/templates/properties.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n properties $< $@
-
-build/intermediate/properties.owl: src/ontology/templates/properties.tsv | build/intermediate build/robot.jar
-	$(ROBOT) template --template $< --output $@
-
-
-### Imports
-#
-# We look for external terms in src/ontology/templates/index.tsv,
-# download their OWL files,
-# use ROBOT to filter for just the terms we need,
-# then save the results to src/ontology/imports/.
-#
-# WARN: Unforunately some of the source ontologies are large.
-# Extracting a few terms from them still requires loading the full ontology,
-# which requires a lot of memory.
-#
-# TODO: It would be better to use dated versions of these imports.
-
-build/imports/efo.owl.gz: | build/imports
-	curl -L https://www.ebi.ac.uk/ols/ontologies/efo/download | gzip > $@
-
-build/imports/%.owl.gz: | build/imports
-	curl -L http://purl.obolibrary.org/obo/$*.owl | gzip > $@
-
-build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
-	cut -f1 $< \
-	| sed /^$*:/!d \
-	> $@
-
-src/ontology/imports/%.owl: build/imports/%.owl.gz build/imports/%.txt | build/robot.jar
-	java -Xmx16g -jar build/robot.jar --prefixes src/prefixes.json filter \
+build/external.ttl: build/properties.ttl src/ontology/templates/external.tsv | build/robot.jar
+	$(ROBOT) template \
 	--input $< \
-	--term-file $(word 2,$^) \
-	--select annotations \
-	--output $@
-
-# We automatically build a catalog file from the imports
-src/ontology/catalog-v001.xml: src/ontology/gecko-edit.ttl
-	echo '<?xml version="1.0" encoding="UTF-8" standalone="no"?>' > $@
-	echo '<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">' >> $@
-	echo '  <uri name="http://purl.obolibrary.org/obo/gecko/gecko-edit.owl" uri="gecko-edit.owl"/>' >> $@
-	$(foreach o, $(IMPORT_IDS_LOWER), echo '<uri name="http://purl.obolibrary.org/obo/gecko/imports/$(o).owl" uri="imports/$(o).owl"/>' >> $@;)
-	echo '</catalog>' >> $@
-
-
-### GECKO Tasks - to be moved into separate repo
-
-# GECKO does not have an xref template
-build/gecko.owl: build/intermediate/properties.owl src/ontology/templates/gecko.tsv src/ontology/gecko-edit.ttl src/ontology/catalog-v001.xml $(IMPORT_OWLS) | build/robot.jar
-	$(ROBOT) template --input $< \
+	--template $(word 2,$^) \
 	--merge-before \
+	--output $@
+
+src/ontology/gecko.owl: build/external.ttl src/ontology/templates/gecko.tsv | build/robot.jar
+	$(ROBOT) template \
+	--input $< \
 	--template $(word 2,$^) \
-	merge \
-	--input $(word 3,$^) \
-	--include-annotations true \
+	--merge-before \
 	annotate \
-	--ontology-iri "http://purl.obolibrary.org/obo/gecko.owl" \
-	--version-iri "http://purl.obolibrary.org/obo/gecko/$(shell date +'%Y-%m-%d').owl" \
+	--link-annotation dcterms:license $(LICENSE) \
+	--annotation dc11:description "$(DESCRIPTION)" \
+	--annotation dc11:title "$(TITLE)" \
+	--annotation rdfs:comment "$(COMMENT)" \
+	--ontology-iri $(OBO)/gecko.owl \
+	--version-iri $(OBO)/gecko/$(DATE)/gecko.owl \
 	--output $@
 
-# GECKO plus OBO terms
-build/intermediate/index.owl: src/ontology/templates/properties.tsv src/ontology/templates/index.tsv | build/intermediate build/robot.jar
-	$(ROBOT) template --template $< \
-	template --merge-before \
-	--template $(word 2,$^) \
-	--output $@
+### IHCC Browser View
 
-build/gecko-full.owl: build/gecko.owl build/intermediate/index.owl | build/robot.jar
-	$(ROBOT) merge --input $< \
-	--input $(word 2,$^) \
-	reason reduce \
+build/query_result.csv: gecko.owl src/get_ihcc_view.rq | build/robot.jar
+	$(ROBOT) query \
+	--input $< \
+	--query $(word 2,$^) $@
+
+build/ihcc_view_template.csv: src/ihcc_view.py build/query_result.csv
+	python3 $^ $@
+
+src/ontology/ihcc-gecko.owl: build/ihcc_view_template.csv | build/robot.jar
+	$(ROBOT) template \
+	--template $< \
+	annotate \
+	--ontology-iri $(OBO)/ihcc-gecko.owl \
+	--version-iri $(OBO)/gecko/$(DATE)/ihcc-gecko.owl \
 	--output $@
 
 
@@ -151,7 +111,12 @@ build/gecko-full.owl: build/gecko.owl build/intermediate/index.owl | build/robot
 #
 # We use ROBOT's experimental tree branch to generate HTML tree views.
 
-build/%.html: build/%.owl | build/robot-tree.jar
+build/gecko.html: gecko.owl | build/robot-tree.jar
+	java -jar build/robot-tree.jar tree \
+	--input $< \
+	--tree $@
+
+build/ihcc-gecko.html: ihcc-gecko.owl | build/robot-tree.jar
 	java -jar build/robot-tree.jar tree \
 	--input $< \
 	--tree $@
@@ -162,13 +127,10 @@ build/%.html: build/%.owl | build/robot-tree.jar
 # We run ROBOT report to check for common mistakes.
 
 .PRECIOUS: build/report.html
-build/report.html: build/gecko-full.owl | build/robot.jar
+build/report.html: src/ontology/gecko.owl | build/robot.jar
 	$(ROBOT) report \
 	--input $< \
 	--labels true \
-	--print 20 \
-	--format HTML \
-	--standalone true \
 	--fail-on none \
 	--output $@
 
