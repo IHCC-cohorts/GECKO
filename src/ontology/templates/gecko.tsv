@@ -1,82 +1,82 @@
-ID	Label	IHCC Browser Label	Parent	Definition	Category	Comment	Part Of
-ID	LABEL	A 'IHCC browser label'	SC % SPLIT=|	A definition	A 'IHCC category'	A comment	SC 'part of' some %
-COB:0000076	objective specification	aims and objectives	directive information entity		basic cohort attributes	Replaces GECKO 'aims and objectives'
-GECKO:0000003	timeline	timeline	directive information entity		basic cohort attributes		
-OBI:0500000	study design	study design	plan specification		basic cohort attributes	Replaces GECKO 'study design'
-GECKO:0000005	population data item	population data	data item		basic cohort attributes		
-GECKO:0000006	population location	location	geographical location|population data item		population data		
-OBI:0500027	inclusion criterion	criteria for enrollment and recruitment procedures	directive information entity		population data	Replaces GECKO 'criteria for enrollment and recruitment procedures'
-GECKO:0000008	population size	num. participants	population data item|sample size		population data		
-GECKO:0000009	population demographic data item	demographic data	data item	A data item that is about the demographic details of a population.	basic cohort attributes		
-GECKO:0000010	count of sexes	sex(es) studied in cohort	population demographic data item		demographic data		
-GECKO:0000011	count of genders	gender(s) studied in cohort	population demographic data item		demographic data		
-GECKO:0000012	age range	age range	population demographic data item		demographic data		
-GECKO:0000013	data collection event textual entity	data collection events	textual entity		basic cohort attributes		
-UBERON:0000463	organism substance	sample type	material entity		biosample	Replaces GECKO 'sample type'
-UBERON:0001088	urine	urine	organism substance		sample type	Replaces GECKO 'urine'
-UBERON:0000178	blood	blood	organism substance		sample type	Replaces GECKO 'blood'
-GECKO:0000019	blood collected from fasting subject	fasting or non-fasting	blood		blood		
-UBERON:0001988	feces	stool	organism substance		sample type	Replaces GECKO 'stool'
-UBERON:0001836	saliva	saliva	organism substance		sample type	Replaces GECKO 'saliva'
-GECKO:0000112	other organism substance	other biosample type	organism substance		sample type		
-GECKO:0000113	biosample availability textual entity	availability	availability textual entity		biosample		
-GECKO:0000044	biosample size	sample size	sample size		biosample		
-GECKO:0000047	biosample processing	processing method	material processing		biosample		
-GECKO:0000026	biosample storage	storage method	storage		biosample		
-OBI:0001624	organism identification assay	microbiology	assay		laboratory measures	Replaces GECKO 'microbiology'
-GECKO:0000032	genomic assay	genomics	assay		laboratory measures	"get rid of ""data type"" and just use ""genomics"""
-OBI:0000435	genotyping assay	DNA/Genotyping	genomic assay		genomics	Replaces GECKO 'DNA/Genotyping'
-OBI:0002117	whole genome sequencing assay	WGS	genomic assay		genomics	Replaces GECKO 'WGS'
-OBI:0002118	exome sequencing assay	WES	genomic assay		genomics	Replaces GECKO 'WES'
-OBI:0000537	copy number variation profiling assay	Sequence variants (CNV, SNP arrays)	genomic assay		genomics	Replaces GECKO 'Sequence variants (CNV, SNP arrays)'
-OBI:0002020	epigenetic modification assay	Epigenetics	genomic assay		genomics	Replaces GECKO 'Epigenetics'
-OBI:0002623	whole metagenome sequencing assay	Metagenomics	genomic assay		genomics	Replaces GECKO 'Metagenomics'
-GECKO:0000040	microbiome sequencing assay	Microbiome markers (rRNA, etc)	genomic assay		genomics	OBI request?
-OBI:0001271	RNA-seq assay	RNAseq/gene expression	genomic assay		genomics	Replaces GECKO 'RNAseq/gene expression'
-GECKO:0000042	eQTL analysis	eQTL (Cis eQTLs and/or Trans eQTLs)	genomic assay		genomics	OBI request?
-GECKO:0000105	other genomic assay	other	genomic assay		genomics		
-STATO:0000093	date	date and time-related information	measurement datum		survey administration	Replaces GECKO 'date and time-related information'
-IAO:0000619	consent textual entity	consent/accessibility	textual entity		survey administration	Replaces GECKO 'consent/accessibility'
-GECKO:0000055	unique identifier	unique identifiers	identifier		survey administration		
-GECKO:0000057	individual demographic data item	socio-demographic and economic characteristics	data item	A data item that is about the demographic details of an individual.	questionnaire/survey data		
-EFO:0000246	age data item	age/birthdate	individual demographic data item		socio-demographic and economic characteristics	Replaces GECKO 'age/birthdate'
-GECKO:0000059	biological sex data item	biological sex	individual demographic data item		socio-demographic and economic characteristics		
-GECKO:0000060	gender data item	gender	individual demographic data item		socio-demographic and economic characteristics		
-GECKO:0000061	ethnicity data item	ethnicity/race	individual demographic data item		socio-demographic and economic characteristics		
-GECKO:0000063	birthplace location	birthplace	geographical location		socio-demographic and economic characteristics		
-GECKO:0000064	residence location	residence	geographical location		socio-demographic and economic characteristics		
-GECKO:0000065	education status data item	education	individual demographic data item		socio-demographic and economic characteristics		
-GECKO:0000066	family and household structure data item	family and household structure	individual demographic data item		socio-demographic and economic characteristics		
-GECKO:0000067	self-reported lifestyle data item	lifestyle and behaviours	data item		questionnaire/survey data		
-GECKO:0000068	tobacco use history	tobacco	clinical history		lifestyle and behaviours		
-GECKO:0000069	alcohol use history	alcohol	clinical history		lifestyle and behaviours		
-GECKO:0000103	recreational drug history	drugs	clinical history		lifestyle and behaviours		
-GECKO:0000104	physical activity history	physical activity	clinical history		lifestyle and behaviours		
-GECKO:0000071	sleep history	sleep	clinical history		lifestyle and behaviours		
-GECKO:0000072	nutritional history	nutrition	clinical history		lifestyle and behaviours		
-GECKO:0000073	physician textual entity	physician/practitioner info	textual entity		questionnaire/survey data		
-DOID:4	disease	diseases	disposition		questionnaire/survey data	Replaces GECKO 'diseases'
-DOID:74	hematopoietic system disease	blood-related disorders	disease		diseases	Replaces GECKO 'blood-related disorders'
-DOID:28	endocrine system disease	endocrine/nutritional/metabolic disorders	disease		diseases	Replaces GECKO 'endocrine/nutritional/metabolic disorders'
-DOID:150	disease of mental health	mental and behaviour disorders	disease		diseases	Replaces GECKO 'mental and behaviour disorders'
-DOID:863	nervous system disease	nervous system	disease		diseases	Replaces GECKO 'nervous system'
-DOID:77	gastrointestinal system disease	digestive system	disease		diseases	Replaces GECKO 'digestive system'
-DOID:1579	respiratory system disease	respiratory system	disease		diseases	Replaces GECKO 'respiratory system'
-DOID:1287	cardiovascular system disease	circulatory system	disease		diseases	Replaces GECKO 'circulatory system'
-DOID:162	cancer	oncological	disease		diseases	Replaces GECKO 'oncological'
-SYMP:0000462	symptom	signs and symptoms	quality		questionnaire/survey data	Replaces GECKO 'signs and symptoms'
-CMO:0000000	clinical measurement datum	physiological measurements	measurement datum		questionnaire/survey data	Replaces GECKO 'physiological measurements'
-CMO:0000021	body morphological measurement datum	anthropometry	clinical measurement datum		physiological measurements	Replaces GECKO 'anthropometry'
-CMO:0000012	body weight data item	weight	body morphological measurement datum		anthropometry	Replaces GECKO 'weight'
-CMO:0000106	body height data item	height	body morphological measurement datum		anthropometry	Replaces GECKO 'height'
-CMO:0000001	cardiovascular measurement datum	circulation and respiration	clinical measurement datum		physiological measurements	Replaces GECKO 'circulation and respiration'
-CMO:0000003	blood pressure measurement datum	blood pressure	cardiovascular measurement datum		circulation and respiration	Replaces GECKO 'blood pressure'
-CMO:0000294	pulse data item	heart rate (HR)	cardiovascular measurement datum		circulation and respiration	Replaces GECKO 'heart rate (HR)'
-GECKO:0000092	surgical history	surgical interventions	clinical history		questionnaire/survey data	"get rid of ""non-pharmacological interventions"" because this is the only category"
-GECKO:0000093	prescription drug history	medication	clinical history		questionnaire/survey data		
-GECKO:0000094	disease treated by prescription drug	associated disease(s)	information		medication		prescription drug history
-PDRO:0000024	drug prescription	prescription	document		medication	Replaces GECKO 'prescription'
-GECKO:0000096	response to medication	drug response(s)	biological process		medication		
-PDRO:0010022	drug administration specification	administration	directive information entity		medication	Replaces GECKO 'administration'	drug prescription
-GECKO:0000102	summary statistic	summary statistics for additional data from federated sources	statistic		statistics		
-GECKO:0000106	sample size						
+ID	Label	IHCC Browser Label	Parent	Definition	Definition Source	Category	Class Type	About	Inheres In	Part Of	Comment
+ID	LABEL	A 'IHCC browser label'	SC % SPLIT=|	A definition	A definition source	A 'IHCC category'	CLASS_TYPE	C 'is about' some %	C 'inheres in' some %	C 'part of' some %	A comment
+CMO:0000000	clinical measurement data item	physiological measurements	measurement datum	A quantitative or qualitative value which is the result of an act of assessing a morphological or physiological state or property in a single individual or sample or a group of individuals or samples, based on direct observation or experimental manipulation.		questionnaire/survey data					Replaces GECKO 'physiological measurements'
+CMO:0000001	cardiovascular measurement data item	circulation and respiration	clinical measurement data item	Any value resulting from the quantification of a morphological or physiological parameter pertaining to the heart and/or blood vessels.		physiological measurements					Replaces GECKO 'circulation and respiration'
+CMO:0000003	blood pressure measurement data item	blood pressure	cardiovascular measurement data item	Measurement of the pressure, or force per area, exerted by circulating blood against the walls of the blood vessels. The pressure is dependent on the energy of the heart action, elasticity of the vessel walls and volume and viscosity of the blood.		circulation and respiration					Replaces GECKO 'blood pressure'
+CMO:0000012	body weight data item	weight	body morphological measurement data item	The heaviness or degree to which an entire organism's body is drawn to the earth by gravity.		anthropometry					Replaces GECKO 'weight'
+CMO:0000021	body morphological measurement data item	anthropometry	clinical measurement data item	Measurement of the structure or forms of the entire body or parts of the body of an organism.		physiological measurements					Replaces GECKO 'anthropometry'
+CMO:0000106	body height data item	height	body morphological measurement data item	The vertical measurement of a body.		anthropometry					Replaces GECKO 'height'
+CMO:0000294	pulse data item	heart rate (HR)	cardiovascular measurement data item	The count of the rhythmic contractions and expansions of an artery due to the surge of blood from the beat of the heart.		circulation and respiration					Replaces GECKO 'heart rate (HR)'
+COB:0000076	objective specification	aims and objectives	directive information entity			basic cohort attributes					Replaces GECKO 'aims and objectives'
+DOID:1287	cardiovascular system disease	circulatory system	disease	A disease of anatomical entity which occurs in the blood, heart, blood vessels or the lymphatic system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells or lymph to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis.		diseases					Replaces GECKO 'circulatory system'
+DOID:150	disease of mental health	mental and behaviour disorders	disease	A disease that involves a psychological or behavioral pattern generally associated with subjective distress or disability that occurs in an individual, and which are not a part of normal development or culture.		diseases					Replaces GECKO 'mental and behaviour disorders'
+DOID:1579	respiratory system disease	respiratory system	disease	A disease of anatomical entity that located_in the respiratory system which extends from the nasal sinuses to the diaphragm.		diseases					Replaces GECKO 'respiratory system'
+DOID:162	cancer	oncological	disease	A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis.		diseases					Replaces GECKO 'oncological'
+DOID:28	endocrine system disease	endocrine/nutritional/metabolic disorders	disease	A disease of anatomical entity that is located_in endocrine glands which secretes a type of hormone directly into the bloodstream to regulate the body.		diseases					Replaces GECKO 'endocrine/nutritional/metabolic disorders'
+DOID:4	disease	diseases	disposition	A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.		questionnaire/survey data					Replaces GECKO 'diseases'
+DOID:74	hematopoietic system disease	blood-related disorders	disease	A disease of anatomical entity that has_material_basis_in hematopoietic cells.		diseases					Replaces GECKO 'blood-related disorders'
+DOID:77	gastrointestinal system disease	digestive system	disease	A disease of anatomical entity that is located_in the gastrointestinal tract.		diseases					Replaces GECKO 'digestive system'
+DOID:863	nervous system disease	nervous system	disease	A disease of anatomical entity that is located_in the central nervous system or located_in the peripheral nervous system.		diseases					Replaces GECKO 'nervous system'
+GECKO:0000003	timeline	timeline	directive information entity	A directive information entity that specifies the sequence in which a series of events occurred or will occur.		basic cohort attributes					
+GECKO:0000005	population data item	population data	data item	A data item that is about a population of organisms.		basic cohort attributes	equivalent	collection of organisms			
+GECKO:0000006	population location	location	population data item	A population data item that is about the geographical location of a population of organisms.		population data		geographical location			
+GECKO:0000008	population size	num. participants	sample size	A sample size that is about the count of individual organisms in a population.		population data		collection of organisms			
+GECKO:0000009	population quality	demographic data	quality	A quality which inheres in a population of organisms.		basic cohort attributes	equivalent		collection of organisms		
+GECKO:0000010	population sex or sexes	sex(es) studied in cohort	population quality	A population quality concerning the sex or sexes of the population.		demographic data																							
+GECKO:0000011	population gender or genders	gender(s) studied in cohort	population quality	A population quality concerning the gender or genders of the population.		demographic data																							
+GECKO:0000012	population age range	age range	population quality	A population quality concerning the age range of a population.		demographic data																							
+GECKO:0000019	blood collected from fasting subject	fasting or non-fasting	blood	Blood that is collected from an organism which has been fasting for a given amount of time.		blood					
+GECKO:0000026	biosample storage	storage method	storage	A storage process for a biosample collected from an organism.		biosample					
+GECKO:0000032	genomic assay	genomics	assay	An assay that investigates the genome or genomes of an individual organism or population of organisms.		laboratory measures					Merged GECKO 'data type' into 'genomics'.
+GECKO:0000040	microbiome sequencing assay	Microbiome markers (rRNA, etc)	genomic assay	A genomic assay that profiles the microorganisms present in a sample.		genomics					Potential new OBI request
+GECKO:0000042	eQTL analysis	eQTL (Cis eQTLs and/or Trans eQTLs)	genomic assay	A genomic assay that identifies genetic loci and candidate genes correlated with phenotypes.	PMID:27964730	genomics					Potential new OBI request
+GECKO:0000044	biosample size	sample size	count	A count of the number of biosamples collected for an investigation.		biosample					
+GECKO:0000047	biosample processing	processing method	material processing	A material processing which prepares a biosample for investigation.		biosample					
+GECKO:0000055	unique identifier	unique identifiers	identifier	An identifier that is guaranteed to be unique among all identifiers in a particular domain.	Wikipedia:Unique_identifier	survey administration					
+GECKO:0000060	gender	gender	organismal quality	An organismal quality inhering in a bearer by virtue of the bearer's preference towards a range of characteristics pertaining to, and differentiating between, masculinity and femininity.	Wikipedia:Gender|PATO:0000047	socio-demographic and economic characteristics					
+GECKO:0000061	ethnicity	ethnicity/race	organismal quality	An organismal quality inhering in a bearer by virtue of the bearer's identification with a group of other individuals on the basis of presumed similarities such as language or common ancestry.	Wikipedia:Ethnic_group	socio-demographic and economic characteristics					
+GECKO:0000063	birthplace location	birthplace	geographical location	A geographical location in which an individual was born.		socio-demographic and economic characteristics					
+GECKO:0000064	residence location	residence	geographical location	A geographical location in which an individual currently resides.		socio-demographic and economic characteristics					
+GECKO:0000065	education level	education	organismal quality	An organismal quality inhering in a bearer by virute of the bearer's highest level of formal education completed.		socio-demographic and economic characteristics					
+GECKO:0000066	family and household structure	family and household structure	information	Information that is about the structure of an individual's family and/or household.		socio-demographic and economic characteristics																							
+GECKO:0000067	lifestyle history	lifestyle and behaviours	clinical history	A clinical history that is about the lifestyle and behaviors of an individual which may impact health outcomes.		questionnaire/survey data					
+GECKO:0000068	tobacco use history	tobacco	lifestyle history	A lifestyle history that is about the tobacco use or exposure of an individual.		lifestyle and behaviours					
+GECKO:0000069	alcohol use history	alcohol	lifestyle history	A lifestyle history that is about the alcohol consumption of an individual.		lifestyle and behaviours					
+GECKO:0000071	sleep history	sleep	lifestyle history	A lifestyle history that is about the sleep quality and duration of an individual.		lifestyle and behaviours					
+GECKO:0000072	nutritional history	nutrition	lifestyle history	A lifestyle history that is about the diet and nutrition of an individual.		lifestyle and behaviours					
+GECKO:0000073	physician contact textual entity	physician/practitioner info	textual entity	A textual entity that contains contact details for an individual's physician, which may include: name, phone number, address, etc.		questionnaire/survey data					
+GECKO:0000092	surgical history	surgical interventions	clinical history	A clinical history that is about surgical operations performed on an individual.		questionnaire/survey data					Merge 'surgical interventions' into 'non-pharmacological interventions'
+GECKO:0000093	prescription drug history	medication	clinical history	A clinical history that is about the prescription drugs taken by an individual.		questionnaire/survey data					
+GECKO:0000094	disease treated by prescription drug	associated disease(s)	information	Information that is about the disease treated by a drug prescribed to an individual.		medication				prescription drug history	
+GECKO:0000096	response to medication	drug response(s)	biological process	A biological process that results from a drug stimulus.		medication					
+GECKO:0000102	summary statistic for federated data	summary statistics for additional data from federated sources	statistic	A statistic that summarizes a set of federated data.		statistics					
+GECKO:0000103	recreational drug history	drugs	lifestyle history	A lifestyle history that is about the use of unprescribed and/or non-prescription drugs.		lifestyle and behaviours					
+GECKO:0000104	physical activity history	physical activity	lifestyle history	A lifestyle history that is about the typical physical activity of an individual.		lifestyle and behaviours					
+GECKO:0000105	other genomic assay	other	genomic assay	An uncategorized genomic assay.		genomics					
+GECKO:0000106	sample size		count	A count which represents the subset of a collection chosen for an investigation, survey, or assay.							
+GECKO:0000112	other organism substance	other biosample type	organism substance	An uncategorized organism substance.		sample type					
+GECKO:0000113	biosample availability textual entity	availability	availability textual entity	An availability textual entity that is about a substance from an organism (a biosample).		biosample		organism substance			
+IAO:0000619	consent textual entity	consent/accessibility	textual entity	A textual entity that documents the consenting process used to enroll patients in a study.		survey administration					Replaces GECKO 'consent/accessibility'
+OBI:0000435	genotyping assay	DNA/Genotyping	genomic assay	An assay which generates data about a genotype from a specimen of genomic DNA. A variety of techniques and instruments can be used to produce information about sequence variation at particular genomic positions.		genomics					Replaces GECKO 'DNA/Genotyping'
+GECKO:0000013	data collection	data collection events	planned process	A planned process that is a part of an investigation in which raw data is collected.		basic cohort attributes					
+OBI:0000537	copy number variation profiling assay	Sequence variants (CNV, SNP arrays)	genomic assay	An assay that determines lost or amplified genomic regions of DNA by comparing genomic DNA originating from tissues from the same or different individuals using specific techniques such as CGH, array CGH, SNP genotyping		genomics					Replaces GECKO 'Sequence variants (CNV, SNP arrays)'
+OBI:0001271	RNA-seq assay	RNAseq/gene expression	genomic assay	An transcription profiling assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.		genomics					Replaces GECKO 'RNAseq/gene expression'
+OBI:0001624	organism identification assay	microbiology	assay	An assay that identifies the organism species in a specimen.		laboratory measures					Replaces GECKO 'microbiology'
+OBI:0002020	epigenetic modification assay	Epigenetics	genomic assay	An assay that identifies epigenetic modifications including histone modifications, open chromatin, and DNA methylation.		genomics					Replaces GECKO 'Epigenetics'
+OBI:0002117	whole genome sequencing assay	WGS	genomic assay	A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism.		genomics					Replaces GECKO 'WGS'
+OBI:0002118	exome sequencing assay	WES	genomic assay	A DNA sequencing assay that intends to provide information about the sequence of the protein coding components of a genome (exons).		genomics					Replaces GECKO 'WES'
+OBI:0002623	whole metagenome sequencing assay	Metagenomics	genomic assay	A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.		genomics					Replaces GECKO 'Metagenomics'
+OBI:0500000	study design	study design	plan specification	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.		basic cohort attributes					Replaces GECKO 'study design'
+OBI:0500027	inclusion criterion	criteria for enrollment and recruitment procedures	directive information entity	an inclusion criterion (rule) is_a *eligibility criterion* which defines and states a condition which, if met, makes an entity suitable for a given task or participation in a given process. For instance, in a study protocol, inclusion criteria indicate the conditions that prospective subjects MUST meet to be eligible for participation in a study.		population data					Replaces GECKO 'criteria for enrollment and recruitment procedures'
+PATO:0000011	age	age/birthdate	quality	A time quality inhering in a bearer by virtue of how long the bearer has existed.		socio-demographic and economic characteristics					Replaces GECKO 'age/birthdate'
+PATO:0000047	biological sex	biological sex	organismal quality	An organismal quality inhering in a bearer by virtue of the bearer's ability to undergo sexual reproduction in order to differentiate the individuals or types involved.		socio-demographic and economic characteristics					
+PATO:0001995	organismal quality	socio-demographic and economic characteristics	quality	A quality that inheres in an entire organism or part of an organism.		questionnaire/survey data																							
+PDRO:0000024	drug prescription	prescription	document	A health care prescription specifying the initiation, modification or cessation of a drug administration.		medication					Replaces GECKO 'prescription'
+PDRO:0010022	drug administration specification	administration	directive information entity	A drug administration description that specifies a drug administration prescribed or reported by an healthcare provider. It specifies: - The drug product - The posology It may also specify a starting drug administration condition		medication				drug prescription	Replaces GECKO 'administration'
+STATO:0000093	date	date and time-related information	measurement datum	Information about a calendar date or timestamp indicating day, month, year and time of an event.		survey administration					Replaces GECKO 'date and time-related information'
+SYMP:0000462	symptom	signs and symptoms	quality	A quality of a patient that is observed by the patient or a processual entity experienced by the patient, either of which is hypothesized by the patient to be a realization of a disease.		questionnaire/survey data					Replaces GECKO 'signs and symptoms'
+UBERON:0000178	blood	blood	organism substance	A fluid that is composed of blood plasma and erythrocytes.		sample type					Replaces GECKO 'blood'
+UBERON:0000463	organism substance	sample type	material entity	Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.		biosample					Replaces GECKO 'sample type'
+UBERON:0001088	urine	urine	organism substance	Excretion that is the output of a kidney.		sample type					Replaces GECKO 'urine'
+UBERON:0001836	saliva	saliva	organism substance	A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions.		sample type					Replaces GECKO 'saliva'
+UBERON:0001988	feces	stool	organism substance	Portion of semisolid bodily waste discharged through the anus.		sample type					Replaces GECKO 'stool'

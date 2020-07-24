@@ -1,7 +1,10 @@
-ID	Label	Type
-ID	LABEL	TYPE
+ID	Label	Type																							
+ID	LABEL	TYPE																							
 IAO:0000115	definition	owl:AnnotationProperty
 COB:0000072	part of	owl:ObjectProperty
 GECKO:9000000	IHCC category	owl:AnnotationProperty
 GECKO:9000001	IHCC browser label	owl:AnnotationProperty
 rdfs:comment	comment	owl:AnnotationProperty
+RO:0000052	inheres in	owl:ObjectProperty
+IAO:0000136	is about	owl:ObjectProperty
+IAO:0000119	definition source	owl:AnnotationProperty

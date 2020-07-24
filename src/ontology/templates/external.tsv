@@ -1,25 +1,27 @@
-ID	Label	Parent
-ID	LABEL	SC %
-IAO:0000300	textual entity	information
+ID	Label	Parent	Defintion
+ID	LABEL	SC %	A definition
+COB:0000001	quality	
+COB:0000006	material entity	
+COB:0000031	immaterial entity	
+COB:0000032	geographical location	immaterial entity
+COB:0000033	realizable	
+COB:0000034	process	
+COB:0000035	planned process	process
+COB:0000037	biological process	process
+COB:0000055	collection of organisms	material entity
+COB:0000061	information	
+COB:0000069	directive information entity	information
+COB:0000079	plan specification	directive information entity
+COB:0000101	document	information
 COB:0000102	data item	information
+COB:0000107	assay	planned process
+COB:0000111	disposition	realizable
+IAO:0000109	measurement datum	data item
+IAO:0000300	textual entity	information
 IAO:0000612	availability textual entity	textual entity
+IAO:0020000	identifier	information
 OBI:0000094	material processing	planned process
 OBI:0302893	storage	planned process
-COB:0000107	assay	planned process
-IAO:0000109	measurement datum	data item
-IAO:0020000	identifier	information
-COB:0000032	geographical location	immaterial entity
 OGMS:0000015	clinical history	information
-COB:0000111	disposition	realizable
-COB:0000001	quality	
-COB:0000101	document	information
-COB:0000037	biological process	process
-COB:0000069	directive information entity	information
 STATO:0000039	statistic	measurement datum
-COB:0000061	information	
-COB:0000034	process	
-COB:0000033	realizable	
-COB:0000035	planned process	process
-COB:0000031	immaterial entity	
-COB:0000006	material entity	
-COB:0000079	plan specification	directive information entity
+STATO:0000047	count	measurement datum
