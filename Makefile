@@ -10,8 +10,8 @@
 # 2. [Update files](update)
 # 2. View files:
 #     - [ROBOT report](build/report.html)
-#     - [GECKO tree](build/gecko.html) ([gecko.owl](src/ontology/gecko.owl))
-#     - [IHCC view tree](build/ihcc-gecko.html) ([ihcc-gecko.owl](src/ontology/ihcc-gecko.owl))
+#     - [GECKO tree](build/gecko.html) ([gecko.owl](gecko.owl))
+#     - [IHCC view tree](build/ihcc-gecko.html) ([ihcc-gecko.owl](views/ihcc-gecko.owl))
 
 ### Configuration
 #
@@ -36,12 +36,14 @@ COMMENT = The GECKO is maintained by the CINECA project, https://www.cineca-proj
 TITLE = Genomics Cohorts Knowledge Ontology
 
 .PHONY: all
-all: src/ontology/gecko.owl src/ontology/ihcc-gecko.owl build/gecko.html build/ihcc-gecko.html build/report.html
+all: gecko.owl views/ihcc-gecko.owl build/gecko.html build/ihcc-gecko.html build/report.html
+
+.PHONY: clean
+clean:
+	rm -rf build/templates.xlsx
 
 .PHONY: update
-update:
-	rm -rf build/templates.xlsx
-	make all
+update: clean all
 
 build:
 	mkdir -p $@
@@ -74,7 +76,7 @@ build/external.ttl: build/properties.ttl src/ontology/templates/external.tsv | b
 	--merge-before \
 	--output $@
 
-src/ontology/gecko.owl: build/external.ttl src/ontology/templates/gecko.tsv | build/robot.jar
+gecko.owl: build/external.ttl src/ontology/templates/gecko.tsv | build/robot.jar
 	$(ROBOT) template \
 	--input $< \
 	--template $(word 2,$^) \
@@ -98,7 +100,7 @@ build/query_result.csv: gecko.owl src/get_ihcc_view.rq | build/robot.jar
 build/ihcc_view_template.csv: src/ihcc_view.py build/query_result.csv
 	python3 $^ $@
 
-src/ontology/ihcc-gecko.owl: build/ihcc_view_template.csv | build/robot.jar
+views/ihcc-gecko.owl: build/ihcc_view_template.csv | build/robot.jar
 	$(ROBOT) template \
 	--template $< \
 	annotate \
@@ -127,7 +129,7 @@ build/ihcc-gecko.html: ihcc-gecko.owl | build/robot-tree.jar
 # We run ROBOT report to check for common mistakes.
 
 .PRECIOUS: build/report.html
-build/report.html: src/ontology/gecko.owl | build/robot.jar
+build/report.html: gecko.owl | build/robot.jar
 	$(ROBOT) report \
 	--input $< \
 	--labels true \

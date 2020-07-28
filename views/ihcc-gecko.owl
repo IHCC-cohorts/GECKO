@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="urn:absolute:/src/ontology/ihcc-gecko.owl#"
-     xml:base="urn:absolute:/src/ontology/ihcc-gecko.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ihcc-gecko.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ihcc-gecko.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="urn:absolute:/src/ontology/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="urn:absolute:/gecko/2020-07-23/ihcc-gecko.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ihcc-gecko.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-07-28/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -172,15 +172,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_863">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/EFO_0000246 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0000246">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</rdfs:label>
     </owl:Class>
     
 
@@ -378,28 +369,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GECKO_0000057 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_0000059 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000059">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GECKO_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdfs:label>
     </owl:Class>
     
@@ -408,7 +381,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnicity/race</rdfs:label>
     </owl:Class>
     
@@ -417,7 +390,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000063 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">birthplace</rdfs:label>
     </owl:Class>
     
@@ -426,7 +399,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
     </owl:Class>
     
@@ -435,7 +408,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000065 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">education</rdfs:label>
     </owl:Class>
     
@@ -444,7 +417,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family and household structure</rdfs:label>
     </owl:Class>
     
@@ -697,6 +670,33 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000005"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">criteria for enrollment and recruitment procedures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Class>
     
 
