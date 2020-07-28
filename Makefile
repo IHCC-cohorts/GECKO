@@ -40,7 +40,7 @@ all: gecko.owl views/ihcc-gecko.owl build/gecko.html build/ihcc-gecko.html build
 
 .PHONY: clean
 clean:
-	rm -rf build/templates.xlsx
+	rm -rf build
 
 .PHONY: update
 update: clean all
