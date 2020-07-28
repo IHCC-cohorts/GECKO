@@ -118,7 +118,7 @@ build/gecko.html: gecko.owl | build/robot-tree.jar
 	--input $< \
 	--tree $@
 
-build/ihcc-gecko.html: ihcc-gecko.owl | build/robot-tree.jar
+build/ihcc-gecko.html: views/ihcc-gecko.owl | build/robot-tree.jar
 	java -jar build/robot-tree.jar tree \
 	--input $< \
 	--tree $@
