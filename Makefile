@@ -57,7 +57,6 @@ build/robot-tree.jar: | build
 
 ### GECKO
 
-.PHONY: build/templates.xlsx
 build/templates.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1bYnbxvPPFO7D7zg9Tr2e32jb8l13kMZ81vP_iaSZCXg/export?format=xlsx"
 
