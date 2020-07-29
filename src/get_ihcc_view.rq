@@ -1,0 +1,6 @@
+PREFIX GECKO: <http://purl.obolibrary.org/obo/GECKO_>
+
+SELECT ?s ?label ?category WHERE { 
+	?s GECKO:9000000 ?category ;
+	   GECKO:9000001 ?label
+}
