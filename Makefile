@@ -43,7 +43,7 @@ clean:
 	rm -rf build
 
 .PHONY: update
-update: clean all
+update: clean build/templates.xlsx all
 
 build:
 	mkdir -p $@
