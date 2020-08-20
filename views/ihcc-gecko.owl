@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-07-29/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-08-20/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -396,10 +396,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GECKO_0000092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical interventions</rdfs:label>
     </owl:Class>
     
@@ -490,6 +499,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000014"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Class>
     
 
@@ -733,6 +751,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000052"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
     </owl:Class>
     
 

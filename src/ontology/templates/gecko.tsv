@@ -37,8 +37,9 @@ GECKO:0000069	alcohol use history	alcohol	lifestyle history	A lifestyle history 
 GECKO:0000071	sleep history	sleep	lifestyle history	A lifestyle history that is about the sleep quality and duration of an individual.		lifestyle and behaviours					
 GECKO:0000072	nutritional history	nutrition	lifestyle history	A lifestyle history that is about the diet and nutrition of an individual.		lifestyle and behaviours					
 GECKO:0000073	physician contact textual entity	physician/practitioner info	textual entity	A textual entity that contains contact details for an individual's physician, which may include: name, phone number, address, etc.		questionnaire/survey data					
-GECKO:0000092	surgical history	surgical interventions	clinical history	A clinical history that is about surgical operations performed on an individual.		questionnaire/survey data					Merge 'surgical interventions' into 'non-pharmacological interventions'
-GECKO:0000093	prescription drug history	medication	clinical history	A clinical history that is about the prescription drugs taken by an individual.		questionnaire/survey data					
+GECKO:0000091	non-pharmacological treatment history	non-pharmacological interventions	treatment history			questionnaire/survey data					
+GECKO:0000092	surgical history	surgical interventions	non-pharmacological treatment history	A clinical history that is about surgical operations performed on an individual.		non-pharmacological interventions					
+GECKO:0000093	prescription drug history	medication	treatment history	A clinical history that is about the prescription drugs taken by an individual.		questionnaire/survey data					
 GECKO:0000094	disease treated by prescription drug	associated disease(s)	information	Information that is about the disease treated by a drug prescribed to an individual.		medication				prescription drug history	
 GECKO:0000096	response to medication	drug response(s)	biological process	A biological process that results from a drug stimulus.		medication					
 GECKO:0000102	summary statistic for federated data	summary statistics for additional data from federated sources	statistic	A statistic that summarizes a set of federated data.		statistics					
@@ -46,6 +47,8 @@ GECKO:0000103	recreational drug history	drugs	lifestyle history	A lifestyle hist
 GECKO:0000104	physical activity history	physical activity	lifestyle history	A lifestyle history that is about the typical physical activity of an individual.		lifestyle and behaviours					
 GECKO:0000106	sample size		count	A count which represents the subset of a collection chosen for an investigation, survey, or assay.							
 GECKO:0000113	biosample availability textual entity	availability	availability textual entity	An availability textual entity that is about a substance from an organism (a biosample).		biosample		organism substance			
+GECKO:0000114	reproductive history	reproduction	clinical history	A clinical history that is about pregnancy, maternity, fertility, menses, and any other reproductive aspect.		questionnaire/survey data					
+GECKO:0000115	treatment history		clinical history	A clinical history that is about any treatment (surgical, prescription, etc.) for disease, disorder, or symptom.							
 IAO:0000619	consent textual entity	consent/accessibility	textual entity	A textual entity that documents the consenting process used to enroll patients in a study.		survey administration					Replaces GECKO 'consent/accessibility'
 MONDO:0000001	disease or disorder	diseases	disposition	A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.		questionnaire/survey data					Replaces GECKO 'diseases'
 MONDO:0004335	digestive system disease	digestive system	disease or disorder	A disease or disorder that involves the digestive system.		diseases					Replaces GECKO 'digestive system'
@@ -78,3 +81,4 @@ UBERON:0000463	organism substance	sample type	material entity	Material anatomica
 UBERON:0001088	urine	urine	organism substance	Excretion that is the output of a kidney.		sample type					Replaces GECKO 'urine'
 UBERON:0001836	saliva	saliva	organism substance	A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions.		sample type					Replaces GECKO 'saliva'
 UBERON:0001988	feces	stool	organism substance	Portion of semisolid bodily waste discharged through the anus.		sample type					Replaces GECKO 'stool'
+UBERON:0000105	life cycle stage	life stage/time point	process	An entire span of an organism's life, commencing with the zygote stage and ending in the death of the organism.		questionnaire/survey data

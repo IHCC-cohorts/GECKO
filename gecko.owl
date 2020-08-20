@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-07-29/gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-08-20/gecko.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -744,14 +744,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000115"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological treatment history</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GECKO_0000092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
-        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical interventions</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about surgical operations performed on an individual.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merge &apos;surgical interventions&apos; into &apos;non-pharmacological interventions&apos;</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical history</rdfs:label>
     </owl:Class>
     
@@ -760,7 +770,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000115"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about the prescription drugs taken by an individual.</obo:IAO_0000115>
@@ -859,6 +869,28 @@
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">availability</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An availability textual entity that is about a substance from an organism (a biosample).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample availability textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about pregnancy, maternity, fertility, menses, and any other reproductive aspect.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about any treatment (surgical, prescription, etc.) for disease, disorder, or symptom.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treatment history</rdfs:label>
     </owl:Class>
     
 
@@ -1295,6 +1327,18 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about a calendar date or timestamp indicating day, month, year and time of an event.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replaces GECKO &apos;date and time-related information&apos;</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entire span of an organism&apos;s life, commencing with the zygote stage and ending in the death of the organism.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life cycle stage</rdfs:label>
     </owl:Class>
     
 
