@@ -64,7 +64,7 @@ build/templates.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1bYnbxvPPFO7D7zg9Tr2e32jb8l13kMZ81vP_iaSZCXg/export?format=xlsx"
 
 src/ontology/templates/index.tsv src/ontology/templates/gecko.tsv src/ontology/templates/properties.tsv src/ontology/templates/external.tsv: build/templates.xlsx | build/robot.jar
-	xlsx2csv -d tab -n $(basename $(notdir $@)) $< $@
+	xlsx2csv -d tab -n $(basename $(notdir $@)) --ignoreempty $< $@
 
 build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
 	$(ROBOT) template \
