@@ -1,0 +1,144 @@
+ID	Label
+ID	LABEL
+CMO:0000000	clinical measurement data item
+CMO:0000001	cardiovascular measurement data item
+CMO:0000003	blood pressure measurement data item
+CMO:0000012	body weight data item
+CMO:0000021	body morphological measurement data item
+CMO:0000106	body height data item
+CMO:0000294	pulse data item
+COB:0000001	quality
+COB:0000006	material entity
+COB:0000031	immaterial entity
+COB:0000032	geographical location
+COB:0000033	realizable
+COB:0000034	process
+COB:0000035	planned process
+COB:0000037	biological process
+COB:0000055	collection of organisms
+COB:0000061	information
+COB:0000069	directive information entity
+COB:0000076	objective specification
+COB:0000079	plan specification
+COB:0000101	document
+COB:0000102	data item
+COB:0000107	assay
+COB:0000111	disposition
+EUPATH:0000147	cause of participant death
+EUPATH:0000308	hospitalization information
+EUPATH:0000359	occupation
+EUPATH:0000374	marital status
+EUPATH:0000451	healthcare information
+EUPATH:0010032	environment associated with human dwelling
+GECKO:0000003	timeline
+GECKO:0000005	population data item
+GECKO:0000006	population location
+GECKO:0000008	population size
+GECKO:0000009	population quality
+GECKO:0000010	population sex or sexes
+GECKO:0000011	population gender or genders
+GECKO:0000012	population age range
+GECKO:0000013	data collection
+GECKO:0000019	blood collected from fasting subject
+GECKO:0000026	biosample storage
+GECKO:0000032	genomic assay
+GECKO:0000040	microbiome sequencing assay
+GECKO:0000042	eQTL analysis
+GECKO:0000044	biosample size
+GECKO:0000047	biosample processing
+GECKO:0000055	unique identifier
+GECKO:0000060	gender
+GECKO:0000061	ethnicity
+GECKO:0000063	birthplace location
+GECKO:0000064	residence location
+GECKO:0000065	education level
+GECKO:0000066	family and household structure
+GECKO:0000067	lifestyle history
+GECKO:0000068	tobacco use history
+GECKO:0000069	alcohol use history
+GECKO:0000071	sleep history
+GECKO:0000072	nutritional history
+GECKO:0000073	physician contact textual entity
+GECKO:0000091	non-pharmacological treatment history
+GECKO:0000092	surgical history
+GECKO:0000093	prescription drug history
+GECKO:0000094	disease treated by prescription drug
+GECKO:0000096	response to medication
+GECKO:0000102	summary statistic for federated data
+GECKO:0000103	recreational drug history
+GECKO:0000104	physical activity history
+GECKO:0000106	sample size
+GECKO:0000113	biosample availability textual entity
+GECKO:0000114	reproductive history
+GECKO:0000115	treatment history
+GECKO:0000118	psychological measurement
+GECKO:0000119	cognitive measurement
+GECKO:0000120	personality measurement
+GECKO:0000121	emotion
+GECKO:0000122	oral health history
+GECKO:0000123	psychological treatment history
+GECKO:0000124	radiological treatment history
+GECKO:0000125	physical therapy history
+GECKO:0000126	perception of health measurement
+GECKO:0000127	quality of life measurement
+GECKO:0000128	information on functional limitations
+GECKO:0000129	information on use of assistive devices
+GECKO:0000130	religious affiliation
+GECKO:0000131	human social environment
+GECKO:EUPATH_1	human dwelling environment
+GECKO:EUPATH_2	human neighborhood environment
+GECKO:EUPATH_3	human workplace environment
+GECKO:EUPATH_4	routine clinical visit information
+IAO:0000109	measurement datum
+IAO:0000300	textual entity
+IAO:0000612	availability textual entity
+IAO:0000619	consent textual entity
+IAO:0020000	identifier
+MF:0000041	belief
+MONDO:0000001	disease or disorder
+MONDO:0002051	integumentary system disease
+MONDO:0002081	musculoskeletal system disease
+MONDO:0003900	connective tissue disease
+MONDO:0004335	digestive system disease
+MONDO:0004992	cancer
+MONDO:0004995	cardiovascular disease
+MONDO:0005071	nervous system disorder
+MONDO:0005084	mental disorder
+MONDO:0005087	respiratory system disease
+MONDO:0005151	endocrine system disease
+MONDO:0005550	infectious disease
+MONDO:0005570	hematologic disease
+MONDO:0021178	injury
+MONDO:0024458	disease of visual system
+MONDO:0024623	otorhinolaryngologic disease
+MONDO:0029000	poisoning
+OBI:0000094	material processing
+OBI:0000435	genotyping assay
+OBI:0000537	copy number variation profiling assay
+OBI:0001271	RNA-seq assay
+OBI:0001624	organism identification assay
+OBI:0002020	epigenetic modification assay
+OBI:0002117	whole genome sequencing assay
+OBI:0002118	exome sequencing assay
+OBI:0002415	exposure to environmental and workplace carcinogens history
+OBI:0002623	whole metagenome sequencing assay
+OBI:0302893	storage
+OBI:0500000	study design
+OBI:0500027	inclusion criterion
+OGMS:0000015	clinical history
+OGMS:0000020	symptom
+OMRSE:00000501	income data
+PATO:0000011	age
+PATO:0000047	biological sex
+PATO:0001995	organismal quality
+PDRO:0000024	drug prescription
+PDRO:0010022	drug administration specification
+STATO:0000039	statistic
+STATO:0000047	count
+STATO:0000093	date
+UBERON:0000105	life cycle stage
+UBERON:0000178	blood
+UBERON:0000463	organism substance
+UBERON:0001088	urine
+UBERON:0001836	saliva
+UBERON:0001988	feces

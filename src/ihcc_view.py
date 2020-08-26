@@ -11,7 +11,17 @@ top_levels = [
     {"ID": "GECKO:0000056", "Label": "questionnaire/survey data"},
     {"ID": "GECKO:0000101", "Label": "statistics"},
     {"ID": "GECKO:0000105", "Label": "other", "Parent": "genomics"},
-    {"ID": "GECKO:0000112", "Label": "other biosample type", "Parent": "sample type"}
+    {"ID": "GECKO:0000112", "Label": "other biosample type", "Parent": "sample type"},
+    {
+        "ID": "GECKO:0000116",
+        "Label": "other questionnaire/survey data",
+        "Parent": "questionnaire/survey data",
+    },
+    {
+        "ID": "GECKO:0000117",
+        "Label": "perception of health and quality of life",
+        "Parent": "questionnaire/survey data",
+    },
 ]
 
 

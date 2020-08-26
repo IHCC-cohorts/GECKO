@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-08-20/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-08-26/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -91,6 +91,60 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aims and objectives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cause of death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000451"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitalizations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marital status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0010032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0010032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</rdfs:label>
     </owl:Class>
     
 
@@ -390,7 +444,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000073 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000451"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physician/practitioner info</rdfs:label>
     </owl:Class>
     
@@ -506,8 +560,188 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000114 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000114">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health and quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive and psychological measurements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000118"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000118"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000118"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological distress and emotions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health and hygiene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiological interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical therapy interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000117"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000117"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000117"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">functional limitations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000117"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use of assistive devices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">religion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">housing characteristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neighbourhood characteristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_3">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">workplace characteristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000451"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">routine visits to health professionals</rdfs:label>
     </owl:Class>
     
 
@@ -521,11 +755,47 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal beliefs and values</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0003900 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003900">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue</rdfs:label>
     </owl:Class>
     
 
@@ -593,11 +863,56 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0005570 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005570">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood-related disorders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases of the ear, nose, and/or throat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0029000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0029000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poisoning</rdfs:label>
     </owl:Class>
     
 
@@ -665,6 +980,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0002415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exposure to carcinogens</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0002623 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002623">
@@ -695,8 +1019,17 @@
     <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signs and symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">income and possessions</rdfs:label>
     </owl:Class>
     
 
@@ -758,7 +1091,7 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
     </owl:Class>
     
