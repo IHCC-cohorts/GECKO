@@ -1,0 +1,36 @@
+CREATE TABLE IF NOT EXISTS prefix (
+  prefix TEXT PRIMARY KEY,
+  base TEXT NOT NULL
+);
+
+INSERT OR IGNORE INTO prefix VALUES
+("BFO",       "http://purl.obolibrary.org/obo/BFO_"),
+("COB",       "http://purl.obolibrary.org/obo/COB_"),
+("CHEBI",     "http://purl.obolibrary.org/obo/CHEBI_"),
+("CL",        "http://purl.obolibrary.org/obo/CL_"),
+("CMO",       "http://purl.obolibrary.org/obo/CMO_"),
+("dcterms",   "http://purl.org/dc/terms/"),
+("dc11",      "http://purl.org/dc/elements/1.1/"),
+("EUPATH",    "http://purl.obolibrary.org/obo/EUPATH_"),
+("GECKO",     "http://purl.obolibrary.org/obo/GECKO_"),
+("GO",        "http://purl.obolibrary.org/obo/GO_"),
+("HP",        "http://purl.obolibrary.org/obo/HP_"),
+("IAO",       "http://purl.obolibrary.org/obo/IAO_"),
+("MF",        "http://purl.obolibrary.org/obo/MF_"),
+("MMO",       "http://purl.obolibrary.org/obo/MMO_"),
+("MONDO",     "http://purl.obolibrary.org/obo/MONDO_"),
+("NCBITaxon", "http://purl.obolibrary.org/obo/NCBITaxon_"),
+("NCIT",      "http://purl.obolibrary.org/obo/NCIT_"),
+("OBI",       "http://purl.obolibrary.org/obo/OBI_"),
+("OGMS",      "http://purl.obolibrary.org/obo/OGMS_"),
+("obo",       "http://purl.obolibrary.org/obo/"),
+("oboInOwl",  "http://www.geneontology.org/formats/oboInOwl#"),
+("OMRSE",     "http://purl.obolibrary.org/obo/OMRSE_"),
+("owl",       "http://www.w3.org/2002/07/owl#"),
+("PATO",      "http://purl.obolibrary.org/obo/PATO_"),
+("PDRO",      "http://purl.obolibrary.org/obo/PDRO_"),
+("PR",        "http://purl.obolibrary.org/obo/PR_"),
+("rdfs",      "http://www.w3.org/2000/01/rdf-schema#"),
+("RO",        "http://purl.obolibrary.org/obo/RO_"),
+("STATO",     "http://purl.obolibrary.org/obo/STATO_"),
+("UBERON",    "http://purl.obolibrary.org/obo/UBERON_");
