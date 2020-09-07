@@ -1,27 +1,85 @@
-ID	Label	Parent	Defintion
-ID	LABEL	SC %	A definition
-COB:0000001	quality	
-COB:0000006	material entity	
-COB:0000031	immaterial entity	
-COB:0000032	geographical location	immaterial entity
-COB:0000033	realizable	
-COB:0000034	process	
-COB:0000035	planned process	process
-COB:0000037	biological process	process
-COB:0000055	collection of organisms	material entity
-COB:0000061	information	
-COB:0000069	directive information entity	information
-COB:0000079	plan specification	directive information entity
-COB:0000101	document	information
-COB:0000102	data item	information
-COB:0000107	assay	planned process
-COB:0000111	disposition	realizable
-IAO:0000109	measurement datum	data item
-IAO:0000300	textual entity	information
-IAO:0000612	availability textual entity	textual entity
-IAO:0020000	identifier	information
-OBI:0000094	material processing	planned process
-OBI:0302893	storage	planned process
-OGMS:0000015	clinical history	information
-STATO:0000039	statistic	measurement datum
-STATO:0000047	count	measurement datum
+Label	IHCC Browser Label	Parent	Category	Comment
+LABEL	A 'IHCC browser label'	SC %	A 'IHCC category'	
+clinical measurement data item	physiological measurements	measurement datum	questionnaire/survey data	Replaces GECKO 'physiological measurements'			
+cardiovascular measurement data item	circulation and respiration	clinical measurement data item	physiological measurements	Replaces GECKO 'circulation and respiration'			
+blood pressure measurement data item	blood pressure	cardiovascular measurement data item	circulation and respiration	Replaces GECKO 'blood pressure'			
+body weight data item	weight	body morphological measurement data item	anthropometry	Replaces GECKO 'weight'			
+body morphological measurement data item	anthropometry	clinical measurement data item	physiological measurements	Replaces GECKO 'anthropometry'			
+body height data item	height	body morphological measurement data item	anthropometry	Replaces GECKO 'height'			
+pulse data item	heart rate (HR)	cardiovascular measurement data item	circulation and respiration	Replaces GECKO 'heart rate (HR)'			
+quality				
+material entity				
+immaterial entity				
+geographical location		immaterial entity		
+realizable				
+process				
+planned process		process		
+biological process		process		
+collection of organisms		material entity		
+information				
+directive information entity		information		
+objective specification	aims and objectives	directive information entity	basic cohort attributes	Replaces GECKO 'aims and objectives'			
+plan specification		directive information entity		
+document		information		
+data item		information		
+assay		planned process		
+disposition		realizable		
+cause of participant death	cause of death	information	other questionnaire/survey data					
+hospitalization information	hospitalizations	information	healthcare information					
+occupation	occupation	information	socio-demographic and economic characteristics					
+marital status	marital status	information	socio-demographic and economic characteristics					
+healthcare information	healthcare information	information	questionnaire/survey data					
+environment associated with human dwelling	physical environment	material entity	questionnaire/survey data					
+measurement datum		data item		
+textual entity		information		
+availability textual entity		textual entity		
+consent textual entity	consent/accessibility	textual entity	survey administration	Replaces GECKO 'consent/accessibility'			
+identifier		information		
+belief	personal beliefs and values	disposition	other questionnaire/survey data				
+disease or disorder	diseases	disposition	questionnaire/survey data	Replaces GECKO 'diseases'			
+integumentary system disease	skin and subcutaneous tissue	disease or disorder	diseases				
+musculoskeletal system disease	musculoskeletal system	disease or disorder	diseases				
+connective tissue disease	connective tissue	disease or disorder	diseases				
+digestive system disease	digestive system	disease or disorder	diseases	Replaces GECKO 'digestive system'			
+cancer	oncological	disease or disorder	diseases	Replaces GECKO 'oncological'			
+cardiovascular disease	circulatory system	disease or disorder	diseases	Replaces GECKO 'circulatory system'			
+nervous system disorder	nervous system	disease or disorder	diseases	Replaces GECKO 'nervous system'			
+mental disorder	mental and behaviour disorders	disease or disorder	diseases	Replaces GECKO 'mental and behaviour disorders'			
+respiratory system disease	respiratory system	disease or disorder	diseases	Replaces GECKO 'respiratory system'			
+endocrine system disease	endocrine/nutritional/metabolic disorders	disease or disorder	diseases	Replaces GECKO 'endocrine/nutritional/metabolic disorders'			
+infectious disease	infectious disease	disease or disorder	diseases				
+hematologic disease	blood-related disorders	disease or disorder	diseases	Replaces GECKO 'blood-related disorders'			
+injury	injury	disease or disorder	diseases				
+disease of visual system	visual system	disease or disorder	diseases				
+otorhinolaryngologic disease	diseases of the ear, nose, and/or throat	disease or disorder	diseases				
+poisoning	poisoning	disease or disorder	diseases				
+material processing		planned process		
+genotyping assay	DNA/Genotyping	genomic assay	genomics	Replaces GECKO 'DNA/Genotyping'			
+copy number variation profiling assay	Sequence variants (CNV, SNP arrays)	genomic assay	genomics	Replaces GECKO 'Sequence variants (CNV, SNP arrays)'			
+RNA-seq assay	RNAseq/gene expression	genomic assay	genomics	Replaces GECKO 'RNAseq/gene expression'			
+organism identification assay	microbiology	assay	laboratory measures	Replaces GECKO 'microbiology'			
+epigenetic modification assay	Epigenetics	genomic assay	genomics	Replaces GECKO 'Epigenetics'			
+whole genome sequencing assay	WGS	genomic assay	genomics	Replaces GECKO 'WGS'			
+exome sequencing assay	WES	genomic assay	genomics	Replaces GECKO 'WES'			
+exposure to environmental and workplace carcinogens history	exposure to carcinogens	information	physical environment				
+whole metagenome sequencing assay	Metagenomics	genomic assay	genomics	Replaces GECKO 'Metagenomics'			
+storage		planned process		
+study design	study design	plan specification	basic cohort attributes	Replaces GECKO 'study design'			
+inclusion criterion	criteria for enrollment and recruitment procedures	directive information entity	population data	Replaces GECKO 'criteria for enrollment and recruitment procedures'			
+clinical history		information		
+symptom	signs and symptoms	quality	other questionnaire/survey data	Replaces GECKO 'signs and symptoms'			
+income data	income and possessions	data item	socio-demographic and economic characteristics				
+age	age/birthdate	quality	socio-demographic and economic characteristics	Replaces GECKO 'age/birthdate'			
+biological sex	biological sex	organismal quality	socio-demographic and economic characteristics				
+organismal quality	socio-demographic and economic characteristics	quality	questionnaire/survey data				
+drug prescription	prescription	document	medication	Replaces GECKO 'prescription'			
+drug administration specification	administration	directive information entity	medication	Replaces GECKO 'administration'			
+statistic		measurement datum		
+count		measurement datum		
+date	date and time-related information	measurement datum	survey administration	Replaces GECKO 'date and time-related information'			
+life cycle stage	life stage/time point	process	other questionnaire/survey data				
+blood	blood	organism substance	sample type	Replaces GECKO 'blood'			
+organism substance	sample type	material entity	biosample	Replaces GECKO 'sample type'			
+urine	urine	organism substance	sample type	Replaces GECKO 'urine'			
+saliva	saliva	organism substance	sample type	Replaces GECKO 'saliva'			
+feces	stool	organism substance	sample type	Replaces GECKO 'stool'			
