@@ -126,13 +126,20 @@ build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
 build/imports/%.ttl: build/imports/%.db build/imports/%.txt
 	python3 -m gizmos.extract -d $< -T $(word 2,$^) -n > $@
 
-src/ontology/annotations.owl: $(IMPORT_MODS) | build/robot.jar
+build/annotation-properties.owl: src/ontology/templates/annotation-properties.tsv | build/robot.jar
+	$(ROBOT) template \
+	--template $< \
+	--output $@
+
+src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/annotation-properties.owl  | build/robot.jar
 	$(ROBOT) merge \
-	$(foreach I,$^, --input $(I)) \
+	$(foreach I,$(IMPORT_MODS), --input $(I)) \
 	remove \
 	--term rdfs:label \
 	query \
 	--update src/queries/fix_annotations.rq \
+	merge \
+	--input build/annotation-properties.owl \
 	annotate \
 	--ontology-iri "http://purl.obolibrary.org/obo/cob/$(notdir $@)" \
 	--output $@

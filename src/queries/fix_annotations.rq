@@ -5,4 +5,12 @@ WHERE  { ?s ?p ?o .
 		 ?p a owl:AnnotationProperty .
 		 FILTER (LANG(?o) != "")
 		 FILTER (LANG(?o) != "en") 
-	   }
+	   } ;
+
+DELETE { ?s ?p ?o }
+WHERE  { ?s ?p ?o .
+		 ?s ?p ?o2 .
+		 ?p a owl:AnnotationProperty .
+		 FILTER (LANG(?o) != "")
+		 FILTER (LANG(?o2) != "en") 
+	   } ;
