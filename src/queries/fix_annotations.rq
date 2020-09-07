@@ -1,0 +1,7 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+DELETE { ?s ?p ?o }
+WHERE  { ?s ?p ?o .
+		 ?p a owl:AnnotationProperty .
+		 FILTER (LANG(?o) != "en") 
+	   }

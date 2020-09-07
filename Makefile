@@ -131,6 +131,8 @@ src/ontology/annotations.owl: $(IMPORT_MODS) | build/robot.jar
 	$(foreach I,$^, --input $(I)) \
 	remove \
 	--term rdfs:label \
+	query \
+	--update src/queries/fix_annotations.rq \
 	annotate \
 	--ontology-iri "http://purl.obolibrary.org/obo/cob/$(notdir $@)" \
 	--output $@
@@ -138,17 +140,22 @@ src/ontology/annotations.owl: $(IMPORT_MODS) | build/robot.jar
 
 ### IHCC Browser View
 
-build/query_result.csv: gecko.owl src/get_ihcc_view.rq | build/robot.jar
+build/query_result.csv: gecko.owl src/queries/get_ihcc_view.rq | build/robot.jar
 	$(ROBOT) query \
 	--input $< \
 	--query $(word 2,$^) $@
 
-build/ihcc_view_template.csv: src/ihcc_view.py build/query_result.csv
+build/ihcc_view_template.csv: src/scripts/ihcc_view.py build/query_result.csv
 	python3 $^ $@
 
-views/ihcc-gecko.owl: build/ihcc_view_template.csv | build/robot.jar
+build/ihcc_annotations.ttl: gecko.owl src/queries/build_ihcc_annotations.rq | build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
+views/ihcc-gecko.owl: build/ihcc_view_template.csv build/ihcc_annotations.ttl | build/robot.jar
 	$(ROBOT) template \
 	--template $< \
+	merge \
+	--input $(word 2,$^) \
 	annotate \
 	--ontology-iri $(OBO)/ihcc-gecko.owl \
 	--version-iri $(OBO)/gecko/$(DATE)/ihcc-gecko.owl \
