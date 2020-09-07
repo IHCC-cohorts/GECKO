@@ -242,6 +242,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000037">
+        <obo:IAO_0000115>A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.</obo:IAO_0000115>
         <rdfs:comment>A biological process is an evolved process</rdfs:comment>
     </owl:Class>
     
@@ -305,7 +306,12 @@
 
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000147 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000147"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000147">
+        <obo:IAO_0000115>An information content entity indicating the cause of death for a participant in the study.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:  Jie Zheng, Chris Stoeckert, David Roos, Grant Dorsey</obo:IAO_0000117>
+        <obo:IAO_0000119>Penn Group</obo:IAO_0000119>
+        <dc:source>PRISM</dc:source>
+    </owl:Class>
     
 
 
@@ -315,6 +321,7 @@
         <obo:IAO_0000115 xml:lang="en">an information content entity that is about a part of a health care encounter that occurs in a hospital facility</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person: John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">EuPathDB</obo:IAO_0000119>
+        <oboInOwl:inSubset>ICEMR protein array</oboInOwl:inSubset>
     </owl:Class>
     
 
@@ -339,13 +346,20 @@
 
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000451 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000451"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000451">
+        <obo:IAO_0000115>An information content entity about healthcare that is private or public.</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/EUPATH_0010032 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0010032">
+        <obo:IAO_0000115>environmental system associated with the dwelling used by humans.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:  Cristian Cocos, Jie Zheng, Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Penn Group</obo:IAO_0000119>
+        <dc:source>GEMS</dc:source>
+    </owl:Class>
     
 
 
@@ -414,73 +428,374 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001">
+        <obo:IAO_0000115>A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000408</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:N18</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:799.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2991</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OGMS:0000031</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Orphanet:377788</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:64572001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0012634</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>condition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder, non-neoplastic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diseases and disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medical condition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>other disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0000001</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0002051 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002051"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002051">
+        <obo:IAO_0000115>A disease involving the integumental system.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>MONDO:0045027</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>DOID:16</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:128598002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1290011</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>integumental system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>integumental system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>integumentary disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of integument</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of integumental system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0002051</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0002081 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002081"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002081">
+        <obo:IAO_0000115>A disease involving the musculoskeletal system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:17</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:729.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009140</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C107377</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:928000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0026857</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of musculoskeletal system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>musculoskeletal disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0002081</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0003900 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003900"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003900">
+        <obo:IAO_0000115>A disease involving the connective tissue.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>COHD:253549</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003240</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:105969002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0009782</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>connective tissue disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>connective tissue disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>connective tissue diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>connective tissue disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>connective tissue disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease, connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary disorder of connective tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tissue disease, connective</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of connective tissue</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0003900</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0004335 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
+        <obo:IAO_0000115>A disease or disorder that involves the digestive system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>COHD:4201745</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:77</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000405</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:K92.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:520-579.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:V47.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D005767</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2990</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:53619000</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>alimentary system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenterological system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenterological system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenteropathy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>git disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stomach or intestinal disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of digestive system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0004335</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0004992 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004992"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004992">
+        <obo:IAO_0000115>A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>COHD:443392</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:0050686</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:0050687</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOID:162</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000311</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GARD:0011960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:C80</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:C80.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:195.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:199.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8000/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C9305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_406</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ONCOTREE:MT</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:363346000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0006826</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cell type cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignancy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant Growth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplastic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm (disease), malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organ system cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>MT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0004992</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0004995 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004995"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004995">
+        <obo:IAO_0000115>A disease involving the cardiovascular system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:1287</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000319</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:I00.I99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:390-459.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:420-429.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:423</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:423.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:424</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.81</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:429.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:459.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:459.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D002318</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C2931</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:49601007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0007222</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cardiovascular disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular disease (CVD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of subdivision of hemolymphoid system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>circulatory system disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of cardiovascular system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0004995</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005071 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005071"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005071">
+        <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:863</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000618</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:G00-G99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:G00.G99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:G98</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:G98.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:349.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:349.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26835</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:118940003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0027765</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Nervous_system_disease</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nervous system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nervous system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nervous system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurologic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurological disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurological disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of nervous system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0005071</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005084 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005084"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005084">
+        <obo:IAO_0000115>A disease that has its basis in the disruption of mental process.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EFO:0000677</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:F00.F99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:290-299.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:298.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:V11.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_12669</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:74732009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:CN240636</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disorder of mental process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mental or behavioural disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mental process disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of mental process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0005084</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005087 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005087"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005087">
+        <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:1579</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:J96-J99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:J98</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:460-519.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:500-508.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:503</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:508</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:508.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:508.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:508.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:510-519.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:516</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:516.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:516.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:517</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:517.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:519</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:519.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:519.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:519.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:519.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:V12.60</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:V47.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D012140</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26871</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:50043002</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of respiratory system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of respiratory system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of respiratory system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of respiratory system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0005087</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005151 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005151"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005151">
+        <obo:IAO_0000115>A disease involving the endocrine system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:28</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0001379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:E34.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:259.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:259.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D004700</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:362969004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0014130</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrinopathy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>thyroid or other glandular disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of endocrine system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0005151</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005550 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005550">
+        <obo:IAO_0000115>A disorder resulting from the presence and activity of a microbial, viral, or parasitic agent. It can be transmitted by direct or indirect contact.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:0050117</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0005741</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:A00.B99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:079.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:136.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:136.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>IDO:0000436</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003141</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26726</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:40733004</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>clinical infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>communicable disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious diseases and manifestations</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>transmissible disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disease by infectious agent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0005550</oboInOwl:id>
         <rdfs:comment>Replaces &apos;infection&apos; in disease hierarchy. OBI imported term infection is moved to pathologic process. This class is a container class for infectious diseases, not the process of infection itself.</rdfs:comment>
     </owl:Class>
     
@@ -489,6 +804,41 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/MONDO_0005570 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005570">
+        <obo:IAO_0000115>A disease involving the hematopoietic system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DOID:74</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0005803</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GTR:AN1320635</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:D75.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:280-289.99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:289.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9:289.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D006402</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C26323</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Orphanet:97992</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:414022008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0018939</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:CN206939</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:CN882913</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>blood disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>blood disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>blood dyscrasia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of hematopoietic system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of the blood and blood-forming organs</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of hematopoietic system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of hematopoietic system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematologic and lymphocytic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematological disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematological disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematological system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematopoietic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematopoietic system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematopoietic system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>rare hematologic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>blood dyscrasia NOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of hematopoietic system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>hematological disorders and malignancies</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0005570</oboInOwl:id>
         <rdfs:comment>placeholder for lymphoid disease</rdfs:comment>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/254</rdfs:seeAlso>
     </owl:Class>
@@ -497,19 +847,73 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0021178 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021178"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021178">
+        <obo:IAO_0000115>Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>COHD:440921</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000546</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10:S00.T98</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D014947</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C3671</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>injury</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>trauma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>traumatic injury</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>wound</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>MONDO:0021178</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0024458 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024458"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024458">
+        <obo:IAO_0000115>A disease that involves the visual system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>SCTID:128127008</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>disease of visual system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of visual system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of visual system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>visual system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>visual system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>visual system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of visual system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0024458</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0024623 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024623">
+        <obo:IAO_0000115>Pathological processes of the ear, the nose, and the throat, also known as the ENT diseases.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9:478.19</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D010038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C118420</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:232208008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0029896</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0395797</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ear, nose and throat disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ear, nose or throat disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ear/nose/throat disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>otolaryngologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>otorhinolaryngologic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ENT disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ENT diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, ENT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otorhinolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otorhinolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, ENT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otorhinolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otorhinolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngologic disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngologic diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngological disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngological diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otorhinolaryngological disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otorhinolaryngological diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0024623</oboInOwl:id>
         <rdfs:comment>Editor note: consider uberon class</rdfs:comment>
     </owl:Class>
     
@@ -517,15 +921,31 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0029000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0029000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0029000">
+        <obo:IAO_0000115>A condition or physical state produced by the ingestion, injection, inhalation of or exposure to a deleterious agent.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EFO:0008546</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D011041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:75478009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0302332</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>Poisonings</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>intoxication</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>poisoning syndrome</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>MONDO:0029000</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <obo:IAO_0000111>material processing</obo:IAO_0000111>
+        <obo:IAO_0000112>A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     </owl:Class>
@@ -534,63 +954,129 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000435 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000435"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000435">
+        <obo:IAO_0000111>genotyping assay</obo:IAO_0000111>
+        <obo:IAO_0000112>High-throughput genotyping of oncogenic human papilloma viruses with MALDI-TOF mass spectrometry. Clin Chem. 2008 Jan;54(1):86-92. Epub 2007 Nov 2.PMID: 17981923</obo:IAO_0000112>
+        <obo:IAO_0000115>An assay which generates data about a genotype from a specimen of genomic DNA. A variety of techniques and instruments can be used to produce information about sequence variation at particular genomic positions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>SNP analysis</obo:IAO_0000118>
+        <obo:IAO_0000118>genotype profiling</obo:IAO_0000118>
+        <obo:IAO_0000119>OBI Biomaterial</obo:IAO_0000119>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000537 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000537"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000537">
+        <obo:IAO_0000111>copy number variation profiling assay</obo:IAO_0000111>
+        <obo:IAO_0000112>Profiling of copy number variations (CNVs) in healthy individuals from three ethnic groups using a human genome 32 K BAC-clone-based array. PMID:18058796</obo:IAO_0000112>
+        <obo:IAO_0000115>An assay that determines lost or amplified genomic regions of DNA by comparing genomic DNA originating from tissues from the same or different individuals using specific techniques such as CGH, array CGH, SNP genotyping</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>CNV analysis</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001271 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001271"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001271">
+        <obo:IAO_0000111>RNA-seq assay</obo:IAO_0000111>
+        <obo:IAO_0000115>An transcription profiling assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000118>transcription profiling by high throughput sequencing</obo:IAO_0000118>
+        <obo:IAO_0000119>EFO:0002770</obo:IAO_0000119>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001624 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001624"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001624">
+        <obo:IAO_0000111>organism identification assay</obo:IAO_0000111>
+        <obo:IAO_0000115>An assay that identifies the organism species in a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0002020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002020">
+        <obo:IAO_0000111>epigenetic modification assay</obo:IAO_0000111>
+        <obo:IAO_0000115>An assay that identifies epigenetic modifications including histone modifications, open chromatin, and DNA methylation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>Penn group</obo:IAO_0000119>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0002117 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002117"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002117">
+        <obo:IAO_0000111>whole genome sequencing assay</obo:IAO_0000111>
+        <obo:IAO_0000112>WGS permits comprehensive sequencing of introns and exons, whereas whole exome sequencing (WES) allows deeper sequencing of exonic regions at a lower cost. Due to the large number of genetic variants found in each genome, it is necessary to use filtering approaches to distinguish deleterious from benign variants. WES has been used successfully to identify novel genetic causes of primary immunodeficiency. Complex structural variations and non-Mendelian disorders remain challenges for WGS.</obo:IAO_0000112>
+        <obo:IAO_0000115>A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000116>Genotyping assays should ideally identify which part of the genome the information is about. We do not currently have a good way to do this. That information should be added later.</obo:IAO_0000116>
+        <obo:IAO_0000117>ImmPort</obo:IAO_0000117>
+        <obo:IAO_0000118>WGS</obo:IAO_0000118>
+        <obo:IAO_0000119>PMID:23095910</obo:IAO_0000119>
+        <obo:IAO_0000119>PMID:25827230</obo:IAO_0000119>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0002118 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002118"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002118">
+        <obo:IAO_0000111>exome sequencing assay</obo:IAO_0000111>
+        <obo:IAO_0000112>DNA was extracted from the Ficoll pellet of blood taken from congenital asplenia patients. Unamplified, high-molecular weight, RNase-treated genomic DNA (4_6 _g) was used for whole exome sequencing (WES) with the use of Agilent 71 Mb (V4 + UTR) singlesample capture and an Illumina HiSeq 2000. Sequencing was carried out so as to obtain 30_ coverage from 2 _ 100-bp paired-end reads. We used the Annovar tool (25) to annotate the resulting highquality (HQ) variants. In the regions targeted by WES capture (81.5% of the consensus coding genome), the mean numbers of single-nucleotide variants (SNVs) and small insertions/deletions (indels) detected per sample were 84,192 and13,325, respectively. After filtering, a mean of 74,398 (95.3%) high-quality (HQ) SNVs and 9,033 (70.6%) HQ indels were called. A mean of 105 coding HQ SNVs and 32 indels was identified.</obo:IAO_0000112>
+        <obo:IAO_0000115>A DNA sequencing assay that intends to provide information about the sequence of the protein coding components of a genome (exons).</obo:IAO_0000115>
+        <obo:IAO_0000117>ImmPort</obo:IAO_0000117>
+        <obo:IAO_0000118>WES</obo:IAO_0000118>
+        <obo:IAO_0000119>PMID:25827230</obo:IAO_0000119>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0002415 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002415"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002415">
+        <obo:IAO_0000111>exposure to environmental and workplace carcinogens history</obo:IAO_0000111>
+        <obo:IAO_0000115>A information content entity that indicates the exposure of an individual to carcinogens in the workplace or environment.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
+        <obo:IAO_0000119>OBIB</obo:IAO_0000119>
+        <obo:IAO_0000234>NCI BBRB</obo:IAO_0000234>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0002623 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002623"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002623">
+        <obo:IAO_0000111>whole metagenome sequencing assay</obo:IAO_0000111>
+        <obo:IAO_0000115>A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.</obo:IAO_0000115>
+        <obo:IAO_0000116>Whole metagenome sequencing has been used to explore the composition and metabolic capability of communities of microbes found in the environment (e.g. in soil, water, etc.) and in humans and other species (e.g. in the gut, oral cavity, etc.).</obo:IAO_0000116>
+        <obo:IAO_0000117>Rebecca Jackson</obo:IAO_0000117>
+        <obo:IAO_0000118>WMS</obo:IAO_0000118>
+        <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
+        <obo:IAO_0000119>Michelle Giglio</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1056</obo:IAO_0000233>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0302893 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302893">
+        <obo:IAO_0000111>storage</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 18550121.Total Prostate Specific Antigen Stability Confirmed After Long-Term Storage of Serum at -80C. J Urol. 2008 Jun 10.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A maintenance process by which material entities that are not actively metabolizing are placed in well identified location and possibly under controlled environment in ad-hoc devices/structures in order to preserve and protect them from decay/alteration and maintain availability</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI-Branch</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -600,6 +1086,9 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
         <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design.</obo:IAO_0000112>
+        <obo:IAO_0000115>A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
+        <obo:IAO_0000116>Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
         <obo:IAO_0000232 xml:lang="en">rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol.</obo:IAO_0000232>
     </owl:Class>
@@ -622,25 +1111,38 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
+        <obo:IAO_0000115>A time quality inhering in a bearer by virtue of how long the bearer has existed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000011</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000047</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
+        <obo:IAO_0000115>A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001995</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PDRO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000024">
+        <obo:IAO_0000112>&quot;Prescription for John Smith : Ativan 2mg tablets, take 1 tablet twice daily by mouth as needed if anxious, dispense 60 tablets, renew 12 times. Signed by Dr Hazard. Date: 15/10/29&quot;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A health care prescription specifying the initiation, modification or cessation of a drug administration.</obo:IAO_0000115>
     </owl:Class>
     
@@ -650,6 +1152,7 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0010022">
         <obo:IAO_0000111 xml:lang="en">prescribed drug administration specification</obo:IAO_0000111>
+        <obo:IAO_0000112>&apos;take Aspirin 81 mg oral tablet, 1 tablet once daily by mouth, start today&apos; or the synonymous abbreviated version &apos;Aspirin 81 mg tablet PO DIE&apos;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A drug administration description that specifies a drug administration prescribed or reported by an healthcare provider.
 
 It specifies:
@@ -667,6 +1170,7 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Statistic).</obo:IAO_0000119>
         <obo:STATO_0000032 xml:lang="en">statistic</obo:STATO_0000032>
@@ -680,6 +1184,7 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">a count of 4 resulting from counting limbs in humans</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a count is a data item denoted by an integer and represented the number of instances or occurences of an entity</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
         <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
@@ -691,6 +1196,9 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000093">
         <obo:IAO_0000115 xml:lang="en">Information about a calendar date or timestamp indicating day, month, year and time of an event.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
     </owl:Class>
     
@@ -698,37 +1206,215 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000116>this class represents a proper part of the life cycle of an organism. The class &apos;life cycle&apos; should not be placed here</obo:IAO_0000116>
+        <obo:UBPROP_0000012>the WBls class &apos;all stages&apos; belongs here as it is the superclass of other WBls stages</obo:UBPROP_0000012>
+        <obo:UBPROP_0000012>we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>BILS:0000105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBdv:00007012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:24120</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HsapDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MmusDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OlatDv:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PdumDv:0000090</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBls:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:1000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFS:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFS:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ncithesaurus:Developmental_Stage</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>developmental stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0000105</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000178 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178">
+        <obo:IAO_0000115>A fluid that is composed of blood plasma and erythrocytes.</obo:IAO_0000115>
+        <obo:IAO_0000232>This class excludes blood analogues, such as the insect analog of blood. See UBERON:0000179 haemolymphatic fluid.</obo:IAO_0000232>
+        <obo:UBPROP_0000001>A complex mixture of cells suspended in a liquid matrix that delivers nutrients to cells and removes wastes. (Source: BioGlossary, www.Biology-Text.com)[TAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000001>Highly specialized circulating tissue consisting of several types of cells suspended in a fluid medium known as plasma.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000002>relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]</obo:UBPROP_0000002>
+        <obo:UBPROP_0000003>Recent findings strongly suggest that the molecular pathways involved in the development and function of blood cells are highly conserved among vertebrates and various invertebrates phyla. (...) There is now good reason to believe that, in vertebrates and invertebrates alike, blood cell lineages diverge from a common type of progenitor cell, the hemocytoblast.[well established][VHOG]</obo:UBPROP_0000003>
+        <oboInOwl:hasDbXref>AAO:0000046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000089</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0079</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000296</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0000176</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:418</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:16332</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:02000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EV:0100047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:9670</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:965</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000059</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D001769</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000315</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12434</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OpenCyc:Mx4rvVjI8JwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0005767</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0000224</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000124</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Blood</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>portion of blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>vertebrate blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>whole blood</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000178</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000463 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000463">
+        <obo:IAO_0000115>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>AAO:0010839</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-2101</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:35178</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00007019</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:9669</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002450</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SPD:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001487</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001824</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001726</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0004001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001487</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:BodySubstance</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>body fluid or substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>body substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organism substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of body substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of organism substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0000463</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001088 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001088"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001088">
+        <obo:IAO_0000115>Excretion that is the output of a kidney</obo:IAO_0000115>
+        <obo:UBPROP_0000008>kidney excreta from some taxa (e.g. in aves) may not be liquid</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref>BTO:0001419</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-1092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0001939</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:36554</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:00002047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:12274</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:1189</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D014556</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OpenCyc:Mx4rvVjGppwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0042036</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Urine</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0001088</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001836 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001836"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001836">
+        <obo:IAO_0000115>A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions.</obo:IAO_0000115>
+        <obo:UBPROP_0000007>salivary</obo:UBPROP_0000007>
+        <obo:UBPROP_0000008>We classify a wide variety of not necessarily homologous fluids here. In humans, the saliva is a turbid and slightly viscous fluid, generally of an alkaline reaction, and is secreted by the parotid, submaxillary, and sublingual glands. In the mouth the saliva is mixed with the secretion from the buccal glands. In man and many animals, saliva is an important digestive fluid on account of the presence of the peculiar enzyme, ptyalin</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref>BTO:0001202</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0891</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:36536</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:02000036</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:59862</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:1167</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002507</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000444</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D012463</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13275</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OpenCyc:Mx4rvVjJ95wpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0036087</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Saliva</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>salivary gland secretion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>sailva normalis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>saliva atomaris</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>saliva molecularis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001836</oboInOwl:id>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001988 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001988">
+        <obo:IAO_0000115>Portion of semisolid bodily waste discharged through the anus[MW,modified]</obo:IAO_0000115>
+        <obo:UBPROP_0000001>Excretion in semisolid state processed by the intestine.[FMA]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000007>fecal</obo:UBPROP_0000007>
+        <oboInOwl:hasBroadSynonym>excreta</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>BTO:0000440</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-2345</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:00002003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:64183</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:1199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002509</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D005243</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13234</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OpenCyc:Mx4rvVjJMZwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0015733</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Feces</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>faeces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fecal material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fecal matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>matières fécales@fr</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>merde@fr</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>partie de la merde@fr</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>piece of shit</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>porción de mierda@es</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of excrement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of faeces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of fecal material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of fecal matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of feces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portionem cacas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stool</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>teil der fäkalien@de</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cow dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>cow pat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>fewmet</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>frass</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>guano</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of guano</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of scat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>scat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>spraint</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>droppings</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>excrement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ordure</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>spoor</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001988</oboInOwl:id>
+    </owl:Class>
 </rdf:RDF>
 
 
