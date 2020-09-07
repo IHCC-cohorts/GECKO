@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-08-26/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-09-07/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -706,42 +706,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social environment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_1 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_1">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">housing characteristics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_2 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neighbourhood characteristics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_3 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_3">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">workplace characteristics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_4 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_4">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000451"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">routine visits to health professionals</rdfs:label>
     </owl:Class>
     
 

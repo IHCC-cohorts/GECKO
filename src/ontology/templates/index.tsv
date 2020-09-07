@@ -85,10 +85,6 @@ GECKO:0000128	information on functional limitations
 GECKO:0000129	information on use of assistive devices
 GECKO:0000130	religious affiliation
 GECKO:0000131	human social environment
-GECKO:EUPATH_1	human dwelling environment
-GECKO:EUPATH_2	human neighborhood environment
-GECKO:EUPATH_3	human workplace environment
-GECKO:EUPATH_4	routine clinical visit information
 IAO:0000109	measurement datum
 IAO:0000300	textual entity
 IAO:0000612	availability textual entity

@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-08-26/gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-09-07/gecko.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1120,54 +1120,6 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immaterial entity that encompasses the domain made up of interactions between the individual&apos;s physical environment, social processes, and relationships with other individuals and groups.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10352860</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human social environment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_1 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_1">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
-        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">housing characteristics</obo:GECKO_9000001>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment associated with human dwelling that constitutes a human&apos;s immediate residence.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human dwelling environment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_2 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
-        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neighbourhood characteristics</obo:GECKO_9000001>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment associated with human dwelling that constitutes the immediate social and/or geographical region in which a human resides.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human neighborhood environment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_3 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_3">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
-        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">workplace characteristics</obo:GECKO_9000001>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment associated with human dwelling that constitutes the physical location in which a human works.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human workplace environment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GECKO_EUPATH_4 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_EUPATH_4">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
-        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">routine visits to health professionals</obo:GECKO_9000001>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that is about a part of a routine clinical visit.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">routine clinical visit information</rdfs:label>
     </owl:Class>
     
 
