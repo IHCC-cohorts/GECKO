@@ -107,7 +107,7 @@ gecko.owl: build/properties.ttl src/ontology/templates/index.tsv src/ontology/te
 
 ### Imports
 
-IMPORTS := cob eupath iao mf mondo obi omrse pato pdro stato uberon # cmo oogms
+IMPORTS := bfo eupath go iao mf mondo obi omrse pato pco pdro stato uberon # cmo ogms
 IMPORT_MODS := $(foreach I,$(IMPORTS),build/imports/$(I).ttl)
 
 UC = $(shell echo '$1' | tr '[:lower:]' '[:upper:]')

@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-09-07/gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-09-10/gecko.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -28,6 +28,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
     
 
 
@@ -127,6 +139,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001847 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_9991118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000032 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -184,6 +226,18 @@
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     
 
 
@@ -327,6 +381,152 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <obo:BFO_0000179>process</obo:BFO_0000179>
+        <obo:BFO_0000180>Process</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a process of cell-division, \ a beating of the heart</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a process of meiosis</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a process of sleeping</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the course of a disease</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your process of aging.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)</obo:IAO_0000116>
+        <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003]</obo:IAO_0000602>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:BFO_0000179>disposition</obo:BFO_0000179>
+        <obo:BFO_0000180>Disposition</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">an atom of element X has the disposition to decay to an atom of element Y</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">certain people have a predisposition to colon cancer</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">children are innately disposed to categorize objects in certain ways.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the cell wall is disposed to filter chemicals in endocytosis and exocytosis</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type.</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002]</obo:IAO_0000602>
+        <rdfs:label>disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <obo:BFO_0000179>realizable</obo:BFO_0000179>
+        <obo:BFO_0000180>RealizableEntity</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the disposition of your blood to coagulate</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of your reproductive organs</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of this boundary to delineate where Utah and Colorado meet</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002]</obo:IAO_0000602>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realizable entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <obo:BFO_0000179>quality</obo:BFO_0000179>
+        <obo:BFO_0000180>Quality</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the ambient temperature of this portion of air</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the color of a tomato</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the length of the circumference of your waist</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mass of this piece of gold.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nose</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nostril</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001]</obo:IAO_0000602>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <obo:BFO_0000179>site</obo:BFO_0000179>
+        <obo:BFO_0000180>Site</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">Manhattan Canyon)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hole in the interior of a portion of cheese</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a rabbit hole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an air traffic control region defined in the airspace above an airport</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Grand Canyon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Piazza San Marco</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the cockpit of an aircraft</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the hold of a ship</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of a kangaroo pouch</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of the trunk of your car</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your bedroom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your office</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your refrigerator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the lumen of your gut</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your left nostril (a fiat part – the opening – of your left nasal cavity)</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002]</obo:IAO_0000602>
+        <rdfs:label>site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <obo:BFO_0000179>material</obo:BFO_0000179>
+        <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a forest fire</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hurricane</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a photon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a puff of smoke</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sea wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a tornado</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an aggregate of human beings.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an energy wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the undetached arm of a human being</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002]</obo:IAO_0000602>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000041">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immaterial entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CMO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000000">
@@ -404,162 +604,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000001">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000006">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000031">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immaterial entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000032 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographical location</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000033">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realizable</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000034">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000035 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planned process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000037 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
-        <obo:IAO_0000115>A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.</obo:IAO_0000115>
-        <rdfs:comment>A biological process is an evolved process</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000055 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collection of organisms</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000061 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000061">
-        <rdfs:comment>Pier: &apos;data, information or knowledge&apos;. OR &apos;representation</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000069 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000069">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">directive information entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000076 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000076">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
-        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aims and objectives</obo:GECKO_9000001>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000079 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plan specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000101 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">document</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data item</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000107 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000107">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000111 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000111">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disposition</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000147 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000147">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cause of death</obo:GECKO_9000001>
         <obo:IAO_0000115>An information content entity indicating the cause of death for a participant in the study.</obo:IAO_0000115>
@@ -574,7 +622,7 @@
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000308">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitalizations</obo:GECKO_9000001>
         <obo:IAO_0000115 xml:lang="en">an information content entity that is about a part of a health care encounter that occurs in a hospital facility</obo:IAO_0000115>
@@ -589,7 +637,7 @@
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000359 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000359">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</obo:GECKO_9000001>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about an activity that realizes a social role and is often performed for payment.</obo:IAO_0000115>
@@ -601,7 +649,7 @@
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000374 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000374">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marital status</obo:GECKO_9000001>
         <obo:IAO_0000115 xml:lang="en">a categorical value specification that is about a human being and specifies whether that human being is joined to another human being in marriage</obo:IAO_0000115>
@@ -615,7 +663,7 @@
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000451 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000451">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000001>
         <obo:IAO_0000115>An information content entity about healthcare that is private or public.</obo:IAO_0000115>
@@ -627,7 +675,7 @@
     <!-- http://purl.obolibrary.org/obo/EUPATH_0010032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0010032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</obo:GECKO_9000001>
         <obo:IAO_0000115>environmental system associated with the dwelling used by humans.</obo:IAO_0000115>
@@ -642,7 +690,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timeline</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A directive information entity that specifies the sequence in which a series of events occurred or will occur.</obo:IAO_0000115>
@@ -659,12 +707,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000055"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that is about a population of organisms.</obo:IAO_0000115>
@@ -680,7 +728,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000032"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000000>
@@ -698,7 +746,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000000>
@@ -717,12 +765,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000055"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographic data</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality which inheres in a population of organisms.</obo:IAO_0000115>
@@ -770,7 +818,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data collection events</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is a part of an investigation in which raw data is collected.</obo:IAO_0000115>
@@ -806,7 +854,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000107"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory measures</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay that investigates the genome or genomes of an individual organism or population of organisms.</obo:IAO_0000115>
@@ -909,7 +957,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000063 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">birthplace</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical location in which an individual was born.</obo:IAO_0000115>
@@ -921,7 +969,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical location in which an individual currently resides.</obo:IAO_0000115>
@@ -945,7 +993,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family and household structure</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that is about the structure of an individual&apos;s family and/or household.</obo:IAO_0000115>
@@ -1065,7 +1113,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000094">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
@@ -1083,7 +1131,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000096">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000037"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug response(s)</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological process that results from a drug stimulus.</obo:IAO_0000115>
@@ -1221,7 +1269,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000121">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000037"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive and psychological measurements</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological distress and emotions</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological process that results from neurophysiological changes in response to internal and external events.</obo:IAO_0000115>
@@ -1306,7 +1354,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health and quality of life</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">functional limitations</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that is about an individual&apos;s limitations in activities that involve caring for an moving the body.</obo:IAO_0000115>
@@ -1319,7 +1367,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000129">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health and quality of life</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use of assistive devices</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about an individual&apos;s use of assistive devices in performing daily activities.</obo:IAO_0000115>
@@ -1332,7 +1380,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000130 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000130">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">religion</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about an individual&apos;s association with a religion, denomiation, or sub- or non-denominational religious group.</obo:IAO_0000115>
@@ -1345,7 +1393,7 @@
     <!-- http://purl.obolibrary.org/obo/GECKO_0000131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social environment</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immaterial entity that encompasses the domain made up of interactions between the individual&apos;s physical environment, social processes, and relationships with other individuals and groups.</obo:IAO_0000115>
@@ -1355,10 +1403,132 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aims and objectives</obo:GECKO_9000001>
+        <obo:IAO_0000111 xml:lang="en">objective specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Barry Smith</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000116>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plan specification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000111 xml:lang="en">measurement datum</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
@@ -1374,7 +1544,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
@@ -1383,6 +1553,19 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">document</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">document</rdfs:label>
     </owl:Class>
     
 
@@ -1422,7 +1605,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">identifier</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifier</rdfs:label>
@@ -1433,7 +1616,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000111"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal beliefs and values</obo:GECKO_9000001>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief</rdfs:label>
@@ -1444,7 +1627,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/MONDO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000111"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
@@ -2018,10 +2201,47 @@ Written informed consent was obtained from the patient’s parents for publicati
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000111>planned process</obo:IAO_0000111>
+        <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000116>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
+        <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
+objectives is a planned process.</obo:IAO_0000116>
+        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
+        <rdfs:label>planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">assay</obo:IAO_0000111>
+        <obo:IAO_0000112>Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
+        <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">measuring</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">scientific observation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:OBI_0001847>study assay</obo:OBI_0001847>
+        <obo:OBI_9991118>any method</obo:OBI_9991118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111>material processing</obo:IAO_0000111>
         <obo:IAO_0000112>A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
@@ -2089,7 +2309,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OBI_0001624 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001624">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000107"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory measures</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microbiology</obo:GECKO_9000001>
         <obo:IAO_0000111>organism identification assay</obo:IAO_0000111>
@@ -2157,7 +2377,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OBI_0002415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002415">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exposure to carcinogens</obo:GECKO_9000001>
         <obo:IAO_0000111>exposure to environmental and workplace carcinogens history</obo:IAO_0000111>
@@ -2192,7 +2412,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OBI_0302893 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302893">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111>storage</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 18550121.Total Prostate Specific Antigen Stability Confirmed After Long-Term Storage of Serum at -80C. J Urol. 2008 Jun 10.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A maintenance process by which material entities that are not actively metabolizing are placed in well identified location and possibly under controlled environment in ad-hoc devices/structures in order to preserve and protect them from decay/alteration and maintain availability</obo:IAO_0000115>
@@ -2206,7 +2426,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000079"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design</obo:GECKO_9000001>
         <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
@@ -2224,7 +2444,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OBI_0500027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">criteria for enrollment and recruitment procedures</obo:GECKO_9000001>
         <obo:IAO_0000111 xml:lang="en">inclusion criterion</obo:IAO_0000111>
@@ -2242,7 +2462,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OGMS_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical history</rdfs:label>
     </owl:Class>
     
@@ -2251,7 +2471,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signs and symptoms</obo:GECKO_9000001>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symptom</rdfs:label>
@@ -2262,7 +2482,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000501">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">income and possessions</obo:GECKO_9000001>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">income data</rdfs:label>
@@ -2273,7 +2493,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</obo:GECKO_9000001>
         <obo:IAO_0000115>A time quality inhering in a bearer by virtue of how long the bearer has existed.</obo:IAO_0000115>
@@ -2301,7 +2521,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000001>
         <obo:IAO_0000115>A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
@@ -2312,10 +2532,19 @@ Written informed consent was obtained from the patient’s parents for publicati
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PDRO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000101"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescription</obo:GECKO_9000001>
         <obo:IAO_0000112>&quot;Prescription for John Smith : Ativan 2mg tablets, take 1 tablet twice daily by mouth as needed if anxious, dispense 60 tablets, renew 12 times. Signed by Dr Hazard. Date: 15/10/29&quot;</obo:IAO_0000112>
@@ -2328,7 +2557,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <!-- http://purl.obolibrary.org/obo/PDRO_0010022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0010022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administration</obo:GECKO_9000001>
         <obo:IAO_0000111 xml:lang="en">prescribed drug administration specification</obo:IAO_0000111>
@@ -2392,7 +2621,7 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</obo:GECKO_9000001>
         <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
@@ -2468,7 +2697,7 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/UBERON_0000463 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000463">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample type</obo:GECKO_9000001>
         <obo:IAO_0000115>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.</obo:IAO_0000115>

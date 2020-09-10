@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-09-07/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/2020-09-10/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -310,15 +310,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000294">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart rate (HR)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000076 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000076">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000001"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aims and objectives</rdfs:label>
     </owl:Class>
     
 
@@ -1079,6 +1070,29 @@
         <obo:IAO_0000119>PMID:10352860</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>human social environment</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000001"/>
+        <obo:IAO_0000111 xml:lang="en">objective specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Barry Smith</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>objective specification</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aims and objectives</rdfs:label>
     </owl:Class>
     
 
