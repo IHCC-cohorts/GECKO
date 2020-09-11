@@ -84,7 +84,7 @@ gecko.owl: build/properties.ttl src/ontology/templates/index.tsv src/ontology/te
 	--annotation dc11:title "$(TITLE)" \
 	--annotation rdfs:comment "$(COMMENT)" \
 	--ontology-iri $(OBO)/gecko.owl \
-	--version-iri $(OBO)/gecko/$(DATE)/gecko.owl \
+	--version-iri $(OBO)/gecko/releases/$(DATE)/gecko.owl \
 	--output $@
 
 ### IHCC Browser View
@@ -102,7 +102,7 @@ views/ihcc-gecko.owl: build/ihcc_view_template.csv | build/robot.jar
 	--template $< \
 	annotate \
 	--ontology-iri $(OBO)/ihcc-gecko.owl \
-	--version-iri $(OBO)/gecko/$(DATE)/ihcc-gecko.owl \
+	--version-iri $(OBO)/gecko/releases/$(DATE)/views/ihcc-gecko.owl \
 	--output $@
 
 
