@@ -63,8 +63,14 @@ build/robot-tree.jar: | build
 build/templates.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1bYnbxvPPFO7D7zg9Tr2e32jb8l13kMZ81vP_iaSZCXg/export?format=xlsx"
 
-src/ontology/templates/index.tsv src/ontology/templates/gecko.tsv src/ontology/templates/properties.tsv src/ontology/templates/external.tsv: build/templates.xlsx | build/robot.jar
+TEMPLATES := src/ontology/templates/index.tsv \
+             src/ontology/templates/gecko.tsv \
+             src/ontology/templates/properties.tsv \
+             src/ontology/templates/external.tsv
+
+$(TEMPLATES): build/templates.xlsx src/scripts/fix_tsv.py | build/robot.jar
 	xlsx2csv -d tab -n $(basename $(notdir $@)) --ignoreempty $< $@
+	python3 $(word 2,$^) $@
 
 build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
 	$(ROBOT) template \
