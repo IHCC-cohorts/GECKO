@@ -101,7 +101,7 @@ views/ihcc-gecko.owl: build/ihcc_view_template.csv | build/robot.jar
 	$(ROBOT) template \
 	--template $< \
 	annotate \
-	--ontology-iri $(OBO)/ihcc-gecko.owl \
+	--ontology-iri $(OBO)/gecko/ihcc-gecko.owl \
 	--version-iri $(OBO)/gecko/releases/$(DATE)/views/ihcc-gecko.owl \
 	--output $@
 
