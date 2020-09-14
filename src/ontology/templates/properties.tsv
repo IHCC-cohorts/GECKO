@@ -1,6 +1,6 @@
 ID	Label	Type																							
 ID	LABEL	TYPE																							
-COB:0000072	part of	owl:ObjectProperty
+BFO:0000050	part of	owl:ObjectProperty
 GECKO:9000000	IHCC category	owl:AnnotationProperty
 GECKO:9000001	IHCC browser label	owl:AnnotationProperty
 IAO:0000115	definition	owl:AnnotationProperty
