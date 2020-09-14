@@ -6,7 +6,7 @@ BFO:0000017	realizable entity
 BFO:0000019	quality
 BFO:0000029	site
 BFO:0000040	material entity
-BFO:0000041	immaterial entity
+BFO:0000141	immaterial entity
 CMO:0000000	clinical measurement data item
 CMO:0000001	cardiovascular measurement data item
 CMO:0000003	blood pressure measurement data item

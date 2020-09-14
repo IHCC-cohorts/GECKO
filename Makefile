@@ -121,10 +121,15 @@ UC = $(shell echo '$1' | tr '[:lower:]' '[:upper:]')
 build/imports/%.owl: | build/imports
 	curl -Lk -o $@ http://purl.obolibrary.org/obo/$(notdir $@)
 
-build/imports/%.db: src/scripts/prefixes.sql build/imports/%.owl | build/rdftab
+build/imports/%.owl.gz: build/imports/%.owl
+	gzip -f $<
+
+build/imports/%.db: src/scripts/prefixes.sql | build/imports/%.owl.gz build/rdftab
+	gunzip -f $(basename $@).owl.gz
 	rm -rf $@
 	sqlite3 $@ < $<
-	./build/rdftab $@ < $(word 2,$^)
+	./build/rdftab $@ < $(basename $@).owl
+	gzip -f $(basename $@).owl
 
 build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
 	awk -F '\t' '{print $$1}' $< | tail -n +3 | sed -n '/$(call UC,$(notdir $(basename $@))):/p' > $@
