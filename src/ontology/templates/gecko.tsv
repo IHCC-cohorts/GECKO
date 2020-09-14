@@ -5,9 +5,9 @@ population data item	population data	data item	A data item that is about a popul
 population location	location	population data item	A population data item that is about the geographical location of a population of organisms.		population data		site			
 population size	num. participants	sample size	A sample size that is about the count of individual organisms in a population.		population data		collection of organisms			
 population quality	demographic data	quality	A quality which inheres in a population of organisms.		basic cohort attributes	equivalent		collection of organisms		
-population sex or sexes	sex(es) studied in cohort	population quality	A population quality concerning the sex or sexes of the population.		demographic data																							
-population gender or genders	gender(s) studied in cohort	population quality	A population quality concerning the gender or genders of the population.		demographic data																							
-population age range	age range	population quality	A population quality concerning the age range of a population.		demographic data																							
+population sex or sexes	sex(es) studied in cohort	population quality	A population quality concerning the sex or sexes of the population.		demographic data					
+population gender or genders	gender(s) studied in cohort	population quality	A population quality concerning the gender or genders of the population.		demographic data					
+population age range	age range	population quality	A population quality concerning the age range of a population.		demographic data					
 data collection	data collection events	planned process	A planned process that is a part of an investigation in which raw data is collected.		basic cohort attributes					
 blood collected from fasting subject	fasting or non-fasting	blood	Blood that is collected from an organism which has been fasting for a given amount of time.		blood					
 biosample storage	storage method	storage	A storage process for a biosample collected from an organism.		biosample					
@@ -22,13 +22,13 @@ ethnicity	ethnicity/race	organismal quality	An organismal quality inhering in a 
 birthplace location	birthplace	site	A geographical location in which an individual was born.		socio-demographic and economic characteristics					
 residence location	residence	site	A geographical location in which an individual currently resides.		socio-demographic and economic characteristics					
 education level	education	organismal quality	An organismal quality inhering in a bearer by virute of the bearer's highest level of formal education completed.		socio-demographic and economic characteristics					
-family and household structure	family and household structure	information content entity	Information that is about the structure of an individual's family and/or household.		socio-demographic and economic characteristics																							
+family and household structure	family and household structure	information	Information that is about the structure of an individual's family and/or household.		socio-demographic and economic characteristics					
 lifestyle history	lifestyle and behaviours	clinical history	A clinical history that is about the lifestyle and behaviors of an individual which may impact health outcomes.		questionnaire/survey data					
 tobacco use history	tobacco	lifestyle history	A lifestyle history that is about the tobacco use or exposure of an individual.		lifestyle and behaviours					
 alcohol use history	alcohol	lifestyle history	A lifestyle history that is about the alcohol consumption of an individual.		lifestyle and behaviours					
 sleep history	sleep	lifestyle history	A lifestyle history that is about the sleep quality and duration of an individual.		lifestyle and behaviours					
 nutritional history	nutrition	lifestyle history	A lifestyle history that is about the diet and nutrition of an individual.		lifestyle and behaviours					
-physician contact textual entity	physician/practitioner info	textual entity	A textual entity that contains contact details for an individual's physician, which may include: name, phone number, address, etc.		healthcare information																							
+physician contact textual entity	physician/practitioner info	textual entity	A textual entity that contains contact details for an individual's physician, which may include: name, phone number, address, etc.		healthcare information					
 non-pharmacological treatment history	non-pharmacological interventions	treatment history	A treatment history that is about any non-pharamacological treatments such as surgery or physical therapy.		questionnaire/survey data					
 surgical history	surgical interventions	non-pharmacological treatment history	A clinical history that is about surgical operations performed on an individual.		non-pharmacological interventions					
 prescription drug history	medication	treatment history	A clinical history that is about the prescription drugs taken by an individual.		questionnaire/survey data					
@@ -51,7 +51,7 @@ radiological treatment history	radiological interventions	non-pharmacological tr
 physical therapy history	physical therapy interventions	non-pharmacological treatment history	A non-pharmacological treatment history that is about physical therapy treatments such as physical rehabilitation.		non-pharmacological interventions					
 perception of health measurement	perception of health	psychological measurement	A psychological measurement of an individual's subjective perception of health.		perception of health and quality of life					
 quality of life measurement	quality of life	psychological measurement	A psychological measurement of an individual's perception of their quality of life.		perception of health and quality of life					
-information on functional limitations	functional limitations	information content entity	Information that is about an individual's limitations in activities that involve caring for an moving the body.	Maelstrom:Act_daily_living	perception of health and quality of life					
-information on use of assistive devices	use of assistive devices	information content entity	Information about an individual's use of assistive devices in performing daily activities.	Maelstrom:Use_devices	perception of health and quality of life					
-religious affiliation	religion	information content entity	Information about an individual's association with a religion, denomiation, or sub- or non-denominational religious group.	url:http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/religious-affiliation/definition.aspx	socio-demographic and economic characteristics					
-human social environment	social environment	immaterial entity	An immaterial entity that encompasses the domain made up of interactions between the individual's physical environment, social processes, and relationships with other individuals and groups.	PMID:10352860	other questionnaire/survey data									
+information on functional limitations	functional limitations	information	Information that is about an individual's limitations in activities that involve caring for an moving the body.	Maelstrom:Act_daily_living	perception of health and quality of life					
+information on use of assistive devices	use of assistive devices	information	Information about an individual's use of assistive devices in performing daily activities.	Maelstrom:Use_devices	perception of health and quality of life					
+religious affiliation	religion	information	Information about an individual's association with a religion, denomiation, or sub- or non-denominational religious group.	url:http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/religious-affiliation/definition.aspx	socio-demographic and economic characteristics					
+human social environment	social environment	immaterial entity	An immaterial entity that encompasses the domain made up of interactions between the individual's physical environment, social processes, and relationships with other individuals and groups.	PMID:10352860	other questionnaire/survey data					
