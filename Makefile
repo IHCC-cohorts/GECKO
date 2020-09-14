@@ -35,6 +35,13 @@ DESCRIPTION = An ontology to represent genomics cohort attributes.
 COMMENT = The GECKO is maintained by the CINECA project, https://www.cineca-project.eu, and standardises attributes commonly used for genomics cohort description as well as individual-level data items. A series of tools is being developed to enable automated generation of harmonised data files based on a JSON schema mapping file. For more information please contact info@cineca-project.eu
 TITLE = Genomics Cohorts Knowledge Ontology
 
+UNAME := $(shell uname)
+ifeq ($(UNAME), Darwin)
+	RDFTAB_URL := https://github.com/ontodev/rdftab.rs/releases/download/v0.1.1/rdftab-x86_64-apple-darwin
+else
+	RDFTAB_URL := https://github.com/ontodev/rdftab.rs/releases/download/v0.1.1/rdftab-x86_64-unknown-linux-musl
+endif
+
 .PHONY: all
 all: gecko.owl views/ihcc-gecko.owl build/gecko.html build/ihcc-gecko.html build/report.html
 
@@ -51,12 +58,20 @@ update:
 build:
 	mkdir -p $@
 
+build/imports: | build
+	mkdir -p $@
+
 build/robot.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/html-report/lastSuccessfulBuild/artifact/bin/robot.jar
 #curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.6.0/robot.jar
 
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
+
+build/rdftab: | build
+	curl -L -o $@ $(RDFTAB_URL)
+	chmod +x $@
+
 
 ### GECKO
 
@@ -77,38 +92,86 @@ build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
 	--template $< \
 	--output $@
 
-gecko.owl: build/properties.ttl src/ontology/templates/index.tsv src/ontology/templates/gecko.tsv src/ontology/templates/external.tsv | build/robot.jar
+gecko.owl: build/properties.ttl src/ontology/templates/index.tsv src/ontology/templates/gecko.tsv src/ontology/templates/external.tsv src/ontology/annotations.owl | build/robot.jar
 	$(ROBOT) template \
 	--input $< \
 	--template $(word 2,$^) \
 	--template $(word 3,$^) \
 	--template $(word 4,$^) \
 	--merge-before \
+	merge \
+	--input $(word 5,$^) \
 	annotate \
 	--link-annotation dcterms:license $(LICENSE) \
 	--annotation dc11:description "$(DESCRIPTION)" \
 	--annotation dc11:title "$(TITLE)" \
 	--annotation rdfs:comment "$(COMMENT)" \
 	--ontology-iri $(OBO)/gecko.owl \
-	--version-iri $(OBO)/gecko/$(DATE)/gecko.owl \
+	--version-iri $(OBO)/gecko/releases/$(DATE)/gecko.owl \
 	--output $@
+
+
+### Imports
+
+IMPORTS := bfo eupath go iao mf mondo obi omrse pato pco pdro stato uberon # cmo ogms
+IMPORT_MODS := $(foreach I,$(IMPORTS),build/imports/$(I).ttl)
+
+UC = $(shell echo '$1' | tr '[:lower:]' '[:upper:]')
+
+build/imports/%.owl: | build/imports
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/$(notdir $@)
+
+build/imports/%.db: src/scripts/prefixes.sql build/imports/%.owl | build/rdftab
+	rm -rf $@
+	sqlite3 $@ < $<
+	./build/rdftab $@ < $(word 2,$^)
+
+build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
+	awk -F '\t' '{print $$1}' $< | tail -n +3 | sed -n '/$(call UC,$(notdir $(basename $@))):/p' > $@
+
+build/imports/%.ttl: build/imports/%.db build/imports/%.txt
+	python3 -m gizmos.extract -d $< -T $(word 2,$^) -n > $@
+
+build/annotation-properties.owl: src/ontology/templates/annotation-properties.tsv | build/robot.jar
+	$(ROBOT) template \
+	--template $< \
+	--output $@
+
+src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/annotation-properties.owl  | build/robot.jar
+	$(ROBOT) merge \
+	$(foreach I,$(IMPORT_MODS), --input $(I)) \
+	remove \
+	--term rdfs:label \
+	query \
+	--update src/queries/fix_annotations.rq \
+	merge \
+	--input build/annotation-properties.owl \
+	annotate \
+	--ontology-iri "http://purl.obolibrary.org/obo/cob/$(notdir $@)" \
+	--output $@
+
 
 ### IHCC Browser View
 
-build/query_result.csv: gecko.owl src/get_ihcc_view.rq | build/robot.jar
+build/query_result.csv: gecko.owl src/queries/get_ihcc_view.rq | build/robot.jar
 	$(ROBOT) query \
 	--input $< \
 	--query $(word 2,$^) $@
 
-build/ihcc_view_template.csv: src/ihcc_view.py build/query_result.csv
+build/ihcc_view_template.csv: src/scripts/ihcc_view.py build/query_result.csv
 	python3 $^ $@
 
-views/ihcc-gecko.owl: build/ihcc_view_template.csv | build/robot.jar
+build/ihcc_annotations.ttl: gecko.owl src/queries/build_ihcc_annotations.rq | build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
+views/ihcc-gecko.owl: build/ihcc_view_template.csv build/ihcc_annotations.ttl | build/robot.jar
 	$(ROBOT) template \
 	--template $< \
+	merge \
+	--input $(word 2,$^) \
 	annotate \
-	--ontology-iri $(OBO)/ihcc-gecko.owl \
-	--version-iri $(OBO)/gecko/$(DATE)/ihcc-gecko.owl \
+	--ontology-iri $(OBO)/gecko/ihcc-gecko.owl \
+	--version-iri $(OBO)/gecko/releases/$(DATE)/views/ihcc-gecko.owl \
 	--output $@
 
 

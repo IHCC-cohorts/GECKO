@@ -1,0 +1,27 @@
+ID	Label	Type
+ID	LABEL	TYPE
+IAO:0000111	editor preferred term	owl:AnnotationProperty
+IAO:0000112	example of usage	owl:AnnotationProperty
+IAO:0000115	definition	owl:AnnotationProperty
+IAO:0000116	editor note	owl:AnnotationProperty
+IAO:0000117	term editor	owl:AnnotationProperty
+IAO:0000118	alternative term	owl:AnnotationProperty
+IAO:0000232	curator note	owl:AnnotationProperty
+IAO:0000233	term tracker item	owl:AnnotationProperty
+IAO:0000234	ontology term requester	owl:AnnotationProperty
+obo:UBPROP_0000001	external_definition	owl:AnnotationProperty
+obo:UBPROP_0000002	axiom_lost_from_external_ontology	owl:AnnotationProperty
+obo:UBPROP_0000003	homology_notes	owl:AnnotationProperty
+obo:UBPROP_0000007	has_relational_adjective	owl:AnnotationProperty
+obo:UBPROP_0000008	taxon_notes	owl:AnnotationProperty
+obo:UBPROP_0000012	external_ontology_notes	owl:AnnotationProperty
+oboInOwl:hasAlternativeId	has_alternative_id	owl:AnnotationProperty
+oboInOwl:hasBroadSynonym	has_broad_synonym	owl:AnnotationProperty
+oboInOwl:hasExactSynonym	has_exact_synonym	owl:AnnotationProperty
+oboInOwl:hasNarrowSynonym	has_narrow_synonym	owl:AnnotationProperty
+oboInOwl:hasOBONamespace	has_obo_namespace	owl:AnnotationProperty
+oboInOwl:hasRelatedSynonym	has_related_synonym	owl:AnnotationProperty
+oboInOwl:id	id	owl:AnnotationProperty
+oboInOwl:inSubset	in_subset	owl:AnnotationProperty
+rdfs:label	label	owl:AnnotationProperty
+rdfs:seeAlso	see also	owl:AnnotationProperty

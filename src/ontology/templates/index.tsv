@@ -1,5 +1,12 @@
 ID	Label
 ID	LABEL
+BFO:0000015	process
+BFO:0000016	disposition
+BFO:0000017	realizable entity
+BFO:0000019	quality
+BFO:0000029	site
+BFO:0000040	material entity
+BFO:0000041	immaterial entity
 CMO:0000000	clinical measurement data item
 CMO:0000001	cardiovascular measurement data item
 CMO:0000003	blood pressure measurement data item
@@ -7,23 +14,6 @@ CMO:0000012	body weight data item
 CMO:0000021	body morphological measurement data item
 CMO:0000106	body height data item
 CMO:0000294	pulse data item
-COB:0000001	quality
-COB:0000006	material entity
-COB:0000031	immaterial entity
-COB:0000032	geographical location
-COB:0000033	realizable
-COB:0000034	process
-COB:0000035	planned process
-COB:0000037	biological process
-COB:0000055	collection of organisms
-COB:0000061	information
-COB:0000069	directive information entity
-COB:0000076	objective specification
-COB:0000079	plan specification
-COB:0000101	document
-COB:0000102	data item
-COB:0000107	assay
-COB:0000111	disposition
 EUPATH:0000147	cause of participant death
 EUPATH:0000308	hospitalization information
 EUPATH:0000359	occupation
@@ -85,8 +75,15 @@ GECKO:0000128	information on functional limitations
 GECKO:0000129	information on use of assistive devices
 GECKO:0000130	religious affiliation
 GECKO:0000131	human social environment
+GO:0008150	biological_process
+IAO:0000005	objective specification
+IAO:0000027	data item
+IAO:0000030	information content entity
+IAO:0000033	directive information entity
+IAO:0000104	plan specification
 IAO:0000109	measurement datum
 IAO:0000300	textual entity
+IAO:0000310	document
 IAO:0000612	availability textual entity
 IAO:0000619	consent textual entity
 IAO:0020000	identifier
@@ -108,6 +105,8 @@ MONDO:0021178	injury
 MONDO:0024458	disease of visual system
 MONDO:0024623	otorhinolaryngologic disease
 MONDO:0029000	poisoning
+OBI:0000011	planned process
+OBI:0000070	assay
 OBI:0000094	material processing
 OBI:0000435	genotyping assay
 OBI:0000537	copy number variation profiling assay
@@ -127,6 +126,7 @@ OMRSE:00000501	income data
 PATO:0000011	age
 PATO:0000047	biological sex
 PATO:0001995	organismal quality
+PCO:0000000	collection of organisms
 PDRO:0000024	drug prescription
 PDRO:0010022	drug administration specification
 STATO:0000039	statistic
