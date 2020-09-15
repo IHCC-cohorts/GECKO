@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-09-14/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-09-15/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -1683,6 +1683,12 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
+        <obo:IAO_0000115 xml:lang="en">A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant.</obo:IAO_0000115>
+        <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2010-11-18T11:02:10Z
+Updated: 2020-07-06</obo:IAO_0000232>
+        <oboInOwl:hasExactSynonym>symptom</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signs and symptoms</rdfs:label>
     </owl:Class>
     
