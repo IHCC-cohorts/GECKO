@@ -77,7 +77,7 @@ TEMPLATE_NAMES := index gecko properties external
 TEMPLATES := $(foreach T,$(TEMPLATE_NAMES),src/ontology/templates/$(T).tsv)
 
 .PHONY: fetch_templates
-fetch_templates: src/scripts/fix_tsv.py | build/robot.jar
+fetch_templates: src/scripts/fix_tsv.py | build/robot.jar .cogs
 	cogs fetch && cogs pull
 	python3 $< $(TEMPLATES)
 
@@ -212,7 +212,7 @@ BRANCH := $(shell git branch --show-current)
 init-cogs: .cogs
 
 # required env var GOOGLE_CREDENTIALS
-.cogs: $(TEMPLATES)
+.cogs: | $(TEMPLATES)
 	cogs init -u $(EMAIL) -t "GECKO $(BRANCH)" $(foreach T,$(TEMPLATES), && cogs add $(T))
 	cogs push
 	cogs open
