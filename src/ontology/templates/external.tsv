@@ -1,5 +1,4 @@
 Label	IHCC Browser Label	Parent	Category	Comment
-LABEL	A 'IHCC browser label'	SC %	A 'IHCC category'	
 age	age/birthdate	quality	socio-demographic and economic characteristics	Replaces GECKO 'age/birthdate'
 assay		planned process		
 availability textual entity		textual entity		

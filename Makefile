@@ -84,12 +84,21 @@ fetch_templates: src/scripts/fix_tsv.py | build/robot.jar .cogs
 build/templates/gecko.tsv: src/ontology/templates/gecko.tsv | build/templates
 	sed -E "2s/^/LABEL	A 'IHCC browser label'	SC % SPLIT=|	A definition	A definition source	A 'IHCC category'	CLASS_TYPE	C 'is about' some %	C 'inheres in' some %	C 'part of' some %	A comment*/" $< | tr '*' '\n' > $@
 
-build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
+build/templates/external.tsv: src/ontology/templates/external.tsv | build/templates
+	sed -E "2s/^/LABEL	A 'IHCC browser label'	SC %	A 'IHCC category'*/" $< | tr '*' '\n' > $@
+
+build/templates/index.tsv: src/ontology/templates/index.tsv | build/templates
+	sed -E "2s/^/ID	LABEL*/" $< | tr '*' '\n' > $@
+
+build/templates/properties.tsv: src/ontology/templates/properties.tsv | build/templates
+	sed -E "2s/^/ID	LABEL	TYPE*/" $< | tr '*' '\n' > $@
+
+build/properties.ttl: build/templates/properties.tsv | build/robot.jar
 	$(ROBOT) template \
 	--template $< \
 	--output $@
 
-gecko.owl: build/properties.ttl src/ontology/templates/index.tsv build/templates/gecko.tsv src/ontology/templates/external.tsv src/ontology/annotations.owl | build/robot.jar
+gecko.owl: build/properties.ttl build/templates/index.tsv build/templates/gecko.tsv build/templates/external.tsv src/ontology/annotations.owl | build/robot.jar
 	$(ROBOT) template \
 	--input $< \
 	--template $(word 2,$^) \
@@ -129,17 +138,12 @@ build/imports/%.db: src/scripts/prefixes.sql | build/imports/%.owl.gz build/rdft
 	gzip -f $(basename $@).owl
 
 build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
-	awk -F '\t' '{print $$1}' $< | tail -n +3 | sed -n '/$(call UC,$(notdir $(basename $@))):/p' > $@
+	awk -F '\t' '{print $$1}' $< | tail -n +1 | sed -n '/$(call UC,$(notdir $(basename $@))):/p' > $@
 
 build/imports/%.ttl: build/imports/%.db build/imports/%.txt
 	python3 -m gizmos.extract -d $< -T $(word 2,$^) -n > $@
 
-build/annotation-properties.owl: src/ontology/templates/annotation-properties.tsv | build/robot.jar
-	$(ROBOT) template \
-	--template $< \
-	--output $@
-
-src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/annotation-properties.owl  | build/robot.jar
+src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/properties.ttl  | build/robot.jar
 	$(ROBOT) merge \
 	$(foreach I,$(IMPORT_MODS), --input $(I)) \
 	remove \
@@ -147,7 +151,7 @@ src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq buil
 	query \
 	--update src/queries/fix_annotations.rq \
 	merge \
-	--input build/annotation-properties.owl \
+	--input build/properties.ttl \
 	annotate \
 	--ontology-iri "http://purl.obolibrary.org/obo/cob/$(notdir $@)" \
 	--output $@
@@ -213,7 +217,7 @@ init-cogs: .cogs
 
 # required env var GOOGLE_CREDENTIALS
 .cogs: | $(TEMPLATES)
-	cogs init -u $(EMAIL) -t "GECKO $(BRANCH)" $(foreach T,$(TEMPLATES), && cogs add $(T))
+	cogs init -u $(EMAIL) -t "GECKO $(BRANCH)" $(foreach T,$(TEMPLATES), && cogs add $(T) -r 1)
 	cogs push
 	cogs open
 
