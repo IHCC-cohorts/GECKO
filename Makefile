@@ -50,15 +50,12 @@ clean:
 	rm -rf build
 
 .PHONY: update
-update:
-	rm -rf build/templates.xlsx
-	make build/templates.xlsx
-	make all
+update: fetch_templates all
 
 build:
 	mkdir -p $@
 
-build/imports: | build
+build/imports build/templates: | build
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -75,24 +72,24 @@ build/rdftab: | build
 
 ### GECKO
 
-build/templates.xlsx: | build
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1bYnbxvPPFO7D7zg9Tr2e32jb8l13kMZ81vP_iaSZCXg/export?format=xlsx"
+TEMPLATE_NAMES := index gecko properties external
 
-TEMPLATES := src/ontology/templates/index.tsv \
-             src/ontology/templates/gecko.tsv \
-             src/ontology/templates/properties.tsv \
-             src/ontology/templates/external.tsv
+TEMPLATES := $(foreach T,$(TEMPLATE_NAMES),src/ontology/templates/$(T).tsv)
 
-$(TEMPLATES): build/templates.xlsx src/scripts/fix_tsv.py | build/robot.jar
-	xlsx2csv -d tab -n $(basename $(notdir $@)) --ignoreempty $< $@
-	python3 $(word 2,$^) $@
+.PHONY: fetch_templates
+fetch_templates: src/scripts/fix_tsv.py | build/robot.jar
+	cogs fetch && cogs pull
+	python3 $< $(TEMPLATES)
+
+build/templates/gecko.tsv: src/ontology/templates/gecko.tsv | build/templates
+	sed -E "2s/^/LABEL	A 'IHCC browser label'	SC % SPLIT=|	A definition	A definition source	A 'IHCC category'	CLASS_TYPE	C 'is about' some %	C 'inheres in' some %	C 'part of' some %	A comment*/" $< | tr '*' '\n' > $@
 
 build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
 	$(ROBOT) template \
 	--template $< \
 	--output $@
 
-gecko.owl: build/properties.ttl src/ontology/templates/index.tsv src/ontology/templates/gecko.tsv src/ontology/templates/external.tsv src/ontology/annotations.owl | build/robot.jar
+gecko.owl: build/properties.ttl src/ontology/templates/index.tsv build/templates/gecko.tsv src/ontology/templates/external.tsv src/ontology/annotations.owl | build/robot.jar
 	$(ROBOT) template \
 	--input $< \
 	--template $(word 2,$^) \
@@ -206,6 +203,22 @@ build/report.html: gecko.owl | build/robot.jar
 	--labels true \
 	--fail-on none \
 	--output $@
+
+
+### COGS Set Up
+
+BRANCH := $(shell git branch --show-current)
+
+init-cogs: .cogs
+
+# required env var GOOGLE_CREDENTIALS
+.cogs: $(TEMPLATES)
+	cogs init -u $(EMAIL) -t "GECKO $(BRANCH)" $(foreach T,$(TEMPLATES), && cogs add $(T))
+	cogs push
+	cogs open
+
+destroy-cogs: | .cogs
+	cogs delete -f
 
 
 # NCIT Module - NCIT terms that have been mapped to GECKO terms

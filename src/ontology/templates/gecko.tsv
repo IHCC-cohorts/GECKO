@@ -1,5 +1,4 @@
 Label	IHCC Browser Label	Parent	Definition	Definition Source	Category	Class Type	About	Inheres In	Part Of	Comment
-LABEL	A 'IHCC browser label'	SC % SPLIT=|	A definition	A definition source	A 'IHCC category'	CLASS_TYPE	C 'is about' some %	C 'inheres in' some %	C 'part of' some %	A comment
 timeline	timeline	directive information entity	A directive information entity that specifies the sequence in which a series of events occurred or will occur.		basic cohort attributes					
 population data item	population data	data item	A data item that is about a population of organisms.		basic cohort attributes	equivalent	collection of organisms			
 population location	location	population data item	A population data item that is about the geographical location of a population of organisms.		population data		site			
