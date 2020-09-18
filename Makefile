@@ -55,7 +55,7 @@ update: fetch_templates all
 build:
 	mkdir -p $@
 
-build/imports build/templates: | build
+build/imports: | build
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -81,24 +81,12 @@ fetch_templates: src/scripts/fix_tsv.py | build/robot.jar .cogs
 	cogs fetch && cogs pull
 	python3 $< $(TEMPLATES)
 
-build/templates/gecko.tsv: src/ontology/templates/gecko.tsv | build/templates
-	sed -E "2s/^/LABEL	A 'IHCC browser label'	SC % SPLIT=|	A definition	A definition source	A 'IHCC category'	CLASS_TYPE	C 'is about' some %	C 'inheres in' some %	C 'part of' some %	A comment*/" $< | tr '*' '\n' > $@
-
-build/templates/external.tsv: src/ontology/templates/external.tsv | build/templates
-	sed -E "2s/^/LABEL	A 'IHCC browser label'	SC %	A 'IHCC category'*/" $< | tr '*' '\n' > $@
-
-build/templates/index.tsv: src/ontology/templates/index.tsv | build/templates
-	sed -E "2s/^/ID	LABEL*/" $< | tr '*' '\n' > $@
-
-build/templates/properties.tsv: src/ontology/templates/properties.tsv | build/templates
-	sed -E "2s/^/ID	LABEL	TYPE*/" $< | tr '*' '\n' > $@
-
-build/properties.ttl: build/templates/properties.tsv | build/robot.jar
+build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
 	$(ROBOT) template \
 	--template $< \
 	--output $@
 
-gecko.owl: build/properties.ttl build/templates/index.tsv build/templates/gecko.tsv build/templates/external.tsv src/ontology/annotations.owl | build/robot.jar
+gecko.owl: build/properties.ttl src/ontology/templates/index.tsv src/ontology/templates/gecko.tsv src/ontology/templates/external.tsv src/ontology/annotations.owl | build/robot.jar
 	$(ROBOT) template \
 	--input $< \
 	--template $(word 2,$^) \

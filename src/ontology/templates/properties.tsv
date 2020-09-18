@@ -1,4 +1,5 @@
-ID	Label	Type
+ID	Label	Type																							
+ID	LABEL	TYPE																							
 BFO:0000050	part of	owl:ObjectProperty
 GECKO:9000000	IHCC category	owl:AnnotationProperty
 GECKO:9000001	IHCC browser label	owl:AnnotationProperty
