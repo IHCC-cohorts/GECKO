@@ -205,7 +205,7 @@ init-cogs: .cogs
 
 # required env var GOOGLE_CREDENTIALS
 .cogs: | $(TEMPLATES)
-	cogs init -u $(EMAIL) -t "GECKO $(BRANCH)" $(foreach T,$(TEMPLATES), && cogs add $(T) -r 1)
+	cogs init -u $(EMAIL) -t "GECKO $(BRANCH)" $(foreach T,$(TEMPLATES), && cogs add $(T) -r 2)
 	cogs push
 	cogs open
 
