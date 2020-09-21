@@ -50,10 +50,7 @@ clean:
 	rm -rf build
 
 .PHONY: update
-update:
-	rm -rf build/templates.xlsx
-	make build/templates.xlsx
-	make all
+update: fetch_templates all
 
 build:
 	mkdir -p $@
@@ -75,17 +72,14 @@ build/rdftab: | build
 
 ### GECKO
 
-build/templates.xlsx: | build
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1bYnbxvPPFO7D7zg9Tr2e32jb8l13kMZ81vP_iaSZCXg/export?format=xlsx"
+TEMPLATE_NAMES := index gecko properties external
 
-TEMPLATES := src/ontology/templates/index.tsv \
-             src/ontology/templates/gecko.tsv \
-             src/ontology/templates/properties.tsv \
-             src/ontology/templates/external.tsv
+TEMPLATES := $(foreach T,$(TEMPLATE_NAMES),src/ontology/templates/$(T).tsv)
 
-$(TEMPLATES): build/templates.xlsx src/scripts/fix_tsv.py | build/robot.jar
-	xlsx2csv -d tab -n $(basename $(notdir $@)) --ignoreempty $< $@
-	python3 $(word 2,$^) $@
+.PHONY: fetch_templates
+fetch_templates: src/scripts/fix_tsv.py | build/robot.jar .cogs
+	cogs fetch && cogs pull
+	python3 $< $(TEMPLATES)
 
 build/properties.ttl: src/ontology/templates/properties.tsv | build/robot.jar
 	$(ROBOT) template \
@@ -137,12 +131,7 @@ build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
 build/imports/%.ttl: build/imports/%.db build/imports/%.txt
 	python3 -m gizmos.extract -d $< -T $(word 2,$^) -n > $@
 
-build/annotation-properties.owl: src/ontology/templates/annotation-properties.tsv | build/robot.jar
-	$(ROBOT) template \
-	--template $< \
-	--output $@
-
-src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/annotation-properties.owl  | build/robot.jar
+src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/properties.ttl  | build/robot.jar
 	$(ROBOT) merge \
 	$(foreach I,$(IMPORT_MODS), --input $(I)) \
 	remove \
@@ -150,7 +139,7 @@ src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq buil
 	query \
 	--update src/queries/fix_annotations.rq \
 	merge \
-	--input build/annotation-properties.owl \
+	--input build/properties.ttl \
 	annotate \
 	--ontology-iri "http://purl.obolibrary.org/obo/cob/$(notdir $@)" \
 	--output $@
@@ -206,6 +195,22 @@ build/report.html: gecko.owl | build/robot.jar
 	--labels true \
 	--fail-on none \
 	--output $@
+
+
+### COGS Set Up
+
+BRANCH := $(shell git branch --show-current)
+
+init-cogs: .cogs
+
+# required env var GOOGLE_CREDENTIALS
+.cogs: | $(TEMPLATES)
+	cogs init -u $(EMAIL) -t "GECKO $(BRANCH)" $(foreach T,$(TEMPLATES), && cogs add $(T) -r 2)
+	cogs push
+	cogs open
+
+destroy-cogs: | .cogs
+	cogs delete -f
 
 
 # NCIT Module - NCIT terms that have been mapped to GECKO terms
