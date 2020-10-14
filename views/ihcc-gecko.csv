@@ -1,0 +1,128 @@
+ID,LABEL,SubClass Of,definition
+CMO:0000000,physiological measurements,questionnaire/survey data,
+CMO:0000001,circulation and respiration,physiological measurements,
+CMO:0000003,blood pressure,circulation and respiration,
+CMO:0000012,weight,anthropometry,
+CMO:0000021,anthropometry,physiological measurements,
+CMO:0000106,height,anthropometry,
+CMO:0000294,heart rate (HR),circulation and respiration,
+EUPATH:0000147,cause of death,other questionnaire/survey data,An information content entity indicating the cause of death for a participant in the study.
+EUPATH:0000308,hospitalizations,healthcare information,an information content entity that is about a part of a health care encounter that occurs in a hospital facility
+EUPATH:0000359,occupation,socio-demographic and economic characteristics,An information content entity that is about an activity that realizes a social role and is often performed for payment.
+EUPATH:0000374,marital status,socio-demographic and economic characteristics,a categorical value specification that is about a human being and specifies whether that human being is joined to another human being in marriage
+EUPATH:0000451,healthcare information,questionnaire/survey data,An information content entity about healthcare that is private or public.
+EUPATH:0010032,physical environment,questionnaire/survey data,environmental system associated with the dwelling used by humans.
+GECKO:0000001,basic cohort attributes,,
+GECKO:0000003,timeline,basic cohort attributes,A directive information entity that specifies the sequence in which a series of events occurred or will occur.
+GECKO:0000005,population data,basic cohort attributes,A data item that is about a population of organisms.
+GECKO:0000006,location,population data,A population data item that is about the geographical location of a population of organisms.
+GECKO:0000008,num. participants,population data,A sample size that is about the count of individual organisms in a population.
+GECKO:0000009,demographic data,basic cohort attributes,A quality which inheres in a population of organisms.
+GECKO:0000010,sex(es) studied in cohort,demographic data,A population quality concerning the sex or sexes of the population.
+GECKO:0000011,gender(s) studied in cohort,demographic data,A population quality concerning the gender or genders of the population.
+GECKO:0000012,age range,demographic data,A population quality concerning the age range of a population.
+GECKO:0000013,data collection events,basic cohort attributes,A planned process that is a part of an investigation in which raw data is collected.
+GECKO:0000014,biosample,,
+GECKO:0000019,fasting or non-fasting,blood,Blood that is collected from an organism which has been fasting for a given amount of time.
+GECKO:0000026,storage method,biosample,A storage process for a biosample collected from an organism.
+GECKO:0000027,laboratory measures,,
+GECKO:0000032,genomics,laboratory measures,An assay that investigates the genome or genomes of an individual organism or population of organisms.
+GECKO:0000040,"Microbiome markers (rRNA, etc)",genomics,A genomic assay that profiles the microorganisms present in a sample.
+GECKO:0000042,eQTL (Cis eQTLs and/or Trans eQTLs),genomics,A genomic assay that identifies genetic loci and candidate genes correlated with phenotypes.
+GECKO:0000044,sample size,biosample,A count of the number of biosamples collected for an investigation.
+GECKO:0000047,processing method,biosample,A material processing which prepares a biosample for investigation.
+GECKO:0000052,survey administration,,
+GECKO:0000055,unique identifiers,survey administration,An identifier that is guaranteed to be unique among all identifiers in a particular domain.
+GECKO:0000056,questionnaire/survey data,,
+GECKO:0000060,gender,socio-demographic and economic characteristics,"An organismal quality inhering in a bearer by virtue of the bearer's preference towards a range of characteristics pertaining to, and differentiating between, masculinity and femininity."
+GECKO:0000061,ethnicity/race,socio-demographic and economic characteristics,An organismal quality inhering in a bearer by virtue of the bearer's identification with a group of other individuals on the basis of presumed similarities such as language or common ancestry.
+GECKO:0000063,birthplace,socio-demographic and economic characteristics,A geographical location in which an individual was born.
+GECKO:0000064,residence,socio-demographic and economic characteristics,A geographical location in which an individual currently resides.
+GECKO:0000065,education,socio-demographic and economic characteristics,An organismal quality inhering in a bearer by virute of the bearer's highest level of formal education completed.
+GECKO:0000066,family and household structure,socio-demographic and economic characteristics,Information that is about the structure of an individual's family and/or household.
+GECKO:0000067,lifestyle and behaviours,questionnaire/survey data,A clinical history that is about the lifestyle and behaviors of an individual which may impact health outcomes.
+GECKO:0000068,tobacco,lifestyle and behaviours,A lifestyle history that is about the tobacco use or exposure of an individual.
+GECKO:0000069,alcohol,lifestyle and behaviours,A lifestyle history that is about the alcohol consumption of an individual.
+GECKO:0000071,sleep,lifestyle and behaviours,A lifestyle history that is about the sleep quality and duration of an individual.
+GECKO:0000072,nutrition,lifestyle and behaviours,A lifestyle history that is about the diet and nutrition of an individual.
+GECKO:0000073,physician/practitioner info,healthcare information,"A textual entity that contains contact details for an individual's physician, which may include: name, phone number, address, etc."
+GECKO:0000091,non-pharmacological interventions,questionnaire/survey data,A treatment history that is about any non-pharamacological treatments such as surgery or physical therapy.
+GECKO:0000092,surgical interventions,non-pharmacological interventions,A clinical history that is about surgical operations performed on an individual.
+GECKO:0000093,medication,questionnaire/survey data,A clinical history that is about the prescription drugs taken by an individual.
+GECKO:0000094,associated disease(s),medication,Information that is about the disease treated by a drug prescribed to an individual.
+GECKO:0000096,drug response(s),medication,A biological process that results from a drug stimulus.
+GECKO:0000101,statistics,,
+GECKO:0000102,summary statistics for additional data from federated sources,statistics,A statistic that summarizes a set of federated data.
+GECKO:0000103,drugs,lifestyle and behaviours,A lifestyle history that is about the use of unprescribed and/or non-prescription drugs.
+GECKO:0000104,physical activity,lifestyle and behaviours,A lifestyle history that is about the typical physical activity of an individual.
+GECKO:0000105,other,genomics,
+GECKO:0000112,other biosample type,sample type,
+GECKO:0000113,availability,biosample,An availability textual entity that is about a substance from an organism (a biosample).
+GECKO:0000114,reproduction,other questionnaire/survey data,"A clinical history that is about pregnancy, maternity, fertility, menses, and any other reproductive aspect."
+GECKO:0000116,other questionnaire/survey data,questionnaire/survey data,
+GECKO:0000117,perception of health and quality of life,questionnaire/survey data,
+GECKO:0000118,cognitive and psychological measurements,questionnaire/survey data,A measurement datum of some aspect of human psychology.
+GECKO:0000119,cognitive functioning,cognitive and psychological measurements,"A psychological measurement of some aspect of intellectual functions such as memory, problem solving, and comprehension."
+GECKO:0000120,personality,cognitive and psychological measurements,"A psychological measurement of a person's individual sets of behaviours, cognitions, and emotional patterns."
+GECKO:0000121,psychological distress and emotions,cognitive and psychological measurements,A biological process that results from neurophysiological changes in response to internal and external events.
+GECKO:0000122,oral health and hygiene,lifestyle and behaviours,A lifestyle history that is about oral health and hygiene.
+GECKO:0000123,psychological interventions,non-pharmacological interventions,A non-pharmacological treatment history that is about psychological treatments such as counselling.
+GECKO:0000124,radiological interventions,non-pharmacological interventions,"A non-pharmacological treatment history that is about use of radiology for treatment of disease, disorder, or symptom."
+GECKO:0000125,physical therapy interventions,non-pharmacological interventions,A non-pharmacological treatment history that is about physical therapy treatments such as physical rehabilitation.
+GECKO:0000126,perception of health,perception of health and quality of life,A psychological measurement of an individual's subjective perception of health.
+GECKO:0000127,quality of life,perception of health and quality of life,A psychological measurement of an individual's perception of their quality of life.
+GECKO:0000128,functional limitations,perception of health and quality of life,Information that is about an individual's limitations in activities that involve caring for an moving the body.
+GECKO:0000129,use of assistive devices,perception of health and quality of life,Information about an individual's use of assistive devices in performing daily activities.
+GECKO:0000130,religion,socio-demographic and economic characteristics,"Information about an individual's association with a religion, denomiation, or sub- or non-denominational religious group."
+GECKO:0000131,social environment,other questionnaire/survey data,"An immaterial entity that encompasses the domain made up of interactions between the individual's physical environment, social processes, and relationships with other individuals and groups."
+IAO:0000005,aims and objectives,basic cohort attributes,A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.
+IAO:0000619,consent/accessibility,survey administration,A textual entity that documents the consenting process used to enroll patients in a study.
+MF:0000041,personal beliefs and values,other questionnaire/survey data,
+MONDO:0000001,diseases,questionnaire/survey data,A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.
+MONDO:0002051,skin and subcutaneous tissue,diseases,A disease involving the integumental system.
+MONDO:0002081,musculoskeletal system,diseases,A disease involving the musculoskeletal system.
+MONDO:0003900,connective tissue,diseases,A disease involving the connective tissue.
+MONDO:0004335,digestive system,diseases,A disease or disorder that involves the digestive system.
+MONDO:0004992,oncological,diseases,"A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas."
+MONDO:0004995,circulatory system,diseases,A disease involving the cardiovascular system.
+MONDO:0005071,nervous system,diseases,"A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves."
+MONDO:0005084,mental and behaviour disorders,diseases,A disease that has its basis in the disruption of mental process.
+MONDO:0005087,respiratory system,diseases,"A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma."
+MONDO:0005151,endocrine/nutritional/metabolic disorders,diseases,A disease involving the endocrine system.
+MONDO:0005550,infectious disease,diseases,"A disorder resulting from the presence and activity of a microbial, viral, or parasitic agent. It can be transmitted by direct or indirect contact."
+MONDO:0005570,blood-related disorders,diseases,A disease involving the hematopoietic system.
+MONDO:0021178,injury,diseases,"Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity."
+MONDO:0024458,visual system,diseases,A disease that involves the visual system.
+MONDO:0024623,"diseases of the ear, nose, and/or throat",diseases,"Pathological processes of the ear, the nose, and the throat, also known as the ENT diseases."
+MONDO:0029000,poisoning,diseases,"A condition or physical state produced by the ingestion, injection, inhalation of or exposure to a deleterious agent."
+OBI:0000435,DNA/Genotyping,genomics,An assay which generates data about a genotype from a specimen of genomic DNA. A variety of techniques and instruments can be used to produce information about sequence variation at particular genomic positions.
+OBI:0000537,"Sequence variants (CNV, SNP arrays)",genomics,"An assay that determines lost or amplified genomic regions of DNA by comparing genomic DNA originating from tissues from the same or different individuals using specific techniques such as CGH, array CGH, SNP genotyping"
+OBI:0001271,RNAseq/gene expression,genomics,An transcription profiling assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.
+OBI:0001624,microbiology,laboratory measures,An assay that identifies the organism species in a specimen.
+OBI:0002020,Epigenetics,genomics,"An assay that identifies epigenetic modifications including histone modifications, open chromatin, and DNA methylation."
+OBI:0002117,WGS,genomics,A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism.
+OBI:0002118,WES,genomics,A DNA sequencing assay that intends to provide information about the sequence of the protein coding components of a genome (exons).
+OBI:0002415,exposure to carcinogens,physical environment,A information content entity that indicates the exposure of an individual to carcinogens in the workplace or environment.
+OBI:0002623,Metagenomics,genomics,A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.
+OBI:0500000,study design,basic cohort attributes,A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.
+OBI:0500027,criteria for enrollment and recruitment procedures,population data,"an inclusion criterion (rule) is_a *eligibility criterion*  which defines and states a condition which, if met, makes an entity suitable for a given task or participation in a given process. For instance, in a study protocol, inclusion criteria indicate the conditions that prospective subjects MUST meet to be eligible for participation in a study."
+OGMS:0000020,signs and symptoms,other questionnaire/survey data,"A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant."
+OMRSE:00000501,income and possessions,socio-demographic and economic characteristics,
+PATO:0000011,age/birthdate,socio-demographic and economic characteristics,A time quality inhering in a bearer by virtue of how long the bearer has existed.
+PATO:0000047,biological sex,socio-demographic and economic characteristics,An organismal quality inhering in a bearer by virtue of the bearer's ability to undergo sexual reproduction in order to differentiate the individuals or types involved.
+PATO:0001995,socio-demographic and economic characteristics,questionnaire/survey data,A quality that inheres in an entire organism or part of an organism.
+PDRO:0000024,prescription,medication,"A health care prescription specifying the initiation, modification or cessation of a drug administration."
+PDRO:0010022,administration,medication,"A drug administration description that specifies a drug administration prescribed or reported by an healthcare provider.
+
+It specifies:
+- The drug product
+- The posology
+
+It may also specify a starting drug administration condition"
+STATO:0000093,date and time-related information,survey administration,"Information about a calendar date or timestamp indicating day, month, year and time of an event."
+UBERON:0000105,life stage/time point,other questionnaire/survey data,A spatiotemporal region encompassing some part of the life cycle of an organism.
+UBERON:0000178,blood,sample type,A fluid that is composed of blood plasma and erythrocytes.
+UBERON:0000463,sample type,biosample,"Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body."
+UBERON:0001088,urine,sample type,Excretion that is the output of a kidney
+UBERON:0001836,saliva,sample type,"A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions."
+UBERON:0001988,stool,sample type,"Portion of semisolid bodily waste discharged through the anus[MW,modified]"
