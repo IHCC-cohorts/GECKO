@@ -168,11 +168,14 @@ views/ihcc-gecko.owl: build/ihcc_view_template.csv build/ihcc_annotations.ttl | 
 	--version-iri $(OBO)/gecko/releases/$(DATE)/views/ihcc-gecko.owl \
 	--output $@
 
-views/ihcc-gecko.csv: views/ihcc-gecko.owl | build/robot.jar
+build/ihcc-gecko.csv: views/ihcc-gecko.owl | build/robot.jar
 	$(ROBOT) export \
 	--input $< \
 	--header "ID|LABEL|SubClass Of|definition" \
 	--export $@
+
+views/ihcc-gecko.csv: src/scripts/sort_csv.py build/ihcc-gecko.csv
+	python3 $^ $@
 
 
 ### Trees
