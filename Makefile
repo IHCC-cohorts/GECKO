@@ -50,7 +50,9 @@ clean:
 	rm -rf build
 
 .PHONY: update
-update: fetch_templates all
+update:
+	make fetch_templates
+	make all
 
 build:
 	mkdir -p $@
@@ -136,6 +138,7 @@ src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq buil
 	$(foreach I,$(IMPORT_MODS), --input $(I)) \
 	remove \
 	--term rdfs:label \
+	--term http://purl.obolibrary.org/obo/mondo#excluded_subClassOf \
 	query \
 	--update src/queries/fix_annotations.rq \
 	merge \

@@ -44,6 +44,7 @@ hematologic disease	blood-related disorders	disease or disorder	diseases	Replace
 hospitalization information	hospitalizations	information content entity	healthcare information	
 identifier		information content entity		
 immaterial entity				
+immune system disease	immune system	disease or disorder	diseases	
 inclusion criterion	criteria for enrollment and recruitment procedures	directive information entity	population data	Replaces GECKO 'criteria for enrollment and recruitment procedures'
 income data	income and possessions	data item	socio-demographic and economic characteristics	
 infectious disease	infectious disease	disease or disorder	diseases	
@@ -80,6 +81,7 @@ storage		planned process
 study design	study design	plan specification	basic cohort attributes	Replaces GECKO 'study design'
 symptom	signs and symptoms	quality	other questionnaire/survey data	Replaces GECKO 'signs and symptoms'
 textual entity		information content entity		
+urinary system disease	urinary system	disease or disorder	diseases	
 urine	urine	organism substance	sample type	Replaces GECKO 'urine'
 whole genome sequencing assay	WGS	genomic assay	genomics	Replaces GECKO 'WGS'
 whole metagenome sequencing assay	Metagenomics	genomic assay	genomics	Replaces GECKO 'Metagenomics'
