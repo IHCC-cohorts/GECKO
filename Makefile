@@ -128,8 +128,11 @@ build/imports/%.db: src/scripts/prefixes.sql | build/imports/%.owl.gz build/rdft
 build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
 	awk -F '\t' '{print $$1}' $< | tail -n +3 | sed -n '/$(call UC,$(notdir $(basename $@))):/p' > $@
 
-build/imports/%.ttl: build/imports/%.db build/imports/%.txt
-	python3 -m gizmos.extract -d $< -T $(word 2,$^) -n > $@
+build/annotations.txt: src/ontology/templates/properties.tsv
+	grep 'owl:AnnotationProperty$$' $< | grep -v '^GECKO' | cut -f1 > $@
+
+build/imports/%.ttl: build/imports/%.db build/imports/%.txt build/annotations.txt
+	python3 -m gizmos.extract -d $< -T $(word 2,$^) -A $(word 3,$^) -n > $@
 
 src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/properties.ttl  | build/robot.jar
 	$(ROBOT) merge \
