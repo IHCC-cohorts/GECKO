@@ -127,6 +127,14 @@
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -706,6 +714,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>disorder of hematopoietic system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>hematological disorders and malignancies</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>placeholder for lymphoid disease</rdfs:comment>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/254</rdfs:seeAlso>
     </owl:Class>
     
 

@@ -15,4 +15,5 @@ oboInOwl:hasNarrowSynonym	has_narrow_synonym	owl:AnnotationProperty
 oboInOwl:hasRelatedSynonym	has_related_synonym	owl:AnnotationProperty
 rdfs:comment	comment	owl:AnnotationProperty
 rdfs:label	label	owl:AnnotationProperty
+rdfs:seeAlso	see also	owl:AnnotationProperty
 RO:0000052	inheres in	owl:ObjectProperty
