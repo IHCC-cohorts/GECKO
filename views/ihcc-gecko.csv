@@ -95,20 +95,20 @@ cognitive and psychological measurements,GECKO:0000119,cognitive functioning,"A 
 cognitive and psychological measurements,GECKO:0000120,personality,"A psychological measurement of a person's individual sets of behaviours, cognitions, and emotional patterns."
 cognitive and psychological measurements,GECKO:0000121,psychological distress and emotions,A biological process that results from neurophysiological changes in response to internal and external events.
 questionnaire/survey data,MONDO:0000001,diseases,A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.
-diseases,MONDO:0002051,skin and subcutaneous tissue,A disease involving the integumental system.
-diseases,MONDO:0002081,musculoskeletal system,A disease involving the musculoskeletal system.
+diseases,MONDO:0002051,skin and subcutaneous tissue diseases,A disease involving the integumental system.
+diseases,MONDO:0002081,musculoskeletal system diseases,A disease involving the musculoskeletal system.
 diseases,MONDO:0003900,connective tissue,A disease involving the connective tissue.
-diseases,MONDO:0004335,digestive system,A disease or disorder that involves the digestive system.
-diseases,MONDO:0004992,oncological,"A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas."
-diseases,MONDO:0004995,circulatory system,A disease involving the cardiovascular system.
-diseases,MONDO:0005071,nervous system,"A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves."
+diseases,MONDO:0004335,digestive system diseases,A disease or disorder that involves the digestive system.
+diseases,MONDO:0004992,cancer,"A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas."
+diseases,MONDO:0004995,cardiovascular diseases,A disease involving the cardiovascular system.
+diseases,MONDO:0005071,nervous system disorders,"A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves."
 diseases,MONDO:0005084,mental and behaviour disorders,A disease that has its basis in the disruption of mental process.
-diseases,MONDO:0005087,respiratory system,"A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma."
-diseases,MONDO:0005151,endocrine/nutritional/metabolic disorders,A disease involving the endocrine system.
-diseases,MONDO:0005550,infectious disease,"A disorder resulting from the presence and activity of a microbial, viral, or parasitic agent. It can be transmitted by direct or indirect contact."
+diseases,MONDO:0005087,respiratory system diseases,"A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma."
+diseases,MONDO:0005151,endocrine system diseases,A disease involving the endocrine system.
+diseases,MONDO:0005550,infectious diseases,"A disorder resulting from the presence and activity of a microbial, viral, or parasitic agent. It can be transmitted by direct or indirect contact."
 diseases,MONDO:0005570,blood-related disorders,A disease involving the hematopoietic system.
-diseases,MONDO:0021178,injury,"Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity."
-diseases,MONDO:0024458,visual system,A disease that involves the visual system.
+diseases,MONDO:0021178,injuries,"Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity."
+diseases,MONDO:0024458,visual system diseases,A disease that involves the visual system.
 diseases,MONDO:0024623,"diseases of the ear, nose, and/or throat","Pathological processes of the ear, the nose, and the throat, also known as the ENT diseases."
 diseases,MONDO:0029000,poisoning,"A condition or physical state produced by the ingestion, injection, inhalation of or exposure to a deleterious agent."
 questionnaire/survey data,PATO:0001995,socio-demographic and economic characteristics,A quality that inheres in an entire organism or part of an organism.

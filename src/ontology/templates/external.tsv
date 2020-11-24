@@ -11,8 +11,8 @@ blood pressure measurement data item	blood pressure	cardiovascular measurement d
 body height data item	height	body morphological measurement data item	anthropometry	Replaces GECKO 'height'
 body morphological measurement data item	anthropometry	clinical measurement data item	physiological measurements	Replaces GECKO 'anthropometry'
 body weight data item	weight	body morphological measurement data item	anthropometry	Replaces GECKO 'weight'
-cancer	oncological	disease or disorder	diseases	Replaces GECKO 'oncological'
-cardiovascular disease	circulatory system	disease or disorder	diseases	Replaces GECKO 'circulatory system'
+cancer	cancer	disease or disorder	diseases	Replaces GECKO 'oncological'
+cardiovascular disease	cardiovascular diseases	disease or disorder	diseases	Replaces GECKO 'circulatory system'
 cardiovascular measurement data item	circulation and respiration	clinical measurement data item	physiological measurements	Replaces GECKO 'circulation and respiration'
 cause of participant death	cause of death	information content entity	other questionnaire/survey data	
 clinical history		information content entity		
@@ -24,15 +24,15 @@ copy number variation profiling assay	Sequence variants (CNV, SNP arrays)	genomi
 count		measurement datum		
 data item		information content entity		
 date	date and time-related information	measurement datum	survey administration	Replaces GECKO 'date and time-related information'
-digestive system disease	digestive system	disease or disorder	diseases	Replaces GECKO 'digestive system'
+digestive system disease	digestive system diseases	disease or disorder	diseases	Replaces GECKO 'digestive system'
 directive information entity		information content entity		
-disease of visual system	visual system	disease or disorder	diseases	
+disease of visual system	visual system diseases	disease or disorder	diseases	
 disease or disorder	diseases	disposition	questionnaire/survey data	Replaces GECKO 'diseases'
 disposition		realizable entity		
 document		information content entity		
 drug administration specification	administration	directive information entity	medication	Replaces GECKO 'administration'
 drug prescription	prescription	document	medication	Replaces GECKO 'prescription'
-endocrine system disease	endocrine/nutritional/metabolic disorders	disease or disorder	diseases	Replaces GECKO 'endocrine/nutritional/metabolic disorders'
+endocrine system disease	endocrine system diseases	disease or disorder	diseases	Replaces GECKO 'endocrine/nutritional/metabolic disorders'
 environment associated with human dwelling	physical environment	material entity	questionnaire/survey data	
 epigenetic modification assay	Epigenetics	genomic assay	genomics	Replaces GECKO 'Epigenetics'
 exome sequencing assay	WES	genomic assay	genomics	Replaces GECKO 'WES'
@@ -46,18 +46,18 @@ identifier		information content entity
 immaterial entity				
 inclusion criterion	criteria for enrollment and recruitment procedures	directive information entity	population data	Replaces GECKO 'criteria for enrollment and recruitment procedures'
 income data	income and possessions	data item	socio-demographic and economic characteristics	
-infectious disease	infectious disease	disease or disorder	diseases	
+infectious disease	infectious diseases	disease or disorder	diseases	
 information content entity				
-injury	injury	disease or disorder	diseases	
-integumentary system disease	skin and subcutaneous tissue	disease or disorder	diseases	
+injury	injuries	disease or disorder	diseases	
+integumentary system disease	skin and subcutaneous tissue diseases	disease or disorder	diseases	
 life cycle stage	life stage/time point	process	other questionnaire/survey data	
 marital status	marital status	information content entity	socio-demographic and economic characteristics	
 material entity				
 material processing		planned process		
 measurement datum		data item		
 mental disorder	mental and behaviour disorders	disease or disorder	diseases	Replaces GECKO 'mental and behaviour disorders'
-musculoskeletal system disease	musculoskeletal system	disease or disorder	diseases	
-nervous system disorder	nervous system	disease or disorder	diseases	Replaces GECKO 'nervous system'
+musculoskeletal system disease	musculoskeletal system diseases	disease or disorder	diseases	
+nervous system disorder	nervous system disorders	disease or disorder	diseases	Replaces GECKO 'nervous system'
 objective specification	aims and objectives	directive information entity	basic cohort attributes	Replaces GECKO 'aims and objectives'
 occupation	occupation	information content entity	socio-demographic and economic characteristics	
 organism identification assay	microbiology	assay	laboratory measures	Replaces GECKO 'microbiology'
@@ -71,7 +71,7 @@ process
 pulse data item	heart rate (HR)	cardiovascular measurement data item	circulation and respiration	Replaces GECKO 'heart rate (HR)'
 quality				
 realizable entity				
-respiratory system disease	respiratory system	disease or disorder	diseases	Replaces GECKO 'respiratory system'
+respiratory system disease	respiratory system diseases	disease or disorder	diseases	Replaces GECKO 'respiratory system'
 RNA-seq assay	RNAseq/gene expression	genomic assay	genomics	Replaces GECKO 'RNAseq/gene expression'
 saliva	saliva	organism substance	sample type	Replaces GECKO 'saliva'
 site		immaterial entity		

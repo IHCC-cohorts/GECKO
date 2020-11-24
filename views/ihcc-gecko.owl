@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-10-27/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-24/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -1013,7 +1013,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>integumentary system disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of integument</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of integumental system</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1032,7 +1032,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>musculoskeletal system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of musculoskeletal system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>musculoskeletal disorder</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1082,7 +1082,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>git disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>stomach or intestinal disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of digestive system</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digestive system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digestive system diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1106,7 +1106,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>organ system cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>primary cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>MT</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label>cancer</rdfs:label>
     </owl:Class>
     
 
@@ -1127,7 +1127,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>disorder of cardiovascular system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>circulatory system disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of cardiovascular system</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1148,7 +1148,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>neurological disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>neurological disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of nervous system</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disorders</rdfs:label>
     </owl:Class>
     
 
@@ -1182,7 +1182,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>respiratory system disease or disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>respiratory system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of respiratory system</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1203,7 +1203,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>endocrinopathy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>thyroid or other glandular disorders</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of endocrine system</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1224,7 +1224,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>transmissible disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disease by infectious agent</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Replaces &apos;infection&apos; in disease hierarchy. OBI imported term infection is moved to pathologic process. This class is a container class for infectious diseases, not the process of infection itself.</rdfs:comment>
-        <rdfs:label>infectious disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1270,7 +1270,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>trauma</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>traumatic injury</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>wound</oboInOwl:hasExactSynonym>
-        <rdfs:label>injury</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injuries</rdfs:label>
     </owl:Class>
     
 
@@ -1287,7 +1287,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>visual system disease or disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>visual system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of visual system</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual system diseases</rdfs:label>
     </owl:Class>
     
 
