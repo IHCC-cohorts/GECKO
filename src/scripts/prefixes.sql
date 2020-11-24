@@ -31,6 +31,7 @@ INSERT OR IGNORE INTO prefix VALUES
 ("PCO",       "http://purl.obolibrary.org/obo/PCO_"),
 ("PDRO",      "http://purl.obolibrary.org/obo/PDRO_"),
 ("PR",        "http://purl.obolibrary.org/obo/PR_"),
+("rdf",       "http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
 ("rdfs",      "http://www.w3.org/2000/01/rdf-schema#"),
 ("RO",        "http://purl.obolibrary.org/obo/RO_"),
 ("STATO",     "http://purl.obolibrary.org/obo/STATO_"),

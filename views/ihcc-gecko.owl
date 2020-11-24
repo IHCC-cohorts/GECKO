@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl#"
      xml:base="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-10-23/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-24/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -23,14 +22,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <rdfs:label>editor preferred term</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
@@ -50,22 +41,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <rdfs:label>editor note</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
-        <rdfs:label>term editor</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
@@ -79,84 +54,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label>definition source</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
-        <rdfs:label>curator note</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
-        <rdfs:label>term tracker item</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234">
-        <rdfs:label>ontology term requester</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001">
-        <rdfs:label>external_definition</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBPROP_0000002 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000002">
-        <rdfs:label>axiom_lost_from_external_ontology</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBPROP_0000003 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003">
-        <rdfs:label>homology_notes</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBPROP_0000007 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000007">
-        <rdfs:label>has_relational_adjective</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBPROP_0000008 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000008">
-        <rdfs:label>taxon_notes</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBPROP_0000012 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000012">
-        <rdfs:label>external_ontology_notes</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -192,34 +89,10 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:label>has_obo_namespace</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
         <rdfs:label>has_related_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
-        <rdfs:label>id</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
-        <rdfs:label>in_subset</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -319,9 +192,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
         <obo:IAO_0000115>An information content entity indicating the cause of death for a participant in the study.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:  Jie Zheng, Chris Stoeckert, David Roos, Grant Dorsey</obo:IAO_0000117>
         <obo:IAO_0000119>Penn Group</obo:IAO_0000119>
-        <dc:source>PRISM</dc:source>
         <oboInOwl:hasExactSynonym>cause of participant death</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cause of death</rdfs:label>
     </owl:Class>
@@ -333,10 +204,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000308">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000451"/>
         <obo:IAO_0000115 xml:lang="en">an information content entity that is about a part of a health care encounter that occurs in a hospital facility</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Person: John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">EuPathDB</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>hospitalization information</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset>ICEMR protein array</oboInOwl:inSubset>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitalizations</rdfs:label>
     </owl:Class>
     
@@ -358,7 +227,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000374">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <obo:IAO_0000115 xml:lang="en">a categorical value specification that is about a human being and specifies whether that human being is joined to another human being in marriage</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Person: John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">EuPathDB, BFO&apos;s &apos;relational quality&apos; examples</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>marital status</oboInOwl:hasExactSynonym>
         <rdfs:label>marital status</rdfs:label>
@@ -382,9 +250,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0010032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
         <obo:IAO_0000115>environmental system associated with the dwelling used by humans.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:  Cristian Cocos, Jie Zheng, Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119>Penn Group</obo:IAO_0000119>
-        <dc:source>GEMS</dc:source>
         <oboInOwl:hasExactSynonym>environment associated with human dwelling</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</rdfs:label>
     </owl:Class>
@@ -1078,16 +944,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000001"/>
-        <obo:IAO_0000111 xml:lang="en">objective specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Barry Smith</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
@@ -1101,12 +959,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000619">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000052"/>
-        <obo:IAO_0000111 xml:lang="en">consent textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
 
 Written informed consent was obtained from the patient’s parents for publication of this Case report and any accompanying images. A copy of the written consent is available for review by the Editor-in chief of this journal.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that documents the consenting process used to enroll patients in a study.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym>consent textual entity</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent/accessibility</rdfs:label>
     </owl:Class>
@@ -1137,7 +993,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>disorders</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>medical condition</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>other disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>MONDO:0000001</oboInOwl:id>
         <rdfs:label>diseases</rdfs:label>
     </owl:Class>
     
@@ -1158,7 +1013,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>integumentary system disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of integument</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of integumental system</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0002051</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue</rdfs:label>
     </owl:Class>
     
@@ -1178,7 +1032,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>musculoskeletal system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of musculoskeletal system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>musculoskeletal disorder</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0002081</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system</rdfs:label>
     </owl:Class>
     
@@ -1201,7 +1054,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>primary disorder of connective tissue</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tissue disease, connective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of connective tissue</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0003900</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue</rdfs:label>
     </owl:Class>
     
@@ -1230,7 +1082,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>git disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>stomach or intestinal disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of digestive system</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0004335</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digestive system</rdfs:label>
     </owl:Class>
     
@@ -1255,7 +1106,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>organ system cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>primary cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>MT</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0004992</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
     </owl:Class>
     
@@ -1277,7 +1127,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>disorder of cardiovascular system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>circulatory system disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of cardiovascular system</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0004995</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
     </owl:Class>
     
@@ -1299,7 +1148,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>neurological disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>neurological disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of nervous system</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0005071</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system</rdfs:label>
     </owl:Class>
     
@@ -1315,7 +1163,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>mental or behavioural disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mental process disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of mental process</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0005084</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental and behaviour disorders</rdfs:label>
     </owl:Class>
     
@@ -1335,7 +1182,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>respiratory system disease or disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>respiratory system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of respiratory system</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0005087</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</rdfs:label>
     </owl:Class>
     
@@ -1357,7 +1203,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>endocrinopathy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>thyroid or other glandular disorders</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of endocrine system</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0005151</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
     </owl:Class>
     
@@ -1378,7 +1223,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>infectious disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transmissible disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disease by infectious agent</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0005550</oboInOwl:id>
         <rdfs:comment>Replaces &apos;infection&apos; in disease hierarchy. OBI imported term infection is moved to pathologic process. This class is a container class for infectious diseases, not the process of infection itself.</rdfs:comment>
         <rdfs:label>infectious disease</rdfs:label>
     </owl:Class>
@@ -1410,7 +1254,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>blood dyscrasia NOS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of hematopoietic system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>hematological disorders and malignancies</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0005570</oboInOwl:id>
         <rdfs:comment>placeholder for lymphoid disease</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood-related disorders</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/254</rdfs:seeAlso>
@@ -1427,7 +1270,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>trauma</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>traumatic injury</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>wound</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>MONDO:0021178</oboInOwl:id>
         <rdfs:label>injury</rdfs:label>
     </owl:Class>
     
@@ -1445,7 +1287,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>visual system disease or disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>visual system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of visual system</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0024458</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual system</rdfs:label>
     </owl:Class>
     
@@ -1479,7 +1320,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>otolaryngological diseases</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>otorhinolaryngological disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>otorhinolaryngological diseases</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0024623</oboInOwl:id>
         <rdfs:comment>Editor note: consider uberon class</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases of the ear, nose, and/or throat</rdfs:label>
     </owl:Class>
@@ -1495,7 +1335,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>Poisonings</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>intoxication</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>poisoning syndrome</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>MONDO:0029000</oboInOwl:id>
         <rdfs:label>poisoning</rdfs:label>
     </owl:Class>
     
@@ -1505,10 +1344,8 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000435">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
-        <obo:IAO_0000111>genotyping assay</obo:IAO_0000111>
         <obo:IAO_0000112>High-throughput genotyping of oncogenic human papilloma viruses with MALDI-TOF mass spectrometry. Clin Chem. 2008 Jan;54(1):86-92. Epub 2007 Nov 2.PMID: 17981923</obo:IAO_0000112>
         <obo:IAO_0000115>An assay which generates data about a genotype from a specimen of genomic DNA. A variety of techniques and instruments can be used to produce information about sequence variation at particular genomic positions.</obo:IAO_0000115>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118>SNP analysis</obo:IAO_0000118>
         <obo:IAO_0000118>genotype profiling</obo:IAO_0000118>
         <obo:IAO_0000119>OBI Biomaterial</obo:IAO_0000119>
@@ -1522,10 +1359,8 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000537">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
-        <obo:IAO_0000111>copy number variation profiling assay</obo:IAO_0000111>
         <obo:IAO_0000112>Profiling of copy number variations (CNVs) in healthy individuals from three ethnic groups using a human genome 32 K BAC-clone-based array. PMID:18058796</obo:IAO_0000112>
         <obo:IAO_0000115>An assay that determines lost or amplified genomic regions of DNA by comparing genomic DNA originating from tissues from the same or different individuals using specific techniques such as CGH, array CGH, SNP genotyping</obo:IAO_0000115>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118>CNV analysis</obo:IAO_0000118>
         <oboInOwl:hasExactSynonym>copy number variation profiling assay</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence variants (CNV, SNP arrays)</rdfs:label>
@@ -1537,9 +1372,7 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001271">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
-        <obo:IAO_0000111>RNA-seq assay</obo:IAO_0000111>
         <obo:IAO_0000115>An transcription profiling assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.</obo:IAO_0000115>
-        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <obo:IAO_0000118>transcription profiling by high throughput sequencing</obo:IAO_0000118>
         <obo:IAO_0000119>EFO:0002770</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>RNA-seq assay</oboInOwl:hasExactSynonym>
@@ -1552,10 +1385,7 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001624">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000027"/>
-        <obo:IAO_0000111>organism identification assay</obo:IAO_0000111>
         <obo:IAO_0000115>An assay that identifies the organism species in a specimen.</obo:IAO_0000115>
-        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>organism identification assay</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microbiology</rdfs:label>
@@ -1567,10 +1397,7 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
-        <obo:IAO_0000111>epigenetic modification assay</obo:IAO_0000111>
         <obo:IAO_0000115>An assay that identifies epigenetic modifications including histone modifications, open chromatin, and DNA methylation.</obo:IAO_0000115>
-        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>Penn group</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>epigenetic modification assay</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epigenetics</rdfs:label>
@@ -1582,11 +1409,8 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
-        <obo:IAO_0000111>whole genome sequencing assay</obo:IAO_0000111>
         <obo:IAO_0000112>WGS permits comprehensive sequencing of introns and exons, whereas whole exome sequencing (WES) allows deeper sequencing of exonic regions at a lower cost. Due to the large number of genetic variants found in each genome, it is necessary to use filtering approaches to distinguish deleterious from benign variants. WES has been used successfully to identify novel genetic causes of primary immunodeficiency. Complex structural variations and non-Mendelian disorders remain challenges for WGS.</obo:IAO_0000112>
         <obo:IAO_0000115>A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism.</obo:IAO_0000115>
-        <obo:IAO_0000116>Genotyping assays should ideally identify which part of the genome the information is about. We do not currently have a good way to do this. That information should be added later.</obo:IAO_0000116>
-        <obo:IAO_0000117>ImmPort</obo:IAO_0000117>
         <obo:IAO_0000118>WGS</obo:IAO_0000118>
         <obo:IAO_0000119>PMID:23095910</obo:IAO_0000119>
         <obo:IAO_0000119>PMID:25827230</obo:IAO_0000119>
@@ -1600,10 +1424,8 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
-        <obo:IAO_0000111>exome sequencing assay</obo:IAO_0000111>
         <obo:IAO_0000112>DNA was extracted from the Ficoll pellet of blood taken from congenital asplenia patients. Unamplified, high-molecular weight, RNase-treated genomic DNA (4_6 _g) was used for whole exome sequencing (WES) with the use of Agilent 71 Mb (V4 + UTR) singlesample capture and an Illumina HiSeq 2000. Sequencing was carried out so as to obtain 30_ coverage from 2 _ 100-bp paired-end reads. We used the Annovar tool (25) to annotate the resulting highquality (HQ) variants. In the regions targeted by WES capture (81.5% of the consensus coding genome), the mean numbers of single-nucleotide variants (SNVs) and small insertions/deletions (indels) detected per sample were 84,192 and13,325, respectively. After filtering, a mean of 74,398 (95.3%) high-quality (HQ) SNVs and 9,033 (70.6%) HQ indels were called. A mean of 105 coding HQ SNVs and 32 indels was identified.</obo:IAO_0000112>
         <obo:IAO_0000115>A DNA sequencing assay that intends to provide information about the sequence of the protein coding components of a genome (exons).</obo:IAO_0000115>
-        <obo:IAO_0000117>ImmPort</obo:IAO_0000117>
         <obo:IAO_0000118>WES</obo:IAO_0000118>
         <obo:IAO_0000119>PMID:25827230</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>exome sequencing assay</oboInOwl:hasExactSynonym>
@@ -1616,11 +1438,8 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002415">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0010032"/>
-        <obo:IAO_0000111>exposure to environmental and workplace carcinogens history</obo:IAO_0000111>
         <obo:IAO_0000115>A information content entity that indicates the exposure of an individual to carcinogens in the workplace or environment.</obo:IAO_0000115>
-        <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
         <obo:IAO_0000119>OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234>NCI BBRB</obo:IAO_0000234>
         <oboInOwl:hasExactSynonym>exposure to environmental and workplace carcinogens history</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exposure to carcinogens</rdfs:label>
     </owl:Class>
@@ -1631,14 +1450,10 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002623">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
-        <obo:IAO_0000111>whole metagenome sequencing assay</obo:IAO_0000111>
         <obo:IAO_0000115>A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.</obo:IAO_0000115>
-        <obo:IAO_0000116>Whole metagenome sequencing has been used to explore the composition and metabolic capability of communities of microbes found in the environment (e.g. in soil, water, etc.) and in humans and other species (e.g. in the gut, oral cavity, etc.).</obo:IAO_0000116>
-        <obo:IAO_0000117>Rebecca Jackson</obo:IAO_0000117>
         <obo:IAO_0000118>WMS</obo:IAO_0000118>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <obo:IAO_0000119>Michelle Giglio</obo:IAO_0000119>
-        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1056</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>whole metagenome sequencing assay</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metagenomics</rdfs:label>
     </owl:Class>
@@ -1649,13 +1464,9 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000001"/>
-        <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design.</obo:IAO_0000112>
         <obo:IAO_0000115>A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
-        <obo:IAO_0000116>Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available.</obo:IAO_0000116>
-        <obo:IAO_0000117>PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
-        <obo:IAO_0000232 xml:lang="en">rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol.</obo:IAO_0000232>
         <oboInOwl:hasExactSynonym>study design</oboInOwl:hasExactSynonym>
         <rdfs:label>study design</rdfs:label>
     </owl:Class>
@@ -1666,10 +1477,8 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000005"/>
-        <obo:IAO_0000111 xml:lang="en">inclusion criterion</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 23979341-The major inclusion criterion was patients in whom severe cerebral embolism was diagnosed at age 75 or younger (more than 9 in the NIHSS score on day 7 after the onset of stroke) .</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">an inclusion criterion (rule) is_a *eligibility criterion*  which defines and states a condition which, if met, makes an entity suitable for a given task or participation in a given process. For instance, in a study protocol, inclusion criteria indicate the conditions that prospective subjects MUST meet to be eligible for participation in a study.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Person: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">inclusion condition</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">inclusion rule</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group</obo:IAO_0000119>
@@ -1684,10 +1493,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
         <obo:IAO_0000115 xml:lang="en">A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant.</obo:IAO_0000115>
-        <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2010-11-18T11:02:10Z
-Updated: 2020-07-06</obo:IAO_0000232>
         <oboInOwl:hasExactSynonym>symptom</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signs and symptoms</rdfs:label>
     </owl:Class>
@@ -1709,8 +1515,6 @@ Updated: 2020-07-06</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <obo:IAO_0000115>A time quality inhering in a bearer by virtue of how long the bearer has existed.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>age</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000011</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</rdfs:label>
     </owl:Class>
     
@@ -1722,8 +1526,6 @@ Updated: 2020-07-06</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>biological sex</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000047</oboInOwl:id>
         <rdfs:label>biological sex</rdfs:label>
     </owl:Class>
     
@@ -1735,8 +1537,6 @@ Updated: 2020-07-06</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000056"/>
         <obo:IAO_0000115>A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>organismal quality</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001995</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Class>
     
@@ -1758,7 +1558,6 @@ Updated: 2020-07-06</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0010022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000093"/>
-        <obo:IAO_0000111 xml:lang="en">prescribed drug administration specification</obo:IAO_0000111>
         <obo:IAO_0000112>&apos;take Aspirin 81 mg oral tablet, 1 tablet once daily by mouth, start today&apos; or the synonymous abbreviated version &apos;Aspirin 81 mg tablet PO DIE&apos;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A drug administration description that specifies a drug administration prescribed or reported by an healthcare provider.
 
@@ -1778,9 +1577,6 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000052"/>
         <obo:IAO_0000115 xml:lang="en">Information about a calendar date or timestamp indicating day, month, year and time of an event.</obo:IAO_0000115>
-        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
-        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>date</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
@@ -1793,14 +1589,9 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000116"/>
         <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
-        <obo:IAO_0000116>this class represents a proper part of the life cycle of an organism. The class &apos;life cycle&apos; should not be placed here</obo:IAO_0000116>
-        <obo:UBPROP_0000012>the WBls class &apos;all stages&apos; belongs here as it is the superclass of other WBls stages</obo:UBPROP_0000012>
-        <obo:UBPROP_0000012>we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
         <oboInOwl:hasExactSynonym>life cycle stage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>developmental stage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>stage</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>UBERON:0000105</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
     </owl:Class>
     
@@ -1811,17 +1602,10 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
         <obo:IAO_0000115>A fluid that is composed of blood plasma and erythrocytes.</obo:IAO_0000115>
-        <obo:IAO_0000232>This class excludes blood analogues, such as the insect analog of blood. See UBERON:0000179 haemolymphatic fluid.</obo:IAO_0000232>
-        <obo:UBPROP_0000001>A complex mixture of cells suspended in a liquid matrix that delivers nutrients to cells and removes wastes. (Source: BioGlossary, www.Biology-Text.com)[TAO]</obo:UBPROP_0000001>
-        <obo:UBPROP_0000001>Highly specialized circulating tissue consisting of several types of cells suspended in a fluid medium known as plasma.[AAO]</obo:UBPROP_0000001>
-        <obo:UBPROP_0000002>relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]</obo:UBPROP_0000002>
-        <obo:UBPROP_0000003>Recent findings strongly suggest that the molecular pathways involved in the development and function of blood cells are highly conserved among vertebrates and various invertebrates phyla. (...) There is now good reason to believe that, in vertebrates and invertebrates alike, blood cell lineages diverge from a common type of progenitor cell, the hemocytoblast.[well established][VHOG]</obo:UBPROP_0000003>
         <oboInOwl:hasExactSynonym>blood</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>portion of blood</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vertebrate blood</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>whole blood</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>UBERON:0000178</oboInOwl:id>
         <rdfs:label>blood</rdfs:label>
     </owl:Class>
     
@@ -1837,8 +1621,6 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>organism substance</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>portion of body substance</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>portion of organism substance</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>UBERON:0000463</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample type</rdfs:label>
     </owl:Class>
     
@@ -1849,10 +1631,7 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
         <obo:IAO_0000115>Excretion that is the output of a kidney</obo:IAO_0000115>
-        <obo:UBPROP_0000008>kidney excreta from some taxa (e.g. in aves) may not be liquid</obo:UBPROP_0000008>
         <oboInOwl:hasExactSynonym>urine</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>UBERON:0001088</oboInOwl:id>
         <rdfs:label>urine</rdfs:label>
     </owl:Class>
     
@@ -1863,15 +1642,11 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001836">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
         <obo:IAO_0000115>A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions.</obo:IAO_0000115>
-        <obo:UBPROP_0000007>salivary</obo:UBPROP_0000007>
-        <obo:UBPROP_0000008>We classify a wide variety of not necessarily homologous fluids here. In humans, the saliva is a turbid and slightly viscous fluid, generally of an alkaline reaction, and is secreted by the parotid, submaxillary, and sublingual glands. In the mouth the saliva is mixed with the secretion from the buccal glands. In man and many animals, saliva is an important digestive fluid on account of the presence of the peculiar enzyme, ptyalin</obo:UBPROP_0000008>
         <oboInOwl:hasExactSynonym>saliva</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>salivary gland secretion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>sailva normalis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>saliva atomaris</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>saliva molecularis</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>UBERON:0001836</oboInOwl:id>
         <rdfs:label>saliva</rdfs:label>
     </owl:Class>
     
@@ -1882,8 +1657,6 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001988">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
         <obo:IAO_0000115>Portion of semisolid bodily waste discharged through the anus[MW,modified]</obo:IAO_0000115>
-        <obo:UBPROP_0000001>Excretion in semisolid state processed by the intestine.[FMA]</obo:UBPROP_0000001>
-        <obo:UBPROP_0000007>fecal</obo:UBPROP_0000007>
         <oboInOwl:hasBroadSynonym>excreta</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>faeces</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>fecal material</oboInOwl:hasExactSynonym>
@@ -1913,12 +1686,10 @@ It may also specify a starting drug administration condition</obo:IAO_0000115>
         <oboInOwl:hasNarrowSynonym>portion of scat</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>scat</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>spraint</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>droppings</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>excrement</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>ordure</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>spoor</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>UBERON:0001988</oboInOwl:id>
         <rdfs:label>stool</rdfs:label>
     </owl:Class>
 </rdf:RDF>

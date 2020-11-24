@@ -43,7 +43,7 @@ else
 endif
 
 .PHONY: all
-all: gecko.owl views/ihcc-gecko.owl build/gecko.html build/ihcc-gecko.html build/report.html
+all: views/ihcc-gecko.csv $(TREES) build/report.html
 
 .PHONY: clean
 clean:
@@ -128,8 +128,11 @@ build/imports/%.db: src/scripts/prefixes.sql | build/imports/%.owl.gz build/rdft
 build/imports/%.txt: src/ontology/templates/index.tsv | build/imports
 	awk -F '\t' '{print $$1}' $< | tail -n +3 | sed -n '/$(call UC,$(notdir $(basename $@))):/p' > $@
 
-build/imports/%.ttl: build/imports/%.db build/imports/%.txt
-	python3 -m gizmos.extract -d $< -T $(word 2,$^) -n > $@
+build/annotations.txt: src/ontology/templates/properties.tsv
+	grep 'owl:AnnotationProperty$$' $< | grep -v '^GECKO' | cut -f1 > $@
+
+build/imports/%.ttl: build/imports/%.db build/imports/%.txt build/annotations.txt
+	python3 -m gizmos.extract -d $< -T $(word 2,$^) -A $(word 3,$^) -n > $@
 
 src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/properties.ttl  | build/robot.jar
 	$(ROBOT) merge \
@@ -168,10 +171,21 @@ views/ihcc-gecko.owl: build/ihcc_view_template.csv build/ihcc_annotations.ttl | 
 	--version-iri $(OBO)/gecko/releases/$(DATE)/views/ihcc-gecko.owl \
 	--output $@
 
+build/ihcc-gecko.csv: views/ihcc-gecko.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|SubClass Of|definition" \
+	--export $@
+
+views/ihcc-gecko.csv: src/scripts/sort_csv.py build/ihcc-gecko.csv
+	python3 $^ $@
+
 
 ### Trees
 #
 # We use ROBOT's experimental tree branch to generate HTML tree views.
+
+TREES := build/gecko.html build/ihcc-gecko.html
 
 build/gecko.html: gecko.owl | build/robot-tree.jar
 	java -jar build/robot-tree.jar tree \
