@@ -75,6 +75,7 @@ GECKO:0000128	information on functional limitations
 GECKO:0000129	information on use of assistive devices
 GECKO:0000130	religious affiliation
 GECKO:0000131	human social environment
+GECKO:0000132	family history of disease
 GO:0008150	biological_process
 IAO:0000005	objective specification
 IAO:0000027	data item

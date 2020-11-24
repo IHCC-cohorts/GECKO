@@ -1158,6 +1158,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about any family history of disease.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
