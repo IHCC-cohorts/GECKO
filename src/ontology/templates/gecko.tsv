@@ -24,10 +24,10 @@ residence location	residence	site	A geographical location in which an individual
 education level	education	organismal quality	An organismal quality inhering in a bearer by virute of the bearer's highest level of formal education completed.		socio-demographic and economic characteristics					
 family and household structure	family and household structure	information content entity	Information that is about the structure of an individual's family and/or household.		socio-demographic and economic characteristics					
 lifestyle history	lifestyle and behaviours	clinical history	A clinical history that is about the lifestyle and behaviors of an individual which may impact health outcomes.		questionnaire/survey data					
-tobacco use history	tobacco	lifestyle history	A lifestyle history that is about the tobacco use or exposure of an individual.		lifestyle and behaviours					
-alcohol use history	alcohol	lifestyle history	A lifestyle history that is about the alcohol consumption of an individual.		lifestyle and behaviours					
-sleep history	sleep	lifestyle history	A lifestyle history that is about the sleep quality and duration of an individual.		lifestyle and behaviours					
-nutritional history	nutrition	lifestyle history	A lifestyle history that is about the diet and nutrition of an individual.		lifestyle and behaviours					
+tobacco use history	tobacco use history	lifestyle history	A lifestyle history that is about the tobacco use or exposure of an individual.		lifestyle and behaviours					
+alcohol use history	alcohol use history	lifestyle history	A lifestyle history that is about the alcohol consumption of an individual.		lifestyle and behaviours					
+sleep history	sleep history	lifestyle history	A lifestyle history that is about the sleep quality and duration of an individual.		lifestyle and behaviours					
+nutritional history	dietary history	lifestyle history	A lifestyle history that is about the diet and nutrition of an individual.		lifestyle and behaviours					
 physician contact textual entity	physician/practitioner info	textual entity	A textual entity that contains contact details for an individual's physician, which may include: name, phone number, address, etc.		healthcare information					
 non-pharmacological treatment history	non-pharmacological interventions	treatment history	A treatment history that is about any non-pharamacological treatments such as surgery or physical therapy.		questionnaire/survey data					
 surgical history	surgical interventions	non-pharmacological treatment history	A clinical history that is about surgical operations performed on an individual.		non-pharmacological interventions					
@@ -35,8 +35,8 @@ prescription drug history	medication	treatment history	A clinical history that i
 disease treated by prescription drug	associated disease(s)	information content entity	Information that is about the disease treated by a drug prescribed to an individual.		medication				prescription drug history	
 response to medication	drug response(s)	biological_process	A biological process that results from a drug stimulus.		medication					
 summary statistic for federated data	summary statistics for additional data from federated sources	statistic	A statistic that summarizes a set of federated data.		statistics					
-recreational drug history	drugs	lifestyle history	A lifestyle history that is about the use of unprescribed and/or non-prescription drugs.		lifestyle and behaviours					
-physical activity history	physical activity	lifestyle history	A lifestyle history that is about the typical physical activity of an individual.		lifestyle and behaviours					
+recreational drug history	recreational drug history	lifestyle history	A lifestyle history that is about the use of unprescribed and/or non-prescription drugs.		lifestyle and behaviours					
+physical activity history	physical activity history	lifestyle history	A lifestyle history that is about the typical physical activity of an individual.		lifestyle and behaviours					
 sample size		count	A count which represents the subset of a collection chosen for an investigation, survey, or assay.							
 biosample availability textual entity	availability	availability textual entity	An availability textual entity that is about a substance from an organism (a biosample).		biosample		organism substance			
 reproductive history	reproduction	clinical history	A clinical history that is about pregnancy, maternity, fertility, menses, and any other reproductive aspect.		other questionnaire/survey data					
@@ -45,7 +45,7 @@ psychological measurement	cognitive and psychological measurements	measurement d
 cognitive measurement	cognitive functioning	psychological measurement	A psychological measurement of some aspect of intellectual functions such as memory, problem solving, and comprehension.	Wikipedia:Cognition	cognitive and psychological measurements					
 personality measurement	personality	psychological measurement	A psychological measurement of a person's individual sets of behaviours, cognitions, and emotional patterns.	Wikipedia:Personality	cognitive and psychological measurements					
 emotion	psychological distress and emotions	biological_process	A biological process that results from neurophysiological changes in response to internal and external events.	Wikipedia:Emotion	cognitive and psychological measurements					
-oral health history	oral health and hygiene	lifestyle history	A lifestyle history that is about oral health and hygiene.		lifestyle and behaviours					
+oral health history	oral health history	lifestyle history	A lifestyle history that is about oral health and hygiene.		lifestyle and behaviours					
 psychological treatment history	psychological interventions	non-pharmacological treatment history	A non-pharmacological treatment history that is about psychological treatments such as counselling.		non-pharmacological interventions					
 radiological treatment history	radiological interventions	non-pharmacological treatment history	A non-pharmacological treatment history that is about use of radiology for treatment of disease, disorder, or symptom.		non-pharmacological interventions					
 physical therapy history	physical therapy interventions	non-pharmacological treatment history	A non-pharmacological treatment history that is about physical therapy treatments such as physical rehabilitation.		non-pharmacological interventions					
