@@ -940,6 +940,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:IAO_0000115>A non-pharmacological treatment history that is about diagnostic procedures to determine a condition or disease.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>diagnostic procedure history</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Includes procedures such as colonoscopies, ultrasounds, etc., but excludes laboratory tests.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic interventions</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">

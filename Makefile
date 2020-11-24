@@ -132,7 +132,7 @@ build/annotations.txt: src/ontology/templates/properties.tsv
 	grep 'owl:AnnotationProperty$$' $< | grep -v '^GECKO' | cut -f1 > $@
 
 build/imports/%.ttl: build/imports/%.db build/imports/%.txt build/annotations.txt
-	python3 -m gizmos.extract -d $< -T $(word 2,$^) -A $(word 3,$^) -n > $@
+	python3 -m gizmos.extract -d $< -T $(word 2,$^) -P $(word 3,$^) -n > $@
 
 src/ontology/annotations.owl: $(IMPORT_MODS) src/queries/fix_annotations.rq build/properties.ttl  | build/robot.jar
 	$(ROBOT) merge \
