@@ -43,7 +43,7 @@ else
 endif
 
 .PHONY: all
-all: gecko.owl views/ihcc-gecko.owl build/gecko.html build/ihcc-gecko.html build/report.html
+all: views/ihcc-gecko.csv $(TREES) build/report.html
 
 .PHONY: clean
 clean:
@@ -171,10 +171,21 @@ views/ihcc-gecko.owl: build/ihcc_view_template.csv build/ihcc_annotations.ttl | 
 	--version-iri $(OBO)/gecko/releases/$(DATE)/views/ihcc-gecko.owl \
 	--output $@
 
+build/ihcc-gecko.csv: views/ihcc-gecko.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|SubClass Of|definition" \
+	--export $@
+
+views/ihcc-gecko.csv: src/scripts/sort_csv.py build/ihcc-gecko.csv
+	python3 $^ $@
+
 
 ### Trees
 #
 # We use ROBOT's experimental tree branch to generate HTML tree views.
+
+TREES := build/gecko.html build/ihcc-gecko.html
 
 build/gecko.html: gecko.owl | build/robot-tree.jar
 	java -jar build/robot-tree.jar tree \
