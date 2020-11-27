@@ -83,6 +83,7 @@ questionnaire/survey data,GECKO:0000116,other questionnaire/survey data,
 other questionnaire/survey data,EUPATH:0000147,cause of death,An information content entity indicating the cause of death for a participant in the study.
 other questionnaire/survey data,GECKO:0000114,reproduction,"A clinical history that is about pregnancy, maternity, fertility, menses, and any other reproductive aspect."
 other questionnaire/survey data,GECKO:0000131,social environment,"An immaterial entity that encompasses the domain made up of interactions between the individual's physical environment, social processes, and relationships with other individuals and groups."
+other questionnaire/survey data,GECKO:0000132,family history of disease,A clinical history that is about any family history of disease.
 other questionnaire/survey data,MF:0000041,personal beliefs and values,
 other questionnaire/survey data,OGMS:0000020,signs and symptoms,"A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant."
 other questionnaire/survey data,UBERON:0000105,life stage/time point,A spatiotemporal region encompassing some part of the life cycle of an organism.

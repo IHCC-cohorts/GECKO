@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-24/gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-27/gecko.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1154,6 +1154,18 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immaterial entity that encompasses the domain made up of interactions between the individual&apos;s physical environment, social processes, and relationships with other individuals and groups.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10352860</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human social environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about any family history of disease.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</rdfs:label>
     </owl:Class>
     
 
