@@ -77,6 +77,8 @@ GECKO:0000130	religious affiliation
 GECKO:0000131	human social environment
 GECKO:0000132	family history of disease
 GECKO:0000133	diagnostic procedure history
+GECKO:0000134	Alzheimer's Disease Assessment Scale measurement
+GECKO:0000135	Mini-Mental State Exam measurement
 GO:0008150	biological_process
 IAO:0000005	objective specification
 IAO:0000027	data item

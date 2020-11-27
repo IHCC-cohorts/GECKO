@@ -963,6 +963,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is an output of the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Alzheimer&apos;s Disease Assessment Scale measurement</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADAS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is an output of the Mini-Mental State Exam.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Mini-Mental State Exam measurement</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSE</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
