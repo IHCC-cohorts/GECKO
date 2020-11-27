@@ -574,7 +574,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
         <obo:IAO_0000115>A lifestyle history that is about the tobacco use or exposure of an individual.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tobacco use history</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label>tobacco use history</rdfs:label>
     </owl:Class>
     
 
@@ -585,7 +585,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
         <obo:IAO_0000115>A lifestyle history that is about the alcohol consumption of an individual.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>alcohol use history</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label>alcohol use history</rdfs:label>
     </owl:Class>
     
 
@@ -596,7 +596,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
         <obo:IAO_0000115>A lifestyle history that is about the sleep quality and duration of an individual.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>sleep history</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleep</rdfs:label>
+        <rdfs:label>sleep history</rdfs:label>
     </owl:Class>
     
 
@@ -607,7 +607,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
         <obo:IAO_0000115>A lifestyle history that is about the diet and nutrition of an individual.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>nutritional history</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary history</rdfs:label>
     </owl:Class>
     
 
@@ -703,7 +703,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
         <obo:IAO_0000115>A lifestyle history that is about the use of unprescribed and/or non-prescription drugs.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>recreational drug history</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drugs</rdfs:label>
+        <rdfs:label>recreational drug history</rdfs:label>
     </owl:Class>
     
 
@@ -714,7 +714,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
         <obo:IAO_0000115>A lifestyle history that is about the typical physical activity of an individual.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>physical activity history</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity</rdfs:label>
+        <rdfs:label>physical activity history</rdfs:label>
     </owl:Class>
     
 
@@ -832,7 +832,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
         <obo:IAO_0000115>A lifestyle history that is about oral health and hygiene.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>oral health history</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health and hygiene</rdfs:label>
+        <rdfs:label>oral health history</rdfs:label>
     </owl:Class>
     
 
