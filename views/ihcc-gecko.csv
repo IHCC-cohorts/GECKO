@@ -94,6 +94,8 @@ perception of health and quality of life,GECKO:0000128,functional limitations,In
 perception of health and quality of life,GECKO:0000129,use of assistive devices,Information about an individual's use of assistive devices in performing daily activities.
 questionnaire/survey data,GECKO:0000118,cognitive and psychological measurements,A measurement datum of some aspect of human psychology.
 cognitive and psychological measurements,GECKO:0000119,cognitive functioning,"A psychological measurement of some aspect of intellectual functions such as memory, problem solving, and comprehension."
+cognitive functioning,GECKO:0000134,ADAS,A cognitive measurement that is an output of the Alzheimer's Disease Assessment Scale.
+cognitive functioning,GECKO:0000135,MMSE,A cognitive measurement that is an output of the Mini-Mental State Exam.
 cognitive and psychological measurements,GECKO:0000120,personality,"A psychological measurement of a person's individual sets of behaviours, cognitions, and emotional patterns."
 cognitive and psychological measurements,GECKO:0000121,psychological distress and emotions,A biological process that results from neurophysiological changes in response to internal and external events.
 questionnaire/survey data,MONDO:0000001,diseases,A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.
