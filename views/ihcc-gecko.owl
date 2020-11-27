@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-24/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-27/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -1037,6 +1037,44 @@ Written informed consent was obtained from the patient’s parents for publicati
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:IAO_0000115>A disease involving the renal system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of the urinary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of urinary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-neoplastic urinary tract disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary tract disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary tract disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urological disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urinary tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urinary tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of renal system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary system disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary tract diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urologic disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological disorder</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>urinary system disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0003900 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003900">
@@ -1128,6 +1166,27 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>circulatory system disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of cardiovascular system</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:IAO_0000115>A disorder resulting from an abnormality in the immune system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune dysfunction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of immune system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>immune disorder, NOS</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>immune system disease</rdfs:label>
     </owl:Class>
     
 

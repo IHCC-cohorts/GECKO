@@ -97,10 +97,12 @@ cognitive and psychological measurements,GECKO:0000121,psychological distress an
 questionnaire/survey data,MONDO:0000001,diseases,A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.
 diseases,MONDO:0002051,skin and subcutaneous tissue diseases,A disease involving the integumental system.
 diseases,MONDO:0002081,musculoskeletal system diseases,A disease involving the musculoskeletal system.
+diseases,MONDO:0002118,urinary system disease,A disease involving the renal system.
 diseases,MONDO:0003900,connective tissue,A disease involving the connective tissue.
 diseases,MONDO:0004335,digestive system diseases,A disease or disorder that involves the digestive system.
 diseases,MONDO:0004992,cancer,"A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas."
 diseases,MONDO:0004995,cardiovascular diseases,A disease involving the cardiovascular system.
+diseases,MONDO:0005046,immune system disease,A disorder resulting from an abnormality in the immune system.
 diseases,MONDO:0005071,nervous system disorders,"A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves."
 diseases,MONDO:0005084,mental and behaviour disorders,A disease that has its basis in the disruption of mental process.
 diseases,MONDO:0005087,respiratory system diseases,"A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma."
