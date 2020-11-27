@@ -10,7 +10,7 @@ GECKO currently has two products:
 
 While the OBO view of GECKO conforms to OBO priniciples and reuses classes from upper-level ontologies such as [BFO](http://purl.obolibrary.org/obo/bfo.owl), the IHCC view rearranges the core GECKO terms (including some imported, lower-level terms) and groups them into 5 categories. The labels in the IHCC view are not the `rdfs:label` from the OBO version, but come from the "IHCC browser label" annotation property.
 
-![IHCC GECKO View](https://github.com/IHCC-cohorts/GECKO/raw/readme-update/views/ihcc-gecko.jpg)
+![IHCC GECKO View](https://github.com/IHCC-cohorts/GECKO/blob/master/views/ihcc-gecko.jpg)
 
 ## &copy; 2020 EMBL-EBI
 
