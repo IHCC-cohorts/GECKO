@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-24/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-27/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -947,6 +947,18 @@
         <obo:IAO_0000115>A clinical history that is about any family history of disease.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>family history of disease</oboInOwl:hasExactSynonym>
         <rdfs:label>family history of disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:IAO_0000115>A non-pharmacological treatment history that is about diagnostic procedures to determine a condition or disease.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>diagnostic procedure history</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Includes procedures such as colonoscopies, ultrasounds, etc., but excludes laboratory tests.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic interventions</rdfs:label>
     </owl:Class>
     
 

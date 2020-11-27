@@ -67,6 +67,7 @@ non-pharmacological interventions,GECKO:0000092,surgical interventions,A clinica
 non-pharmacological interventions,GECKO:0000123,psychological interventions,A non-pharmacological treatment history that is about psychological treatments such as counselling.
 non-pharmacological interventions,GECKO:0000124,radiological interventions,"A non-pharmacological treatment history that is about use of radiology for treatment of disease, disorder, or symptom."
 non-pharmacological interventions,GECKO:0000125,physical therapy interventions,A non-pharmacological treatment history that is about physical therapy treatments such as physical rehabilitation.
+non-pharmacological interventions,GECKO:0000133,diagnostic interventions,A non-pharmacological treatment history that is about diagnostic procedures to determine a condition or disease.
 questionnaire/survey data,GECKO:0000093,medication,A clinical history that is about the prescription drugs taken by an individual.
 medication,GECKO:0000094,associated disease(s),Information that is about the disease treated by a drug prescribed to an individual.
 medication,GECKO:0000096,drug response(s),A biological process that results from a drug stimulus.

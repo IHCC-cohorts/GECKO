@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-24/gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-27/gecko.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1166,6 +1166,19 @@
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about any family history of disease.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic interventions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-pharmacological treatment history that is about diagnostic procedures to determine a condition or disease.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes procedures such as colonoscopies, ultrasounds, etc., but excludes laboratory tests.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic procedure history</rdfs:label>
     </owl:Class>
     
 
