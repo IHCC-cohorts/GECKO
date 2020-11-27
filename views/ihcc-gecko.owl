@@ -1070,7 +1070,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>urological disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>urological diseases</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>urological disorder</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>urinary system disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1186,7 +1186,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>immune system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of immune system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>immune disorder, NOS</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>immune system disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune system diseases</rdfs:label>
     </owl:Class>
     
 

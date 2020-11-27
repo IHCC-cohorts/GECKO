@@ -1399,7 +1399,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system disease</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease involving the renal system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>disease of renal system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease or disorder of renal system</oboInOwl:hasExactSynonym>
@@ -1410,7 +1410,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>renal disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>renal system disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>renal system disease or disorder</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary system disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>urinary tract disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>urinary tract disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>urologic disorder</oboInOwl:hasExactSynonym>
@@ -1429,7 +1429,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>urological disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>urological diseases</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>urological disorder</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system disease</rdfs:label>
+        <rdfs:label>urinary system disease</rdfs:label>
     </owl:Class>
     
 
@@ -1542,7 +1542,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune system disease</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune system diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disorder resulting from an abnormality in the immune system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>disease of immune system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease or disorder of immune system</oboInOwl:hasExactSynonym>
