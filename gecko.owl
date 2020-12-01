@@ -1406,7 +1406,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease involving the integumental system.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>MONDO:0045027</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>disease of integumental system</oboInOwl:hasExactSynonym>
@@ -1427,7 +1427,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease involving the musculoskeletal system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>disease of musculoskeletal system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease or disorder of musculoskeletal system</oboInOwl:hasExactSynonym>
@@ -1439,6 +1439,46 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>disorder of musculoskeletal system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>musculoskeletal disorder</oboInOwl:hasRelatedSynonym>
         <rdfs:label>musculoskeletal system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the renal system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of the urinary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of urinary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-neoplastic urinary tract disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary tract disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary tract disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urological disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urinary tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urinary tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of renal system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary system disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary tract diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urologic disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological disorder</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>urinary system disease</rdfs:label>
     </owl:Class>
     
 
@@ -1472,7 +1512,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digestive system</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digestive system diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease or disorder that involves the digestive system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>alimentary system disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>digestive disease</oboInOwl:hasExactSynonym>
@@ -1502,10 +1542,10 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004992">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</obo:GECKO_9000001>
         <obo:IAO_0000115>A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>CA</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cell type cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>malignancy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>malignant Growth</oboInOwl:hasExactSynonym>
@@ -1518,7 +1558,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>organ system cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>primary cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>MT</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>cancer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Class>
     
 
@@ -1528,7 +1568,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004995">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease involving the cardiovascular system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>cardiovascular disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cardiovascular disease (CVD)</oboInOwl:hasExactSynonym>
@@ -1546,12 +1586,34 @@ Written informed consent was obtained from the patient’s parents for publicati
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disorder resulting from an abnormality in the immune system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune dysfunction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of immune system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>immune disorder, NOS</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune system disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0005071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disorders</obo:GECKO_9000001>
         <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>disease of nervous system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease or disorder of nervous system</oboInOwl:hasExactSynonym>
@@ -1590,7 +1652,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>disease of respiratory system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease or disorder of respiratory system</oboInOwl:hasExactSynonym>
@@ -1611,7 +1673,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease involving the endocrine system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>disease of endocrine system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease or disorder of endocrine system</oboInOwl:hasExactSynonym>
@@ -1634,20 +1696,20 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005550">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disorder resulting from the presence and activity of a microbial, viral, or parasitic agent. It can be transmitted by direct or indirect contact.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>clinical infection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>communicable disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>infection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>infectious</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>infectious diseases and manifestations</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>infectious disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transmissible disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disease by infectious agent</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Replaces &apos;infection&apos; in disease hierarchy. OBI imported term infection is moved to pathologic process. This class is a container class for infectious diseases, not the process of infection itself.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease</rdfs:label>
+        <rdfs:label>infectious disease</rdfs:label>
     </owl:Class>
     
 
@@ -1690,13 +1752,13 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injury</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injuries</obo:GECKO_9000001>
         <obo:IAO_0000115>Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injury</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>injury</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>trauma</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>traumatic injury</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>wound</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injury</rdfs:label>
+        <rdfs:label>injury</rdfs:label>
     </owl:Class>
     
 
@@ -1706,7 +1768,7 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual system</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual system diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease that involves the visual system.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>disease of visual system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease or disorder of visual system</oboInOwl:hasExactSynonym>
