@@ -95,10 +95,12 @@ MF:0000041	belief
 MONDO:0000001	disease or disorder
 MONDO:0002051	integumentary system disease
 MONDO:0002081	musculoskeletal system disease
+MONDO:0002118	urinary system disease
 MONDO:0003900	connective tissue disease
 MONDO:0004335	digestive system disease
 MONDO:0004992	cancer
 MONDO:0004995	cardiovascular disease
+MONDO:0005046	immune system disease
 MONDO:0005071	nervous system disorder
 MONDO:0005084	mental disorder
 MONDO:0005087	respiratory system disease
