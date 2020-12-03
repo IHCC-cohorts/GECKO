@@ -985,6 +985,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <obo:IAO_0000115>Information about the language an individual has been exposed to from birth and is their first language.</obo:IAO_0000115>
+        <obo:IAO_0000119>url:https://en.wikipedia.org/wiki/First_language</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>native language of individual</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native language</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
