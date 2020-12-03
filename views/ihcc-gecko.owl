@@ -199,6 +199,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000451"/>
+        <obo:IAO_0000115 xml:lang="en">a data item that is about an investigation and is the specified output of a data transformation that has only clinical visit data as input</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">EuPathDB</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>aggregated clinical visit information</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">routine clincial visits</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000308">

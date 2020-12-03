@@ -50,6 +50,7 @@ physiological measurements,CMO:0000021,anthropometry,
 anthropometry,CMO:0000012,weight,
 anthropometry,CMO:0000106,height,
 questionnaire/survey data,EUPATH:0000451,healthcare information,An information content entity about healthcare that is private or public.
+healthcare information,EUPATH:0000305,routine clincial visits,a data item that is about an investigation and is the specified output of a data transformation that has only clinical visit data as input
 healthcare information,EUPATH:0000308,hospitalizations,an information content entity that is about a part of a health care encounter that occurs in a hospital facility
 healthcare information,GECKO:0000073,physician/practitioner info,"A textual entity that contains contact details for an individual's physician, which may include: name, phone number, address, etc."
 questionnaire/survey data,EUPATH:0010032,physical environment,environmental system associated with the dwelling used by humans.

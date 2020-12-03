@@ -288,6 +288,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000305">
+        <obo:IAO_0000115 xml:lang="en">a data item that is about an investigation and is the specified output of a data transformation that has only clinical visit data as input</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">EuPathDB</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000308">

@@ -15,6 +15,7 @@ CMO:0000021	body morphological measurement data item
 CMO:0000106	body height data item
 CMO:0000294	pulse data item
 EUPATH:0000147	cause of participant death
+EUPATH:0000305	aggregated clinical visit information
 EUPATH:0000308	hospitalization information
 EUPATH:0000359	occupation
 EUPATH:0000374	marital status
