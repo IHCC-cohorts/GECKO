@@ -18,7 +18,7 @@ cause of participant death	cause of death	information content entity	other quest
 clinical history		information content entity		
 clinical measurement data item	physiological measurements	measurement datum	questionnaire/survey data	Replaces GECKO 'physiological measurements'
 collection of organisms		material entity		
-connective tissue disease	connective tissue	disease or disorder	diseases	
+connective tissue disease	connective tissue diseases	disease or disorder	diseases	
 consent textual entity	consent/accessibility	textual entity	survey administration	Replaces GECKO 'consent/accessibility'
 copy number variation profiling assay	Sequence variants (CNV, SNP arrays)	genomic assay	genomics	Replaces GECKO 'Sequence variants (CNV, SNP arrays)'
 count		measurement datum		
