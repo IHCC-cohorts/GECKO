@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-27/gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-12-03/gecko.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1448,11 +1448,11 @@ Written informed consent was obtained from the patient’s parents for publicati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003900">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</obo:GECKO_9000001>
         <obo:IAO_0000115>A disease involving the connective tissue.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>connective tissue disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>connective tissue disease or disorder</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>connective tissue diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>connective tissue disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>connective tissue disorders</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>disease of connective tissue</oboInOwl:hasExactSynonym>

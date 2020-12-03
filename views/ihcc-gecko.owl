@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-11-27/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-12-03/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -1099,7 +1099,7 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasExactSynonym>primary disorder of connective tissue</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tissue disease, connective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of connective tissue</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue</rdfs:label>
+        <rdfs:label>connective tissue diseases</rdfs:label>
     </owl:Class>
     
 
