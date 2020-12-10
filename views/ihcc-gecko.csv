@@ -128,6 +128,7 @@ socio-demographic and economic characteristics,GECKO:0000064,residence,A geograp
 socio-demographic and economic characteristics,GECKO:0000065,education,An organismal quality inhering in a bearer by virute of the bearer's highest level of formal education completed.
 socio-demographic and economic characteristics,GECKO:0000066,family and household structure,Information that is about the structure of an individual's family and/or household.
 socio-demographic and economic characteristics,GECKO:0000130,religion,"Information about an individual's association with a religion, denomiation, or sub- or non-denominational religious group."
+socio-demographic and economic characteristics,GECKO:0000136,native language,Information about the language an individual has been exposed to from birth and is their first language.
 socio-demographic and economic characteristics,OMRSE:00000501,income and possessions,
 socio-demographic and economic characteristics,PATO:0000011,age/birthdate,A time quality inhering in a bearer by virtue of how long the bearer has existed.
 socio-demographic and economic characteristics,PATO:0000047,biological sex,An organismal quality inhering in a bearer by virtue of the bearer's ability to undergo sexual reproduction in order to differentiate the individuals or types involved.
