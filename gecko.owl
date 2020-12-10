@@ -387,6 +387,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">routine clincial visits</obo:GECKO_9000001>
+        <obo:IAO_0000115 xml:lang="en">a data item that is about an investigation and is the specified output of a data transformation that has only clinical visit data as input</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">EuPathDB</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aggregated clinical visit information</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000308">
