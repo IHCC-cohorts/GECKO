@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-12-03/gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2021-01-11/gecko.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1202,8 +1202,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADAS</obo:GECKO_9000001>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is an output of the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alzheimer&apos;s Disease Assessment Scale measurement</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is an output (score) from the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alzheimer&apos;s Disease Assessment Scale score</rdfs:label>
     </owl:Class>
     
 
@@ -1214,8 +1214,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
         <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSE</obo:GECKO_9000001>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is an output of the Mini-Mental State Exam.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mini-Mental State Exam measurement</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is an output (score) from the Mini-Mental State Exam.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mini-Mental State Exam score</rdfs:label>
     </owl:Class>
     
 
@@ -1229,6 +1229,30 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about the language an individual has been exposed to from birth and is their first language.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://en.wikipedia.org/wiki/First_language</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native language of individual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MoCA</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the Montreal Cognitive Assessment Test (MoCA) for Dementia</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montreal Cognitive Assessment Test score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD Battery</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the CERAD Neurophyschological Battery.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD Neuropsychological Battery score</rdfs:label>
     </owl:Class>
     
 

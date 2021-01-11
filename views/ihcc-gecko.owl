@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2020-12-03/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2021-01-11/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -979,8 +979,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
-        <obo:IAO_0000115>A cognitive measurement that is an output of the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Alzheimer&apos;s Disease Assessment Scale measurement</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A cognitive measurement that is an output (score) from the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Alzheimer&apos;s Disease Assessment Scale score</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADAS</rdfs:label>
     </owl:Class>
     
@@ -990,8 +990,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
-        <obo:IAO_0000115>A cognitive measurement that is an output of the Mini-Mental State Exam.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Mini-Mental State Exam measurement</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A cognitive measurement that is an output (score) from the Mini-Mental State Exam.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Mini-Mental State Exam score</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSE</rdfs:label>
     </owl:Class>
     
@@ -1005,6 +1005,28 @@
         <obo:IAO_0000119>url:https://en.wikipedia.org/wiki/First_language</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>native language of individual</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the Montreal Cognitive Assessment Test (MoCA) for Dementia</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Montreal Cognitive Assessment Test score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MoCA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the CERAD Neurophyschological Battery.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CERAD Neuropsychological Battery score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD Battery</rdfs:label>
     </owl:Class>
     
 
