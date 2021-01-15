@@ -19,7 +19,6 @@ cause of participant death	cause of death	information content entity	other quest
 clinical history		information content entity		
 clinical measurement data item	physiological measurements	measurement datum	questionnaire/survey data	Replaces GECKO 'physiological measurements'
 collection of organisms		material entity		
-connective tissue disease	connective tissue diseases	disease or disorder	diseases	
 consent textual entity	consent/accessibility	textual entity	survey administration	Replaces GECKO 'consent/accessibility'
 copy number variation profiling assay	Sequence variants (CNV, SNP arrays)	genomic assay	genomics	Replaces GECKO 'Sequence variants (CNV, SNP arrays)'
 count		measurement datum		
@@ -44,6 +43,7 @@ healthcare information	healthcare information	information content entity	questio
 hematologic disease	blood-related disorders	disease or disorder	diseases	Replaces GECKO 'blood-related disorders'
 hospitalization information	hospitalizations	information content entity	healthcare information	
 identifier		information content entity		
+imaging assay	imaging	assay	laboratory measures	
 immaterial entity				
 immune system disease	immune system diseases	disease or disorder	diseases	
 inclusion criterion	criteria for enrollment and recruitment procedures	directive information entity	population data	Replaces GECKO 'criteria for enrollment and recruitment procedures'
@@ -53,6 +53,7 @@ information content entity
 injury	injuries	disease or disorder	diseases	
 integumentary system disease	skin and subcutaneous tissue diseases	disease or disorder	diseases	
 life cycle stage	life stage/time point	process	other questionnaire/survey data	
+magnetic resonance imaging assay	MRI	imaging assay	imaging
 marital status	marital status	information content entity	socio-demographic and economic characteristics	
 material entity				
 material processing		planned process		
@@ -69,10 +70,12 @@ otorhinolaryngologic disease	diseases of the ear, nose, and/or throat	disease or
 plan specification		directive information entity		
 planned process		process		
 poisoning	poisoning	disease or disorder	diseases	
+positron emission tomography assay	PET	imaging assay	imaging
 process				
 pulse data item	heart rate (HR)	cardiovascular measurement data item	circulation and respiration	Replaces GECKO 'heart rate (HR)'
 quality				
 realizable entity				
+reproductive system disease	reproductive system diseases	disease or disorder	diseases	
 respiratory system disease	respiratory system diseases	disease or disorder	diseases	Replaces GECKO 'respiratory system'
 RNA-seq assay	RNAseq/gene expression	genomic assay	genomics	Replaces GECKO 'RNAseq/gene expression'
 saliva	saliva	organism substance	sample type	Replaces GECKO 'saliva'
