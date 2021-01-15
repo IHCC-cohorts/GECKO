@@ -1274,9 +1274,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
         <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
-        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congential and genetic disorders</obo:GECKO_9000001>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital and genetic disorders</obo:GECKO_9000001>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disorder that is present at birth due to genetics or environmental factors during development.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congential disorder</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital disorder</rdfs:label>
     </owl:Class>
     
 

@@ -109,7 +109,7 @@ cognitive functioning,GECKO:0000143,CDR,A cognitive measurement that is the outp
 cognitive and psychological measurements,GECKO:0000120,personality,"A psychological measurement of a person's individual sets of behaviours, cognitions, and emotional patterns."
 cognitive and psychological measurements,GECKO:0000121,psychological distress and emotions,A biological process that results from neurophysiological changes in response to internal and external events.
 questionnaire/survey data,MONDO:0000001,diseases,A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.
-diseases,GECKO:0000140,congential and genetic disorders,A disorder that is present at birth due to genetics or environmental factors during development.
+diseases,GECKO:0000140,congenital and genetic disorders,A disorder that is present at birth due to genetics or environmental factors during development.
 diseases,MONDO:0002051,skin and subcutaneous tissue diseases,A disease involving the integumental system.
 diseases,MONDO:0002081,musculoskeletal system diseases,A disease involving the musculoskeletal system.
 diseases,MONDO:0002118,urinary system diseases,A disease involving the renal system.
