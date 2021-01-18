@@ -53,7 +53,6 @@ information content entity
 injury	injuries	disease or disorder	diseases	
 integumentary system disease	skin and subcutaneous tissue diseases	disease or disorder	diseases	
 life cycle stage	life stage/time point	process	other questionnaire/survey data	
-magnetic resonance imaging assay	MRI	imaging assay	imaging
 marital status	marital status	information content entity	socio-demographic and economic characteristics	
 material entity				
 material processing		planned process		
@@ -70,7 +69,6 @@ otorhinolaryngologic disease	diseases of the ear, nose, and/or throat	disease or
 plan specification		directive information entity		
 planned process		process		
 poisoning	poisoning	disease or disorder	diseases	
-positron emission tomography assay	PET	imaging assay	imaging
 process				
 pulse data item	heart rate (HR)	cardiovascular measurement data item	circulation and respiration	Replaces GECKO 'heart rate (HR)'
 quality				

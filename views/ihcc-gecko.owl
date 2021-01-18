@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko/ihcc-gecko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2021-01-15/views/ihcc-gecko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2021-01-18/views/ihcc-gecko.owl"/>
     </owl:Ontology>
     
 
@@ -1699,24 +1699,6 @@ Written informed consent was obtained from the patient’s parents for publicati
         <obo:IAO_0000119 xml:lang="en">Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>inclusion criterion</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">criteria for enrollment and recruitment procedures</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_xxx1 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_xxx1">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000185"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PET</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_xxx2 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_xxx2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000185"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRI</rdfs:label>
     </owl:Class>
     
 

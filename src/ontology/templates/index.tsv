@@ -136,8 +136,6 @@ OBI:0002623	whole metagenome sequencing assay
 OBI:0302893	storage
 OBI:0500000	study design
 OBI:0500027	inclusion criterion
-OBI:xxx1	positron emission tomography assay
-OBI:xxx2	magnetic resonance imaging assay
 OGMS:0000015	clinical history
 OGMS:0000020	symptom
 OMRSE:00000501	income data

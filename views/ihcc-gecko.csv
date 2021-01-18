@@ -37,8 +37,6 @@ genomics,OBI:0002117,WGS,A DNA sequencing assay that intends to provide informat
 genomics,OBI:0002118,WES,A DNA sequencing assay that intends to provide information about the sequence of the protein coding components of a genome (exons).
 genomics,OBI:0002623,Metagenomics,A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.
 laboratory measures,OBI:0000185,imaging,An assay that produces a picture of an entity.
-imaging,OBI:xxx1,PET,
-imaging,OBI:xxx2,MRI,
 laboratory measures,OBI:0001624,microbiology,An assay that identifies the organism species in a specimen.
 ,GECKO:0000052,survey administration,
 survey administration,GECKO:0000055,unique identifiers,An identifier that is guaranteed to be unique among all identifiers in a particular domain.
