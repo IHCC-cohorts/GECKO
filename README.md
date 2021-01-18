@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/IHCC-cohorts/GECKO/master/src/logo.png" height="150">
+
 # Genomics Cohorts Knowledge Ontology
 
 **NOTE:** This is work in progress.
