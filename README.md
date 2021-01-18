@@ -17,3 +17,4 @@ While the OBO view of GECKO conforms to OBO priniciples and reuses classes from 
 ## &copy; 2020 EMBL-EBI
 
 Distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/).
+The GECKO logo was designed by Spencer Phillips - EMBL-EBI, 2021.
