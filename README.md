@@ -1,3 +1,5 @@
+<img src="https://user-images.githubusercontent.com/2214135/104771331-09f2f780-576a-11eb-870b-501ee23d4a3e.png" height="150">
+
 # Genomics Cohorts Knowledge Ontology
 
 **NOTE:** This is work in progress.
