@@ -169,6 +169,9 @@ views/ihcc-gecko.owl: build/ihcc_view_template.csv build/ihcc_annotations.ttl | 
 	annotate \
 	--ontology-iri $(OBO)/gecko/ihcc-gecko.owl \
 	--version-iri $(OBO)/gecko/releases/$(DATE)/views/ihcc-gecko.owl \
+	--link-annotation dcterms:license $(LICENSE) \
+	--annotation dc11:title "$(TITLE) (IHCC View)" \
+	--annotation rdfs:comment "$(COMMENT)" \
 	--output $@
 
 build/ihcc-gecko.csv: views/ihcc-gecko.owl | build/robot.jar
