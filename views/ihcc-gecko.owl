@@ -984,8 +984,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
-        <obo:IAO_0000115>A cognitive measurement that is an output of the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Alzheimer&apos;s Disease Assessment Scale measurement</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A cognitive measurement that is an output (score) from the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Alzheimer&apos;s Disease Assessment Scale score</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADAS</rdfs:label>
     </owl:Class>
     
@@ -995,8 +995,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
-        <obo:IAO_0000115>A cognitive measurement that is an output of the Mini-Mental State Exam.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Mini-Mental State Exam measurement</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A cognitive measurement that is an output (score) from the Mini-Mental State Exam.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Mini-Mental State Exam score</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSE</rdfs:label>
     </owl:Class>
     
@@ -1010,6 +1010,83 @@
         <obo:IAO_0000119>url:https://en.wikipedia.org/wiki/First_language</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>native language of individual</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the Montreal Cognitive Assessment Test (MoCA) for Dementia</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Montreal Cognitive Assessment Test score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MoCA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the CERAD Neurophyschological Battery.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CERAD Neuropsychological Battery score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD Battery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the Penn Computerized Neurocognitive Battery.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Penn Computerized Neurocognitive Battery score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penn CNB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:IAO_0000115>A disorder that is present at birth due to genetics or environmental factors during development.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>congenital disorder</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital and genetic disorders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the Severe Impairment Battery.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Severe Impairment Battery score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the Neuropsychiatric Inventory.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Neuropsychiatric Inventory score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:IAO_0000115>A cognitive measurement that is the output (score) from the Clinical Dementia Rating Scale.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Clinical Dementia Rating Scale score</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDR</rdfs:label>
     </owl:Class>
     
 
@@ -1149,28 +1226,6 @@ Written informed consent was obtained from the patient’s parents for publicati
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0003900 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003900">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
-        <obo:IAO_0000115>A disease involving the connective tissue.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>connective tissue disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>connective tissue disease or disorder</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>connective tissue diseases</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>connective tissue disorder</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>connective tissue disorders</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>disease of connective tissue</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>disease or disorder of connective tissue</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>disease, connective tissue</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>disorder of connective tissue</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>primary disorder of connective tissue</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>tissue disease, connective</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>disorder of connective tissue</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>connective tissue diseases</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0004335 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
@@ -1240,6 +1295,26 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>circulatory system disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>disorder of cardiovascular system</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:IAO_0000115>A disease involving the reproductive system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of reproductive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of reproductive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of reproductive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>genital disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>genital system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of reproductive system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive system diseases</rdfs:label>
     </owl:Class>
     
 
@@ -1469,6 +1544,18 @@ Written informed consent was obtained from the patient’s parents for publicati
         <oboInOwl:hasRelatedSynonym>intoxication</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>poisoning syndrome</oboInOwl:hasRelatedSynonym>
         <rdfs:label>poisoning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000027"/>
+        <obo:IAO_0000115>An assay that produces a picture of an entity.</obo:IAO_0000115>
+        <obo:IAO_0000119>OBI branch derived</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>imaging assay</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging</rdfs:label>
     </owl:Class>
     
 

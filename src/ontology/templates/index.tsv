@@ -78,9 +78,16 @@ GECKO:0000130	religious affiliation
 GECKO:0000131	human social environment
 GECKO:0000132	family history of disease
 GECKO:0000133	diagnostic procedure history
-GECKO:0000134	Alzheimer's Disease Assessment Scale measurement
-GECKO:0000135	Mini-Mental State Exam measurement
+GECKO:0000134	Alzheimer's Disease Assessment Scale score
+GECKO:0000135	Mini-Mental State Exam score
 GECKO:0000136	native language of individual
+GECKO:0000137	Montreal Cognitive Assessment Test score
+GECKO:0000138	CERAD Neuropsychological Battery score
+GECKO:0000139	Penn Computerized Neurocognitive Battery score
+GECKO:0000140	congenital disorder
+GECKO:0000141	Severe Impairment Battery score
+GECKO:0000142	Neuropsychiatric Inventory score
+GECKO:0000143	Clinical Dementia Rating Scale score
 GO:0008150	biological_process
 IAO:0000005	objective specification
 IAO:0000027	data item
@@ -98,10 +105,10 @@ MONDO:0000001	disease or disorder
 MONDO:0002051	integumentary system disease
 MONDO:0002081	musculoskeletal system disease
 MONDO:0002118	urinary system disease
-MONDO:0003900	connective tissue disease
 MONDO:0004335	digestive system disease
 MONDO:0004992	cancer
 MONDO:0004995	cardiovascular disease
+MONDO:0005039	reproductive system disease
 MONDO:0005046	immune system disease
 MONDO:0005071	nervous system disorder
 MONDO:0005084	mental disorder
@@ -116,6 +123,7 @@ MONDO:0029000	poisoning
 OBI:0000011	planned process
 OBI:0000070	assay
 OBI:0000094	material processing
+OBI:0000185	imaging assay
 OBI:0000435	genotyping assay
 OBI:0000537	copy number variation profiling assay
 OBI:0001271	RNA-seq assay

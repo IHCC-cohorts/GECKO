@@ -36,6 +36,7 @@ genomics,OBI:0002020,Epigenetics,"An assay that identifies epigenetic modificati
 genomics,OBI:0002117,WGS,A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism.
 genomics,OBI:0002118,WES,A DNA sequencing assay that intends to provide information about the sequence of the protein coding components of a genome (exons).
 genomics,OBI:0002623,Metagenomics,A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.
+laboratory measures,OBI:0000185,imaging,An assay that produces a picture of an entity.
 laboratory measures,OBI:0001624,microbiology,An assay that identifies the organism species in a specimen.
 ,GECKO:0000052,survey administration,
 survey administration,GECKO:0000055,unique identifiers,An identifier that is guaranteed to be unique among all identifiers in a particular domain.
@@ -95,18 +96,25 @@ perception of health and quality of life,GECKO:0000128,functional limitations,In
 perception of health and quality of life,GECKO:0000129,use of assistive devices,Information about an individual's use of assistive devices in performing daily activities.
 questionnaire/survey data,GECKO:0000118,cognitive and psychological measurements,A measurement datum of some aspect of human psychology.
 cognitive and psychological measurements,GECKO:0000119,cognitive functioning,"A psychological measurement of some aspect of intellectual functions such as memory, problem solving, and comprehension."
-cognitive functioning,GECKO:0000134,ADAS,A cognitive measurement that is an output of the Alzheimer's Disease Assessment Scale.
-cognitive functioning,GECKO:0000135,MMSE,A cognitive measurement that is an output of the Mini-Mental State Exam.
+cognitive functioning,GECKO:0000134,ADAS,A cognitive measurement that is an output (score) from the Alzheimer's Disease Assessment Scale.
+cognitive functioning,GECKO:0000135,MMSE,A cognitive measurement that is an output (score) from the Mini-Mental State Exam.
+cognitive functioning,GECKO:0000137,MoCA,A cognitive measurement that is the output (score) from the Montreal Cognitive Assessment Test (MoCA) for Dementia
+cognitive functioning,GECKO:0000138,CERAD Battery,A cognitive measurement that is the output (score) from the CERAD Neurophyschological Battery.
+cognitive functioning,GECKO:0000139,Penn CNB,A cognitive measurement that is the output (score) from the Penn Computerized Neurocognitive Battery.
+cognitive functioning,GECKO:0000141,SIB,A cognitive measurement that is the output (score) from the Severe Impairment Battery.
+cognitive functioning,GECKO:0000142,NPI,A cognitive measurement that is the output (score) from the Neuropsychiatric Inventory.
+cognitive functioning,GECKO:0000143,CDR,A cognitive measurement that is the output (score) from the Clinical Dementia Rating Scale.
 cognitive and psychological measurements,GECKO:0000120,personality,"A psychological measurement of a person's individual sets of behaviours, cognitions, and emotional patterns."
 cognitive and psychological measurements,GECKO:0000121,psychological distress and emotions,A biological process that results from neurophysiological changes in response to internal and external events.
 questionnaire/survey data,MONDO:0000001,diseases,A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.
+diseases,GECKO:0000140,congenital and genetic disorders,A disorder that is present at birth due to genetics or environmental factors during development.
 diseases,MONDO:0002051,skin and subcutaneous tissue diseases,A disease involving the integumental system.
 diseases,MONDO:0002081,musculoskeletal system diseases,A disease involving the musculoskeletal system.
 diseases,MONDO:0002118,urinary system diseases,A disease involving the renal system.
-diseases,MONDO:0003900,connective tissue diseases,A disease involving the connective tissue.
 diseases,MONDO:0004335,digestive system diseases,A disease or disorder that involves the digestive system.
 diseases,MONDO:0004992,cancer,"A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas."
 diseases,MONDO:0004995,cardiovascular diseases,A disease involving the cardiovascular system.
+diseases,MONDO:0005039,reproductive system diseases,A disease involving the reproductive system.
 diseases,MONDO:0005046,immune system diseases,A disorder resulting from an abnormality in the immune system.
 diseases,MONDO:0005071,nervous system disorders,"A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves."
 diseases,MONDO:0005084,mental and behaviour disorders,A disease that has its basis in the disruption of mental process.
